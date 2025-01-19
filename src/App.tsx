@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutMe from './components/AboutMe';
-import Process from './components/Process';
-import FAQ from './components/FAQ';
-import Testimonials from './components/Testimonials';
-import Works from './components/Works';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Preloader from './components/Preloader';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import AboutMe from './sections/AboutMe';
+import Process from './sections/Process';
+import FAQ from './sections/FAQ';
+import Testimonials from './sections/Testimonials';
+import Works from './sections/Works';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
+import Preloader from './sections/Preloader';
 import CustomCursor from './components/CustomCursor';
 
 function App() {
