@@ -17,7 +17,7 @@ function AboutMe() {
           </div>
         </div>
         <div className="media mt-6 lg:mt-0">
-          <img className="lazy" data-src="./public/source/me.JPG" width="415" height="450" alt="Kiril Karatitsyn" />
+          <img className="lazy" data-src="/source/me.JPG" width="415" height="450" alt="Kiril Karatitsyn" />
         </div>
       </div>
     </section>
