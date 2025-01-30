@@ -1,28 +1,28 @@
 function Process() {
   const steps = [
     {
-      title: "1. Kickoff 🚀",
-      description: "We'll start with a focused discussion to understand your e-commerce goals and craft a strategy that aligns with your vision. 🎯"
+      title: "1. First Chat 🚀",
+      description: "Let's discuss your business goals and website requirements. Planning the perfect solution - from simple websites to complete online stores. 🎯"
     },
     {
-      title: "2. Analysis 🔍",
-      description: "I'll analyze your competitors to identify opportunities for your store to stand out and capture market share. 📊"
+      title: "2. Research 🔍",
+      description: "Analyzing industry best practices to ensure your website stands out and attracts the right customers. 📊"
     },
     {
       title: "3. Design 🎨",
-      description: "We'll collaboratively define the visual style, layout, and key features of your Shopify store to maximize conversions. 🛍️"
+      description: "Creating modern, attractive designs that look great on phones, tablets, and computers. 💫"
     },
     {
-      title: "4. Development 💻",
-      description: "I'll build your high-performing Shopify store, handling everything from functionality setup to product page optimization. ⚙️"
+      title: "4. Building 💻",
+      description: "Building your website using the best tools to make it fast, secure, and easy to update. ⚡"
     },
     {
-      title: "5. Review ✅",
-      description: "I'll provide a thorough review and incorporate your feedback to ensure the final product meets your exact requirements. 🔄"
+      title: "5. Check & Test ✅",
+      description: "Thorough testing ensures everything works perfectly, with adjustments made as needed. 🔄"
     },
     {
-      title: "6. Launch 🚀",
-      description: "Your optimized Shopify store is ready for launch! I'll guide you through the process and offer ongoing support for continued success. 🌟"
+      title: "6. Go Live 🚀",
+      description: "Your website goes live with ongoing support to ensure continued optimal performance. 🌟"
     }
   ];
 

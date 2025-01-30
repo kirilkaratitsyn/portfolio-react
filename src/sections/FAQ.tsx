@@ -1,28 +1,28 @@
 function FAQ() {
   const faqs = [
     {
-      question: "What if I need help with more than just Shopify? 🤔",
-      answer: "We'll start with a focused discussion to understand your e-commerce goals and craft a strategy that aligns with your vision. 🎯"
+      question: "What makes your websites special? 💻",
+      answer: "I create websites that are fast, look great, and are easy for your customers to use. They work perfectly on phones, tablets, and computers. 🚀"
     },
     {
-      question: "What do you use to develop your websites? 💻",
-      answer: "I use Figma for design and Visual Studio Code for development. The tool doesn't matter, results do. 🔧"
+      question: "Why choose Shopify for my online store? 🛍️",
+      answer: "Shopify is the safest and easiest way to run an online store. It has everything you need to start selling online quickly. 🔒"
     },
     {
-      question: "What makes your Shopify stores different? 🌟",
-      answer: "High-performing, custom-tailored, and built to convert. 🚀"
+      question: "Why work with me? 🌟",
+      answer: "I create websites that not only look beautiful but also help your business grow. I'm here to support you every step of the way. ⚡"
     },
     {
-      question: "What's your pricing like? 💰",
-      answer: "Contact me for a personalized quote. 📞"
+      question: "How much? 💰",
+      answer: "Each project is unique - let's discuss your specific needs and goals to find the right solution for your budget. 📊"
     },
     {
-      question: "What about ongoing support? 🔄",
-      answer: "I offer support and maintenance packages for continued success. 📈"
+      question: "Support after launch? 🔄",
+      answer: "Yes! I provide ongoing support to ensure your website stays up-to-date and performs at its best. 🛡️"
     },
     {
       question: "Who do you prefer, a Dog or a Cat? 🐱",
-      answer: "Of course a Cat! 😺"
+      answer: "Cats are my favorite! They're independent, graceful, and make perfect coding companions. 😺"
     }
   ];
 

@@ -8,16 +8,16 @@ function AboutMe() {
           </h1>
           <div className="font-bold text-[24px] light-gradient">
             <p className="mb-5">
-              I am a Front-end developer with in-depth knowledge in{' '}
-              <span className="primary-gradient primary-shadow">Shopify</span>, focused on creating seamless and engaging online shopping experiences.
+              I create <span className="primary-gradient primary-shadow">beautiful</span> websites and online-shops that help businesses sell more online. Specializing in developing sites that are easy to use and look great on any device.
             </p>
             <p>
-              Driven by precision and efficiency, I build solutions that make e-commerce straightforward and user-friendly for businesses and their customers.
+              The focus is on making websites that are fast, easy to navigate, and help turn visitors into customers. Whether you need a new website or want to improve your existing one, let's make it happen.
             </p>
+            
           </div>
         </div>
         <div className="media mt-6 lg:mt-0">
-          <img className="lazy" data-src="source/aboutme_1.webp" width="415" height="450" alt="Kiril Karatitsyn" />
+          <img className="lazy" data-src="./public/source/me.JPG" width="415" height="450" alt="Kiril Karatitsyn" />
         </div>
       </div>
     </section>

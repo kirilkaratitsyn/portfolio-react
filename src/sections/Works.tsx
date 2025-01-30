@@ -1,4 +1,5 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function Works() {
   const works = [
@@ -6,12 +7,6 @@ function Works() {
       title: "Honey Sunny Paradise",
       url: "https://www.honeysunnyparadise.com/",
       image: "public/source/works_1.webp",
-      tech: "HTML&CSS, Liquid"
-    },
-    {
-      title: "Purr & Bark",
-      url: "https://purrbark.store/",
-      image: "public/source/works_2.webp",
       tech: "HTML&CSS, Liquid"
     },
     {
@@ -43,12 +38,6 @@ function Works() {
       url: "https://rose-gold.co/",
       image: "public/source/works_8.webp",
       tech: "HTML&CSS, Liquid"
-    },
-    {
-      title: "Easy-Move",
-      url: "https://easy-move.com.ua/",
-      image: "public/source/works_7.webp",
-      tech: "HTML&CSS, Liquid"
     }
   ];
 
@@ -60,7 +49,7 @@ function Works() {
         {/* Desktop Grid */}
         <div className="items sm:grid grid-cols-3 hidden gap-x-[40px]">
           {works.map((work, index) => (
-            <div key={index} className="item mb-[79px] max-w-[490px] flex-col flex gap-[15px]">
+              <div key={index} className="item mb-[79px] max-w-[490px] flex-col flex gap-[15px]">
               <a 
                 href={work.url}
                 target="_blank"
@@ -78,20 +67,24 @@ function Works() {
               <span className="opacity-80">{work.tech}</span>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Mobile Slider */}
         <div className="sm:hidden block">
-          <Splide
-            options={{
-              perPage: 1,
-              perMove: 1,
-              gap: "30px",
-              pagination: true
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
             }}
           >
             {works.map((work, index) => (
-              <SplideSlide key={index}>
+              <SwiperSlide key={index}>
                 <div className="item mb-[79px] max-w-[490px] flex-col items-center flex gap-[15px]">
                   <a 
                     href={work.url}
@@ -109,11 +102,11 @@ function Works() {
                   <p className="text-[20px] font-semibold">{work.title}</p>
                   <span className="opacity-80">{work.tech}</span>
                 </div>
-              </SplideSlide>
+              </SwiperSlide>
             ))}
-          </Splide>
+          </Swiper>
         </div>
-      </div>
+  
     </section>
   );
 }

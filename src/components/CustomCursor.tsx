@@ -27,8 +27,8 @@ function CustomCursor() {
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      const targetX = e.clientX + window.scrollX - 5;
-      const targetY = e.clientY + window.scrollY - 5;
+      const targetX = e.clientX + window.scrollX;
+      const targetY = e.clientY + window.scrollY;
       setPosition({ x: targetX, y: targetY });
     };
 

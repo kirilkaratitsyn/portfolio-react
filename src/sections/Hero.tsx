@@ -53,26 +53,28 @@ function Hero() {
       <div className="hero__container flex flex-col items-center justify-center font-medium md:py-[70px] py-[35px] bg-transparent" data-aos="fade-up">
         <h1 className="mb-2.5 text-3xl md:text-5xl light-gradient">I'm Kiril<br /></h1>
         <div className="min-h-[60px]">
-          <span className="text-3xl md:text-5xl primary-gradient primary-shadow mr-2.5 font-bold">Shopify</span>
+          <span className="text-3xl md:text-5xl primary-gradient primary-shadow mr-2.5 font-bold">Web</span>
           <h1 className="text-2xl md:text-5xl light-gradient" id="word">{currentWord}</h1>
         </div>
-        <div className="slogan md:mt-[37px] text-2xl md:text-[32px] light-gradient">
-          So good, your competitors <br /> will cry.
+        <div className="slogan text-center md:mt-[37px] text-2xl md:text-[32px] light-gradient">
+        I build websites that make your business shine online.
         </div>
         <div className="buttons mt-14 flex justify-center md:flex-row flex-col items-center gap-5 text-sm whitespace-nowrap">
-          <Button 
-            data-cal-link="kiril-karatitsyn/free-consultation-call"
-            data-cal-namespace="free-consultation-call"
-            data-cal-config='{"layout":"month_view","theme":"dark"}'
+          <button 
+            className="light-shadow text-black bg-white px-12 py-3 rounded-full" 
+            data-cal-link="kiril-karatitsyn/free-consultation-call" 
+            data-cal-namespace="free-consultation-call" 
+            data-cal-config='{"layout":"month_view","theme":"dark"}' 
+            id="Button"
           >
             Book a Call
-          </Button>
+          </button>
           <span className="md:inline-block hidden">or</span>
           <a 
             href="mailto:karatitsynkiril@gmail.com?subject=Hi Kiril!" 
             className="light-shadow flex justify-center items-center py-3 px-2 border-white border-[2px] rounded-full"
           >
-            Send me a message <img className="ml-2" width="16" src="source/Arrow up-right.png" alt="arrow" />
+            Send me a message <img className="ml-2" width="16px" src="source/Arrow up-right.png" alt="arrow" />
           </a>
         </div>
       </div>

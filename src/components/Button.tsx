@@ -14,9 +14,13 @@ const Button: React.FC<ButtonProps> = ({ size = 'medium', onClick, children }) =
   };
 
   return (
-    <button
-      className={`light-shadow text-black bg-white rounded-full ${sizeClasses[size]} mt-14 flex justify-center md:flex-row flex-col items-center gap-5 text-sm whitespace-nowrap`}
+    <button 
+      className={`light-shadow text-black bg-white ${sizeClasses[size]} rounded-full`} 
       onClick={onClick}
+      data-cal-link="kiril-karatitsyn/free-consultation-call" 
+      data-cal-namespace="free-consultation-call" 
+      data-cal-config='{"layout":"month_view","theme":"dark"}' 
+        id="Button"
     >
       {children}
     </button>
