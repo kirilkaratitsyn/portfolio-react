@@ -19,60 +19,60 @@ body {
 /* Font face declarations */
 @font-face {
   font-family: 'Onest';
-  src: url('public/fonts/Onest-Black.ttf') format('truetype');
+  src: url('/fonts/Onest-Black.ttf') format('truetype');
   font-weight: 900;
 }
 @font-face {
   font-family: 'Onest';
-  src: url('public/fonts/Onest-Regular.ttf') format('truetype');
+  src: url('/fonts/Onest-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Onest';
-  src: url('public/fonts/Onest-Light.ttf') format('truetype');
+  src: url('/fonts/Onest-Light.ttf') format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Onest';
-  src: url('public/fonts/Onest-Medium.ttf') format('truetype');
+  src: url('/fonts/Onest-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Onest';
-  src: url('public/fonts/Onest-Bold.ttf') format('truetype');
+  src: url('/fonts/Onest-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 
 @font-face {
   font-family: 'e-UkraineHead';
-  src: url('public/fonts/e-UkraineHead.otf') format('opentype');
+  src: url('/fonts/e-UkraineHead.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'e-UkraineHead';
-  src: url('public/fonts/e-UkraineHead-Bold.otf') format('opentype');
+  src: url('/fonts/e-UkraineHead-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'e-UkraineHead';
-  src: url('public/fonts/e-UkraineHead-Light.otf') format('opentype');
+  src: url('/fonts/e-UkraineHead-Light.otf') format('opentype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'e-UkraineHead';
-      src: url('public/fonts/e-UkraineHead-Medium.otf') format('opentype');
+      src: url('/fonts/e-UkraineHead-Medium.otf') format('opentype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'e-UkraineHead';
-  src: url('public/fonts/e-UkraineHead-Regular.otf') format('opentype');
+  src: url('/fonts/e-UkraineHead-Regular.otf') format('opentype');
   font-weight: 400;
 }
 

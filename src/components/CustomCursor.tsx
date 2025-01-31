@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -11,25 +12,25 @@ function CustomCursor() {
 
     if (isMobile) return;
 
-    let cursorX = 0;
-    let cursorY = 0;
     let frameId: number;
 
     const animateCursor = () => {
-      const diffX = position.x - cursorX;
-      const diffY = position.y - cursorY;
+      const diffX = targetPosition.x - position.x;
+      const diffY = targetPosition.y - position.y;
 
-      cursorX += diffX * 0.08;
-      cursorY += diffY * 0.08;
+      // Update position with easing
+      setPosition({
+        x: position.x + diffX * 0.1,
+        y: position.y + diffY * 0.1
+      });
 
-      setPosition({ x: cursorX, y: cursorY });
       frameId = requestAnimationFrame(animateCursor);
     };
 
     const handleMouseMove = (e: MouseEvent) => {
       const targetX = e.clientX + window.scrollX;
       const targetY = e.clientY + window.scrollY;
-      setPosition({ x: targetX, y: targetY });
+      setTargetPosition({ x: targetX, y: targetY });
     };
 
     document.addEventListener('mousemove', handleMouseMove);
@@ -39,7 +40,7 @@ function CustomCursor() {
       document.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(frameId);
     };
-  }, []);
+  }, [position, targetPosition]);
 
   if (!isVisible) return null;
 
@@ -55,7 +56,8 @@ function CustomCursor() {
         left: `${position.x}px`,
         top: `${position.y}px`,
         zIndex: 9999,
-        transition: 'transform 0.1s ease-out'
+        transition: 'transform 0.1s ease-out',
+        transform: 'translate(-50%, -50%)' // Center the cursor on the position
       }}
     />
   );

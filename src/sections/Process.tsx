@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 function Process() {
   const steps = [
     {
@@ -38,16 +40,10 @@ function Process() {
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center">
-          <button 
-            data-aos="fade-up"
-            className="light-shadow text-black bg-white px-12 py-3 rounded-full"
-            data-cal-link="kiril-karatitsyn/free-consultation-call"
-            data-cal-namespace="free-consultation-call"
-            data-cal-config='{"layout":"month_view","theme":"dark"}'
-          >
-            Book a Call
-          </button>
+        <div className="flex justify-center items-center" data-aos="fade-up">
+          <Button size="large">
+            <span>Book a Call</span>
+          </Button>
         </div>
       </div>
     </section>

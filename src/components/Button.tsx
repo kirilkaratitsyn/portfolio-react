@@ -1,21 +1,22 @@
 import React from 'react';
 
 interface ButtonProps {
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'extraLarge';
   onClick?: () => void;
   children: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({ size = 'medium', onClick, children }) => {
   const sizeClasses = {
-    small: 'px-4 py-2 text-sm',
-    medium: 'px-6 py-3 text-base',
-    large: 'px-8 py-4 text-lg',
+    small: 'px-12 py-3 text-sm',
+    medium: 'px-12 py-3 text-base',
+    large: 'px-12 py-3 text-lg',
+    extraLarge: 'text-[14px] md:text-[24px] px-[43px] md:px-[73px] py-[9px] font-semibold',
   };
 
   return (
     <button 
-      className={`light-shadow text-black bg-white ${sizeClasses[size]} rounded-full`} 
+      className={`transition-all duration-500 whitespace-nowrap light-shadow font-medium text-black bg-white ${sizeClasses[size]} rounded-full`} 
       onClick={onClick}
       data-cal-link="kiril-karatitsyn/free-consultation-call" 
       data-cal-namespace="free-consultation-call" 

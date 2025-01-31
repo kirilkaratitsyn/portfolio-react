@@ -12,18 +12,21 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import Preloader from './sections/Preloader';
 import CustomCursor from './components/CustomCursor';
+import { lazyLoadImages } from './utils/lazyLoad';
 
 function App() {
   useEffect(() => {
     AOS.init();
+    lazyLoadImages();
   }, []);
 
   return (
     <div className="wrapper">
       <Preloader />
-      <CustomCursor />
+      
       <Header />
       <main>
+        <CustomCursor />
         <Hero />
         <AboutMe />
         <Process />

@@ -6,37 +6,37 @@ function Works() {
     {
       title: "Honey Sunny Paradise",
       url: "https://www.honeysunnyparadise.com/",
-      image: "public/source/works_1.webp",
+      image: "/source/works_1.webp",
       tech: "HTML&CSS, Liquid"
     },
     {
       title: "Hephestorium(PDPs)",
       url: "https://www.hephestorium.com/",
-      image: "public/source/works_3.webp",
+      image: "/source/works_3.webp",
       tech: "HTML&CSS, Liquid"
     },
     {
       title: "Craft-Minds(PDPs)",
       url: "https://craft-minds.com/",
-      image: "public/source/6718b31b0e47a451312f3357 1.png",
+      image: "/source/6718b31b0e47a451312f3357 1.png",
       tech: "HTML&CSS, Liquid"
     },
     {
       title: "Art Broken Bottle",
       url: "https://artbrokenbottle.com/",
-      image: "public/source/works_5.webp",
+      image: "/source/works_5.webp",
       tech: "HTML&CSS, Liquid"
     },
     {
       title: "Shovavas",
       url: "https://shovavas.org/",
-      image: "public/source/works_6.webp",
+      image: "/source/works_6.webp",
       tech: "HTML&CSS, Liquid, JavaScript"
     },
     {
       title: "Rose-Gold",
       url: "https://rose-gold.co/",
-      image: "public/source/works_8.webp",
+      image: "/source/works_8.webp",
       tech: "HTML&CSS, Liquid"
     }
   ];

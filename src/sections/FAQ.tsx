@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 function FAQ() {
   const faqs = [
     {
@@ -41,6 +43,11 @@ function FAQ() {
               <span className="opacity-80">{faq.answer}</span>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center items-center" data-aos="fade-up">
+          <Button size="large">
+            <span>Book a Call</span>
+          </Button>
         </div>
       </div>
     </section>

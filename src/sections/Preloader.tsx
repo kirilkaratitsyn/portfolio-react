@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 
 function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
+      setIsFadingOut(true);
+      setTimeout(() => setIsLoading(false), 1000);
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -24,10 +26,11 @@ function Preloader() {
         height: '100%',
         backgroundColor: '#000',
         zIndex: 9999,
-        transition: 'transform 1s, opacity 1s',
+        transition: 'opacity 1s ease-out',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        opacity: isFadingOut ? 0 : 1
       }}
     >
       <span className="loader">
