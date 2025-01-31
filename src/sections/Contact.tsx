@@ -6,7 +6,7 @@ function Contact() {
   
   return (
     <section id="contact">
-      <div className="contact__container flex justify-center items-center flex-col" data-aos="fade-up">
+      <div className="contact__container text-center flex justify-center items-center flex-col" data-aos="fade-up">
         <h3 className="md:text-[24px] text-lg md:mb-[40px] mb-5 font-[200] light-gradient">
         {t('contact.subtitle')}
         </h3>
