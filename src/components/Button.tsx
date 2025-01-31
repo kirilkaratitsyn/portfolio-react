@@ -11,12 +11,12 @@ const Button: React.FC<ButtonProps> = ({ size = 'medium', onClick, children }) =
     small: 'px-12 py-3 text-sm',
     medium: 'px-12 py-3 text-base',
     large: 'px-12 py-3 text-lg',
-    extraLarge: 'text-[14px] md:text-[24px] px-[43px] md:px-[73px] py-[9px] font-semibold',
+    extraLarge: 'text-[20px] md:text-[24px] px-[63px] md:px-[73px] py-[9px] font-regular',
   };
 
   return (
     <button 
-      className={`transition-all duration-500 whitespace-nowrap light-shadow font-medium text-black bg-white ${sizeClasses[size]} rounded-full`} 
+      className={`transition-all duration-500 whitespace-nowrap light-shadow font-medium  mt-10 text-black bg-white ${sizeClasses[size]} rounded-full`} 
       onClick={onClick}
       data-cal-link="kiril-karatitsyn/free-consultation-call" 
       data-cal-namespace="free-consultation-call" 

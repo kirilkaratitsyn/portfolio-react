@@ -13,6 +13,8 @@ import Footer from './sections/Footer';
 import Preloader from './sections/Preloader';
 import CustomCursor from './components/CustomCursor';
 import { lazyLoadImages } from './utils/lazyLoad';
+import './i18n';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
   useEffect(() => {
@@ -26,12 +28,13 @@ function App() {
       
       <Header />
       <main>
+        <LanguageSwitcher />
         <CustomCursor />
         <Hero />
         <AboutMe />
         <Process />
-        <FAQ />
         <Testimonials />
+        <FAQ />
         <Works />
         <Contact />
       </main>
