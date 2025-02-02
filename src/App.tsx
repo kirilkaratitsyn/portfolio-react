@@ -33,7 +33,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Process />
-        <Testimonials />
+        
         <FAQ />
         <Works />
         <Contact />

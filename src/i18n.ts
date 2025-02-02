@@ -59,34 +59,77 @@ const resources = {
       },
       testimonials: {
         title: "Testimonials",
-        reviews: {
-          oleksandr: {
+        reviews: [
+          {
             name: "Oleksandr",
+            image: "/source/1.png",
             text: "Kiril is a lifesaver! He fixed all the issues on my Shopify site and even gave me tips to improve it. I'm so happy with the results."
           },
-          anastasia: {
+          {
             name: "Anastasia",
+            image: "/source/4.png",
             text: "I was so lost trying to set up my online store, but Kiril made it a breeze! Now I have a beautiful website that actually gets sales. Thanks, Kiril!"
           },
-          dmytro: {
+          {
             name: "Dmytro",
+            image: "/source/3.png",
             text: "Working with Kiril was a fantastic experience. He's a true expert in Shopify and really cares about his clients. I highly recommend him!"
           },
-          artem: {
+          {
             name: "Artem",
+            image: "/source/2.png",
             text: "Kiril went above and beyond to create a stunning website for my business. He's a true professional and a pleasure to work with."
           },
-          hanna: {
+          {
             name: "Hanna",
+            image: "/source/5.png",
             text: "My new website is everything I wanted and more! Kiril is incredibly talented and easy to work with. I can't thank him enough."
           }
-        }
+        ]
       },
       contact: {
         title: "LET'S WORK TOGETHER",
         subtitle: "everything starts with a conversation",
         email: "karatitsynkiril@gmail.com",
         book_call: "Book a Call"
+      },
+      faq: {
+        title: "FAQ",
+        questions: [
+          {
+            question: "What makes your websites special? 💻",
+            answer: "I create websites that are fast, look great, and are easy for your customers to use. They work perfectly on phones, tablets, and computers. 🚀"
+          },
+          {
+            question: "Why choose Shopify for my online store? 🛍️",
+            answer: "Shopify is the safest and easiest way to run an online store. It has everything you need to start selling online quickly. 🔒"
+          },
+          {
+            question: "Why work with me? 🌟",
+            answer: "I create websites that not only look beautiful but also help your business grow. I'm here to support you every step of the way. ⚡"
+          },
+          {
+            question: "How much? 💰",
+            answer: "Each project is unique - let's discuss your specific needs and goals to find the right solution for your budget. 📊"
+          },
+          {
+            question: "Support after launch? 🔄",
+            answer: "Yes! I provide ongoing support to ensure your website stays up-to-date and performs at its best. 🛡️"
+          },
+          {
+            question: "Who do you prefer, a Dog or a Cat? 🐱",
+            answer: "Cats are my favorite! They're independent, graceful, and make perfect coding companions. 😺"
+          }
+        ],
+        book_call: "Book a Call"
+      },
+      header: {
+        about: "About Me",
+        process: "Process",
+        faq: "FAQ",
+        works: "Works",
+        contact: "Contact Me",
+        resume: "Resume"
       }
     }
   },
@@ -175,6 +218,44 @@ const resources = {
         subtitle: "все починається з розмови",
         email: "karatitsynkiril@gmail.com",
         book_call: "Забронювати дзвінок"
+      },
+      faq: {
+        title: "FAQ",
+        questions: [
+          {
+            question: "Що робить ваші веб-сайти особливими? 💻",
+            answer: "Я створюю веб-сайти, які швидко працюють, гарно виглядають та зручні для ваших клієнтів. Вони ідеально працюють на телефонах, планшетах та комп'ютерах. 🚀"
+          },
+          {
+            question: "Чому обирати Shopify для мого інтернет-магазину? 🛍️",
+            answer: "Shopify - це найбезпечніший і найпростіший спосіб вести інтернет-магазин. Він має все необхідне для швидкого початку продажів онлайн. 🔒"
+          },
+          {
+            question: "Чому працювати зі мною? 🌟",
+            answer: "Я створюю веб-сайти, які не лише гарно виглядають, але й допомагають вашому бізнесу рости. Я тут, щоб підтримувати вас на кожному етапі. ⚡"
+          },
+          {
+            question: "Скільки це коштує? 💰",
+            answer: "Кожен проект унікальний - давайте обговоримо ваші конкретні потреби та цілі, щоб знайти правильне рішення для вашого бюджету. 📊"
+          },
+          {
+            question: "Підтримка після запуску? 🔄",
+            answer: "Так! Я надаю постійну підтримку, щоб ваш веб-сайт залишався актуальним і працював на найвищому рівні. 🛡️"
+          },
+          {
+            question: "Хто тобі більше подобається, собака чи кіт? 🐱",
+            answer: "Коти - мої улюбленці! Вони незалежні, граціозні та стають ідеальними компаньйонами для програмування. 😺"
+          }
+        ],
+        book_call: "Забронювати дзвінок"
+      },
+      header: {
+        about: "Про мене",
+        process: "Процес",
+        faq: "FAQ",
+        works: "Роботи",
+        contact: "Контакти",
+        resume: "Резюме"
       }
     }
   }

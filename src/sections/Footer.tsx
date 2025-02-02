@@ -1,7 +1,9 @@
+import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+
 function Footer() {
   return (
     <footer>
-      <div className="footer__container py-10 flex flex-col justify-center items-center">
+      <div className="footer__containr py-10 flex flex-col justify-center items-center bg-white text-black">
         <span className="opacity-60 mb-2.5 md:text-[16px] text-[12px]">
           © {new Date().getFullYear()} Kiril Karatitsyn. All rights reserved.
         </span>
@@ -12,7 +14,7 @@ function Footer() {
             className="opacity-60 hover:opacity-100"
             href="https://github.com/kirilwallstreetreserv"
           >
-            <img className="max-w-[32px]" src="source/github logo.png" alt="GitHub" />
+            <FaGithub className="w-8 h-8" />
           </a>
           <a 
             target="_blank"
@@ -20,7 +22,7 @@ function Footer() {
             className="opacity-60 hover:opacity-100"
             href="https://www.instagram.com/kiril.karatitsyn?igsh=anUycG50cW1ha3li&utm_source=qr"
           >
-            <img className="max-w-[32px]" src="source/instagram-icon logo.png" alt="Instagram" />
+            <FaInstagram className="w-8 h-8" />
           </a>
           <a 
             target="_blank"
@@ -28,7 +30,7 @@ function Footer() {
             className="opacity-60 hover:opacity-100"
             href="https://t.me/kirilkryt"
           >
-            <img className="max-w-[32px]" src="source/telegram logo.png" alt="Telegram" />
+            <FaTelegramPlane className="w-8 h-8" />
           </a>
         </div>
       </div>

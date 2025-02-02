@@ -4,6 +4,7 @@ function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     // Only show custom cursor on non-mobile devices
@@ -31,6 +32,11 @@ function CustomCursor() {
       const targetX = e.clientX + window.scrollX;
       const targetY = e.clientY + window.scrollY;
       setTargetPosition({ x: targetX, y: targetY });
+
+      // Check if cursor is over contact or footer sections
+      const targetElement = document.elementFromPoint(e.clientX, e.clientY);
+      const isOverDarkSection = targetElement?.closest('#contact, #footer');
+      setIsDarkMode(!!isOverDarkSection);
     };
 
     document.addEventListener('mousemove', handleMouseMove);
@@ -50,7 +56,7 @@ function CustomCursor() {
         width: '10px',
         height: '10px',
         borderRadius: '50%',
-        backgroundColor: 'white',
+        backgroundColor: isDarkMode ? 'black' : 'white',
         position: 'absolute',
         pointerEvents: 'none',
         left: `${position.x}px`,

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState('');
 
@@ -27,12 +29,12 @@ function Header() {
   }, [isMenuOpen]);
 
   const links = [
-    { name: "About Me", href: "#about_me" },
-    { name: "Process", href: "#process" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Works", href: "#work" },
-    { name: "Contact Me", href: "#contact" },
-    { name: "Resume", href: "source/Resume.pdf", download: true },
+    { name: t('header.about'), href: "#about_me" },
+    { name: t('header.process'), href: "#process" },
+    { name: t('header.faq'), href: "#faq" },
+    { name: t('header.works'), href: "#work" },
+    { name: t('header.contact'), href: "#contact" },
+    { name: t('header.resume'), href: "source/Resume.pdf", download: true },
   ];
 
   return (
@@ -41,7 +43,7 @@ function Header() {
         <h1 className={`primary-gradient name ${isMenuOpen ? 'invisible' : ''}`}>
           <a href="#hero">KARATITSYN</a>
         </h1>
-        <ul className={`nav md:flex md:flex-row text-[24px] md:text-[16px] gap-[25px]  text-center ${isMenuOpen ? 'open' : ''}`}>
+        <ul className={`nav md:flex md:flex-row text-[14px] md:text-[16px] gap-[25px]  text-center ${isMenuOpen ? 'open' : ''}`}>
           {links.map((link, index) => (
             <li key={link.name} className="w-full md:w-auto text-center">
               <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
