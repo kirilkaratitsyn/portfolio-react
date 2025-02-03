@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
 function Footer() {
   return (
     <footer>
-      <div className="footer__containr py-10 flex flex-col justify-center items-center bg-white text-black">
+      <div className="footer__containr max-w-[1440px] mx-auto pb-5 py-1 flex flex-col justify-center items-center bg-white text-black">
         <span className="opacity-60 mb-2.5 md:text-[16px] text-[12px]">
           © {new Date().getFullYear()} Kiril Karatitsyn. All rights reserved.
         </span>
