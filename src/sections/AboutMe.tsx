@@ -9,7 +9,7 @@ function AboutMe() {
       <div className="about__container pt-20 " data-aos="fade-up">
         <div className="lg:flex flex-row justify-between">
           <div className="content max-w-[670px]">
-            <h1 className="mb-8 text-3xl md:text-[37px] font-bold primary-gradient uppercase">
+            <h1 className="mb-8 text-3xl md:text-[37px] font-bold primary-gradient primary-shadow uppercase">
               {t('about.title')}
             </h1>
             <div className="font-bold text-[24px] ">
