@@ -34,12 +34,6 @@ function Works() {
       url: "https://shovavas.org/",
       image: "/source/works_6.webp",
       tech: "HTML&CSS, Liquid, JavaScript"
-    },
-    {
-      title: "Rose-Gold",
-      url: "https://rose-gold.co/",
-      image: "/source/works_8.webp",
-      tech: "HTML&CSS, Liquid"
     }
   ];
 
