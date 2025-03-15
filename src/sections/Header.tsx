@@ -45,7 +45,7 @@ function Header() {
         </h1>
         <ul className={`nav md:flex md:flex-row text-[14px] md:text-[16px] gap-[25px]  text-center ${isMenuOpen ? 'open' : ''}`}>
           {links.map((link, index) => (
-            <li key={link.name} className="w-full md:w-auto text-center">
+            <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
               <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
                 {link.name}
               </a>

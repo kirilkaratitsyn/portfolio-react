@@ -16,7 +16,7 @@ function FAQ() {
             <div 
               key={index}
               data-aos="fade-up" 
-              className="item mb-[40px] max-w-[490px] px-[10px] py-[5px] border-white border-[1px] rounded-[4px]"
+              className="item mb-[40px] max-w-[490px] px-[10px] py-[5px] "
             >
               <p className="text-[20px] mb-[24px] font-semibold">{faq.question}</p>
               <span className="opacity-80">{faq.answer}</span>
