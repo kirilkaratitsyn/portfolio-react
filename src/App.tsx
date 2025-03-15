@@ -32,10 +32,11 @@ function App() {
         <CustomCursor />
         <Hero />
         <AboutMe />
+        <Works />
         <Process />
         
         <FAQ />
-        <Works />
+       
         <Contact />
       </main>
       <Footer />

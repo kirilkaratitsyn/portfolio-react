@@ -183,6 +183,11 @@ header {
 .primary-shadow {
   text-shadow: 0 0 19.4px rgba(255, 162, 29, 0.53);
 }
+* {
+  cursor: none; /* Hides the cursor for all elements, including pointer */
+}
+
+
 
 button {
   -webkit-transition: all 0.5s ease;

@@ -52,7 +52,7 @@ function Hero() {
         </div>
         <div className="buttons mt-14 flex justify-center md:flex-row flex-col items-center gap-5 text-sm whitespace-nowrap">
           <button 
-            className="light-shadow text-black bg-white px-12 py-3 rounded-full" 
+            className="light-shadow text-black bg-white/90 backdrop-blur-sm px-12 py-3 rounded-full hover:bg-white transition-all duration-300" 
             data-cal-link="kiril-karatitsyn/free-consultation-call" 
             data-cal-namespace="free-consultation-call" 
             data-cal-config='{"layout":"month_view","theme":"dark"}' 
@@ -63,7 +63,7 @@ function Hero() {
           <span className="md:inline-block hidden">{t('hero.or')}</span>
           <a 
             href="mailto:karatitsynkiril@gmail.com?subject=Hi Kiril!" 
-            className="light-shadow flex justify-center items-center py-3 px-2 border-white border-[2px] rounded-full"
+            className="light-shadow flex justify-center items-center py-3 px-2 border-white/50 backdrop-blur-sm bg-white/10 border-[2px] rounded-full hover:bg-white/20 transition-all duration-300"
           >
             {t('hero.send_message')} <img className="ml-2" width="16px" src="source/Arrow up-right.png" alt="arrow" />
           </a>

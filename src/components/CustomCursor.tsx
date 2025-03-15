@@ -21,8 +21,8 @@ function CustomCursor() {
 
       // Update position with easing
       setPosition({
-        x: position.x + diffX * 0.1,
-        y: position.y + diffY * 0.1
+        x: position.x + diffX * 0.5,
+        y: position.y + diffY * 0.5
       });
 
       frameId = requestAnimationFrame(animateCursor);
