@@ -205,7 +205,7 @@ const resources = {
     translation: {
       hero: {
         web: "Веб",
-        title: "Я Кирило",
+        title: "Я Кіріл",
         subtitle: "Я створюю веб-сайти, які роблять ваш бізнес помітним в інтернеті.",
         book_call: "Забронювати дзвінок",
         send_message: "Написати мені",
