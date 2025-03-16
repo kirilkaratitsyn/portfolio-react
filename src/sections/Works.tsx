@@ -6,11 +6,14 @@ import Button from '../components/Button';
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTranslation } from 'react-i18next';
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 function Works() {
+  const { t } = useTranslation();
+  
   // Initial number of items to display
   const [visibleItems, setVisibleItems] = useState(6);
   const previousItemsRef = useRef(6);
@@ -23,81 +26,13 @@ function Works() {
   // Track when new items are loaded
   const [newItemsLoaded, setNewItemsLoaded] = useState(false);
   
-  const works = [
-    {
-      title: "Honey Sunny Paradise",
-      url: "https://www.honeysunnyparadise.com/",
-      image: "/source/works_1.webp",
-      tech: ""
-    },
-    {
-      title: "Hephestorium(PDPs)",
-      url: "https://www.hephestorium.com/",
-      image: "/source/works_3.webp",
-      tech: ""
-    },
-    {
-      title: "Craft-Minds(PDPs)",
-      url: "https://craft-minds.com/",
-      image: "/source/6718b31b0e47a451312f3357 1.png",
-      tech: ""
-    },
-   
-    {
-      title: "Shovavas",
-      url: "https://shovavas.org/",
-      image: "/source/works_6.webp",
-      tech: ""
-    },
-    {
-      title: "Pair Stich",
-      url: "https://pairstitch.pl/",
-      image: "/source/Pairstich.webp",
-      tech: ""
-    },
-    {
-      title: "Kramucci",
-      url: "https://kramucci.com/",
-      image: "/source/Kramucci - Premium Italian Women Bags.webp",
-      tech: ""
-    },
-    {
-      title: "Steppyshoes",
-      url: "https://steppyshoes.com/",
-      image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
-      tech: ""
-    },
-    {
-      title: "Haftx",
-      url: "https://haftx.com/",
-      image: "/source/HaftX.webp",
-      tech: ""
-    },
-    {
-      title: "Canvaswall",
-      url: "https://canvaswallartstore.com/",
-      image: "/source/TheCanvasWallArt.webp",
-      tech: ""
-    },
-    {
-      title: "The Vegan Wellness",
-      url: "https://theveganwellnessco.uk/",
-      image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
-      tech: ""
-    },
-    {
-      title: "Junofires",
-      url: "https://junofires.nl/",
-      image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
-      tech: ""
-    },
-    {
-      title: "Lerros",
-      url: "https://www.lerros.com/",
-      image: "/source/Buy fashion for men conveniently online.webp",
-      tech: ""
-    }
-  ];
+  // Get works from translation
+  const works = t('works.projects', { returnObjects: true }) as Array<{
+    title: string;
+    url: string;
+    image: string;
+    tech: string;
+  }>;
 
   // Function to load more items
   const loadMore = () => {
@@ -180,8 +115,8 @@ function Works() {
       }, 100);
     }
     
-    // Reset the card refs array to match the visible items
-    cardRefs.current = cardRefs.current.slice(0, visibleItems);
+    // Initialize card refs array to the correct size
+    cardRefs.current = Array(visibleItems).fill(null);
   }, [visibleItems]);
 
   // Initial lazy loading on component mount
@@ -250,7 +185,7 @@ function Works() {
   return (
     <section id="work" className="work__container">
       <div data-aos="fade-up">
-        <h1 className="mb-8 text-[37px] font-bold primary-gradient primary-shadow">Works</h1>
+        <h1 className="mb-8 text-[37px] font-bold primary-gradient primary-shadow">{t('works.title')}</h1>
         
         {/* Desktop Grid */}
         <div ref={containerRef} className="items grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-x-[40px]">
@@ -276,12 +211,12 @@ function Works() {
                 />
               </a>
               <p className="text-[20px] font-semibold">{work.title}</p>
-              <span className="opacity-80">{work.tech}</span>
+              <span className="opacity-80 min-h-[100px]">{work.tech}</span>
               <button
                 onClick={() => window.open(work.url, '_blank')}
                 className="bg-white/90 backdrop-blur-sm text-black light-shadow px-12 py-3 rounded-full w-fit hover:bg-white transition-all duration-300"
               >
-                Visit Website
+                {t('works.visitWebsite')}
               </button>
             </div>
           ))}
@@ -292,9 +227,9 @@ function Works() {
           <div className="flex justify-center mt-8 mb-16">
             <button
               onClick={loadMore}
-              className="light-shadow flex justify-center items-center px-12 py-3  border-white/50 backdrop-blur-sm bg-white/10 border-[2px] rounded-full hover:bg-white/20 transition-all duration-300 "
+              className="light-shadow flex justify-center items-center px-12 py-3 border-white/50 backdrop-blur-sm bg-white/10 border-[2px] rounded-full hover:bg-white/20 transition-all duration-300"
             >
-              Load More
+              {t('works.loadMore')}
             </button>
           </div>
         )}

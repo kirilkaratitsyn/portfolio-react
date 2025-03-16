@@ -51,11 +51,70 @@ const resources = {
       },
       works: {
         title: "Works",
-        tech: {
-          html_css: "HTML&CSS",
-          liquid: "Liquid",
-          javascript: "JavaScript"
-        }
+        loadMore: "Load More",
+        visitWebsite: "Visit Website",
+        projects: [
+          {
+            title: "Honey Sunny Paradise",
+            url: "https://www.honeysunnyparadise.com/",
+            image: "/source/works_1.webp",
+            tech: "US client selling Hawaiian honey needed a quality, simple online store. I fully configured it and integrated FedEx shipping."
+          },
+          {
+            title: "Craft-Minds(PDPs)",
+            url: "https://craft-minds.com/",
+            image: "/source/6718b31b0e47a451312f3357 1.png",
+            tech: "Ongoing collaboration with the client, developing unique product landing pages and enhancing the theme with custom sections."
+          },
+          {
+            title: "Pair Stich",
+            url: "https://pairstitch.pl/",
+            image: "/source/Pairstich.webp",
+            tech: "Implemented a custom color selector that dynamically changes based on clothing type and bypasses the 100 variant limit."
+          },
+          {
+            title: "Kramucci",
+            url: "https://kramucci.com/",
+            image: "/source/Kramucci - Premium Italian Women Bags.webp",
+            tech: "Migrated the Polish site version to English with additional improvements."
+          },
+          {
+            title: "Steppyshoes",
+            url: "https://steppyshoes.com/",
+            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
+            tech: "Migrated the English version of the site to French and added custom sections."
+          },
+          {
+            title: "Haftx",
+            url: "https://haftx.com/",
+            image: "/source/HaftX.webp",
+            tech: "Developed a custom color selector that adapts to clothing type and overcomes the 100 variant limitation."
+          },
+          {
+            title: "Canvaswall",
+            url: "https://canvaswallartstore.com/",
+            image: "/source/TheCanvasWallArt.webp",
+            tech: "Developed and implemented several custom sections according to the design and technical requirements."
+          },
+          {
+            title: "The Vegan Wellness",
+            url: "https://theveganwellnessco.uk/",
+            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
+            tech: "Developed a Shopify store with a custom theme from scratch, implemented a subscription system, and integrated sections with metafields for easy administration."
+          },
+          {
+            title: "Junofires",
+            url: "https://junofires.nl/",
+            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            tech: "Optimized filters in a Shopify store, added automatic image display functionality when filtering by color, improving UX and navigation."
+          },
+          {
+            title: "Lerros",
+            url: "https://www.lerros.com/",
+            image: "/source/Buy fashion for men conveniently online.webp",
+            tech: "Updated the theme in a Shopify store, correctly transferred content and metafields, preserved data structure, and configured product display for stable operation."
+          }
+        ]
       },
       testimonials: {
         title: "Testimonials",
@@ -186,11 +245,70 @@ const resources = {
       },
       works: {
         title: "Роботи",
-        tech: {
-          html_css: "HTML&CSS",
-          liquid: "Liquid",
-          javascript: "JavaScript"
-        }
+        loadMore: "Завантажити ще",
+        visitWebsite: "Відвідати сайт",
+        projects: [
+          {
+            title: "Honey Sunny Paradise",
+            url: "https://www.honeysunnyparadise.com/",
+            image: "/source/works_1.webp",
+            tech: "Клієнт із США, що продає гавайський мед, звернувся до мене по якісний і простий інтернет-магазин, повністю налаштований мною, було підключено доставку FedEx"
+          },
+          {
+            title: "Craft-Minds(PDPs)",
+            url: "https://craft-minds.com/",
+            image: "/source/6718b31b0e47a451312f3357 1.png",
+            tech: "Співпрацюю з клієнтом на постійній основі, розробляю унікальні посадки для продуктів, також допрацьовував тему своїми секціями"
+          },
+          {
+            title: "Pair Stich",
+            url: "https://pairstitch.pl/",
+            image: "/source/Pairstich.webp",
+            tech: "Реалізовано кастомний селектор кольорів, який динамічно змінюється за типом одягу та обходить ліміт у 100 варіантів."
+          },
+          {
+            title: "Kramucci",
+            url: "https://kramucci.com/",
+            image: "/source/Kramucci - Premium Italian Women Bags.webp",
+            tech: "Перенесено польську версію сайту на англійську з доопрацюванням."
+          },
+          {
+            title: "Steppyshoes",
+            url: "https://steppyshoes.com/",
+            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
+            tech: "Перенесено англійську версію сайту на французьку та додано кастомні секції."
+          },
+          {
+            title: "Haftx",
+            url: "https://haftx.com/",
+            image: "/source/HaftX.webp",
+            tech: "Розроблено кастомний селектор кольорів, який адаптується до типу одягу та обходить обмеження у 100 варіантів."
+          },
+          {
+            title: "Canvaswall",
+            url: "https://canvaswallartstore.com/",
+            image: "/source/TheCanvasWallArt.webp",
+            tech: "Розроблено та впроваджено кілька кастомних секцій згідно з макетом і технічними вимогами."
+          },
+          {
+            title: "The Vegan Wellness",
+            url: "https://theveganwellnessco.uk/",
+            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
+            tech: "Розробив Shopify-магазин із кастомною темою з нуля, реалізував систему підписки, інтегрував секції з метаполями для зручного адміністрування."
+          },
+          {
+            title: "Junofires",
+            url: "https://junofires.nl/",
+            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            tech: "Оптимізував фільтри в Shopify-магазині, додав функцію автоматичного відображення відповідного зображення при фільтрації за кольором, що покращило UX і навігацію."
+          },
+          {
+            title: "Lerros",
+            url: "https://www.lerros.com/",
+            image: "/source/Buy fashion for men conveniently online.webp",
+            tech: "Оновив тему в Shopify-магазині, коректно переніс контент і метаполя, зберіг структуру даних і налаштував відображення товарів для стабільної роботи магазину."
+          }
+        ]
       },
       testimonials: {
         title: "Відгуки",
