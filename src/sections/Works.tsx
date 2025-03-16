@@ -195,7 +195,7 @@ function Works() {
               ref={el => cardRefs.current[index] = el}
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseLeave={() => handleMouseLeave(index)}
-              className="item px-5 py-5 transition-all duration-300 rounded-lg mb-[79px] max-w-[490px] flex-col items-center justify-between flex gap-[15px] backdrop-blur-md bg-white/5 border border-white/10 shadow-lg hover:bg-white/10 hover:scale-105"
+              className="item px-5 py-5 transition-all duration-300 rounded-lg mb-[40px] max-w-[490px] flex-col items-center justify-between flex gap-[15px] backdrop-blur-md bg-white/5 border border-white/10 shadow-lg hover:bg-white/10 hover:scale-105"
               style={{ transition: 'all 0.3s ease' }}
             >
               <a 
@@ -220,6 +220,29 @@ function Works() {
               </button>
             </div>
           ))}
+          
+          {/* New "Your Project Here" Card - only show when all projects are loaded */}
+          {allItemsVisible && (
+            <div 
+              ref={el => cardRefs.current[visibleItems] = el}
+              onMouseMove={(e) => handleMouseMove(e, visibleItems)}
+              onMouseLeave={() => handleMouseLeave(visibleItems)}
+              className="item px-5 py-5 transition-all duration-300 rounded-lg mb-[40px] max-w-[490px] flex-col items-center justify-between flex gap-[15px] backdrop-blur-md bg-gradient-to-br from-white/10 to-white/5 border border-white/20 shadow-lg hover:bg-white/15 hover:scale-105"
+              style={{ transition: 'all 0.3s ease' }}
+            >
+              <div className="w-[316px] h-[255px] flex items-center justify-center rounded-lg bg-gradient-to-br from-orange-500/90 to-yellow-500/90">
+                <div className="text-6xl">✨</div>
+              </div>
+              <p className="text-[20px] font-semibold">{t('works.contactCard.title')}</p>
+              <span className="opacity-80 min-h-[100px] ">{t('works.contactCard.text')}</span>
+              <button
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-gradient-to-r from-orange-600/90 to-yellow-600/90 text-white light-shadow px-12 py-3 rounded-full w-fit hover:from-orange-500 hover:to-yellow-500 transition-all duration-300"
+              >
+                {t('works.contactCard.button')}
+              </button>
+            </div>
+          )}
         </div>
         
         {/* Load More Button - only show if there are more items to load */}

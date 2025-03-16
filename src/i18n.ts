@@ -53,6 +53,11 @@ const resources = {
         title: "Works",
         loadMore: "Load More",
         visitWebsite: "Visit Website",
+        contactCard: {
+          title: "Your Project Here",
+          text: "Have a project in mind? Let's work together to create a stunning website that helps your business grow online.",
+          button: "Contact Me"
+        },
         projects: [
           {
             title: "Honey Sunny Paradise",
@@ -247,6 +252,11 @@ const resources = {
         title: "Роботи",
         loadMore: "Завантажити ще",
         visitWebsite: "Відвідати сайт",
+        contactCard: {
+          title: "Ваш Проект Тут",
+          text: "Маєте проект на думці? Давайте працювати разом, щоб створити приголомшливий веб-сайт, який допоможе вашому бізнесу зростати в інтернеті.",
+          button: "Зв'язатися зі мною"
+        },
         projects: [
           {
             title: "Honey Sunny Paradise",
