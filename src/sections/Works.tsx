@@ -230,7 +230,7 @@ function Works() {
               className="item px-5 py-5 transition-all duration-300 rounded-lg mb-[40px] max-w-[490px] flex-col items-center justify-between flex gap-[15px] backdrop-blur-md bg-gradient-to-br from-white/10 to-white/5 border border-white/20 shadow-lg hover:bg-white/15 hover:scale-105"
               style={{ transition: 'all 0.3s ease' }}
             >
-              <div className="w-fill h-[255px] flex items-center justify-center rounded-lg bg-gradient-to-br from-orange-500/90 to-yellow-500/90">
+              <div className="w-[-webkit-fill-available] h-[255px] flex items-center justify-center rounded-lg bg-gradient-to-br from-orange-500/90 to-yellow-500/90">
                 <div className="text-6xl">✨</div>
               </div>
               <p className="text-[20px] font-semibold">{t('works.contactCard.title')}</p>
