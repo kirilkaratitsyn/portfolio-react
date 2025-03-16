@@ -91,7 +91,11 @@ const resources = {
         title: "LET'S WORK TOGETHER",
         subtitle: "everything starts with a conversation",
         email: "karatitsynkiril@gmail.com",
-        book_call: "Book a Call"
+        book_call: "Book a Call",
+        linkedin: "LinkedIn",
+        github: "GitHub",
+        preferMessage: "Prefer to send a direct message?",
+        sendMessage: "Send Message"
       },
       faq: {
         title: "FAQ",
@@ -217,7 +221,11 @@ const resources = {
         title: "ДАВАЙТЕ ПРАЦЮВАТИ РАЗОМ",
         subtitle: "все починається з розмови",
         email: "karatitsynkiril@gmail.com",
-        book_call: "Забронювати дзвінок"
+        book_call: "Забронювати дзвінок",
+        linkedin: "LinkedIn",
+        github: "GitHub",
+        preferMessage: "Prefer to send a direct message?",
+        sendMessage: "Send Message"
       },
       faq: {
         title: "FAQ",

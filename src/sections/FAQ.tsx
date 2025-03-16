@@ -1,9 +1,47 @@
 import Button from "../components/Button";
 import { useTranslation } from 'react-i18next';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 function FAQ() {
   const { t } = useTranslation();
   const faqs = t('faq.questions', { returnObjects: true }) as Array<{ question: string, answer: string }>;
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Set up GSAP animations
+  useEffect(() => {
+    if (!containerRef.current) return;
+    
+    const faqItems = containerRef.current.querySelectorAll('.item');
+    
+    gsap.fromTo(
+      faqItems,
+      { 
+        x: -30, 
+        opacity: 0 
+      },
+      { 
+        x: 0, 
+        opacity: 1, 
+        stagger: 0.15, 
+        duration: 0.7,
+        ease: "back.out(1.2)",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 75%",
+          toggleActions: "play none none none"
+        }
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, [faqs.length]);
 
   return (
     <section id="faq">
@@ -11,7 +49,7 @@ function FAQ() {
         <h1 className="mb-8 text-[37px] font-bold primary-gradient primary-shadow">
           {t('faq.title')}
         </h1>
-        <div className="items md:grid grid-cols-2 gap-x-[50px]">
+        <div ref={containerRef} className="items md:grid grid-cols-2 gap-x-[50px]">
           {faqs.map((faq: { question: string, answer: string }, index: number) => (
             <div 
               key={index}

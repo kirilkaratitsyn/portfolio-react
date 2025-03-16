@@ -425,3 +425,4 @@ a {
 .language-switcher button.active::after {
   transform: translateY(-50%) scale(1);
 }
+

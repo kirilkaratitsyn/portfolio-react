@@ -4,6 +4,11 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Button from '../components/Button';
 import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 function Works() {
   // Initial number of items to display
@@ -12,6 +17,11 @@ function Works() {
   
   // References for the hover effect
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // Reference for the container
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  // Track when new items are loaded
+  const [newItemsLoaded, setNewItemsLoaded] = useState(false);
   
   const works = [
     {
@@ -32,12 +42,7 @@ function Works() {
       image: "/source/6718b31b0e47a451312f3357 1.png",
       tech: ""
     },
-    {
-      title: "Art Broken Bottle",
-      url: "https://artbrokenbottle.com/",
-      image: "/source/works_5.webp",
-      tech: ""
-    },
+   
     {
       title: "Shovavas",
       url: "https://shovavas.org/",
@@ -76,7 +81,7 @@ function Works() {
     },
     {
       title: "The Vegan Wellness",
-      url: "https://theveganwellnessc.com/",
+      url: "https://theveganwellnessco.uk/",
       image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
       tech: ""
     },
@@ -88,7 +93,7 @@ function Works() {
     },
     {
       title: "Lerros",
-      url: "https://www.leiros.com/en",
+      url: "https://www.lerros.com/",
       image: "/source/Buy fashion for men conveniently online.webp",
       tech: ""
     }
@@ -96,10 +101,13 @@ function Works() {
 
   // Function to load more items
   const loadMore = () => {
-    setVisibleItems(prevVisibleItems => 
+    setVisibleItems(prevVisibleItems => {
       // Increase by 6 at a time, but don't exceed the total count
-      Math.min(prevVisibleItems + 6, works.length)
-    );
+      const newCount = Math.min(prevVisibleItems + 6, works.length);
+      // Set flag to indicate new items were loaded
+      setNewItemsLoaded(true);
+      return newCount;
+    });
   };
 
   // Function to initialize lazy loading for images
@@ -184,13 +192,68 @@ function Works() {
     cardRefs.current = Array(visibleItems).fill(null);
   }, []);
 
+  // Set up GSAP animations for newly loaded items
+  useEffect(() => {
+    if (!newItemsLoaded || !containerRef.current) return;
+    
+    // Get only the newly added cards
+    const allCards = containerRef.current.querySelectorAll('.item');
+    const newCards = Array.from(allCards).slice(previousItemsRef.current);
+    
+    if (newCards.length === 0) return;
+    
+    // Set initial state for new cards
+    gsap.set(newCards, { 
+      y: 50, 
+      opacity: 0 
+    });
+    
+    // Animate the new cards
+    gsap.to(newCards, { 
+      y: 0, 
+      opacity: 1, 
+      stagger: 0.1, 
+      duration: 0.8,
+      ease: "power2.out",
+      onComplete: () => {
+        // Reset the flag after animation completes
+        setNewItemsLoaded(false);
+        // Update the previous items count
+        previousItemsRef.current = visibleItems;
+      }
+    });
+    
+  }, [newItemsLoaded, visibleItems]);
+
+  // Initial animation on component mount
+  useEffect(() => {
+    if (!containerRef.current) return;
+    
+    const initialCards = containerRef.current.querySelectorAll('.item');
+    
+    gsap.fromTo(
+      initialCards,
+      { 
+        y: 50, 
+        opacity: 0 
+      },
+      { 
+        y: 0, 
+        opacity: 1, 
+        stagger: 0.1, 
+        duration: 0.8,
+        ease: "power2.out"
+      }
+    );
+  }, []);
+
   return (
     <section id="work" className="work__container">
       <div data-aos="fade-up">
         <h1 className="mb-8 text-[37px] font-bold primary-gradient primary-shadow">Works</h1>
         
         {/* Desktop Grid */}
-        <div className="items grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-x-[40px]">
+        <div ref={containerRef} className="items grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-x-[40px]">
           {[...works].reverse().slice(0, visibleItems).map((work, index) => (
             <div 
               key={index} 
@@ -229,7 +292,7 @@ function Works() {
           <div className="flex justify-center mt-8 mb-16">
             <button
               onClick={loadMore}
-              className="bg-white/90 backdrop-blur-sm text-black light-shadow px-12 py-3 rounded-full hover:bg-white transition-all duration-300"
+              className="light-shadow flex justify-center items-center px-12 py-3  border-white/50 backdrop-blur-sm bg-white/10 border-[2px] rounded-full hover:bg-white/20 transition-all duration-300 "
             >
               Load More
             </button>
