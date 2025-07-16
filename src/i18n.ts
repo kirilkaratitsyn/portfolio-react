@@ -118,7 +118,25 @@ const resources = {
             url: "https://www.lerros.com/",
             image: "/source/Buy fashion for men conveniently online.webp",
             tech: "Updated the theme in a Shopify store, correctly transferred content and metafields, preserved data structure, and configured product display for stable operation."
-          }
+          },
+          {
+            title: "Kiki Green",
+            url: "https://kikigreen.com/",
+            image: "/source/kiki-green.png",
+            tech: "Developed a full-cycle e-commerce solution from scratch, including complete online store creation and integration with various plugins such as loyalty programs and product subscriptions."
+          },
+          {
+            title: "Larson Jewelers",
+            url: "https://www.larsonjewelers.com/collections/mens-tungsten-wedding-bands-desktop-1",
+            image: "/source/larson.png",
+            tech: "Created a new collections page and implemented 4 additional links for campaign testing purposes, enhancing the site's navigation structure and A/B testing capabilities."
+          },
+          {
+            title: "The Magic Scent",
+            url: "https://themagicscent.com/pages/build-your-pack",
+            image: "/source/Magic-Scent.png",
+            tech: "Created a custom 'Build Your Pack' page and developed a new  collections page for scent marketing products, enhancing the user experience and product organization."
+          },
         ]
       },
       testimonials: {
