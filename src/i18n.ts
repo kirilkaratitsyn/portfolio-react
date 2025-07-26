@@ -137,6 +137,18 @@ const resources = {
             image: "/source/Magic-Scent.png",
             tech: "Created a custom 'Build Your Pack' page and developed a new  collections page for scent marketing products, enhancing the user experience and product organization."
           },
+        {
+          title: "Junior's Cheesecake",
+          url: "https://juniorscheesecake.com/",
+          image: "/source/Juniors Cheesecake.png",
+          tech: "Created new custom sections based on Figma design, developed email templates and handling, and implemented serving page functionality."
+        },
+        {
+          title: "Spring Mountain Vineyard",
+          url: "https://club.springmountainvineyard.com/",
+          image: "/source/Spring Mountain Vineyard.png",
+          tech: "Redesigned the collection page with improved filter design and product cards, implemented dynamic breadcrumb logic that updates without page refresh for better UX."
+        },
         ]
       },
       testimonials: {

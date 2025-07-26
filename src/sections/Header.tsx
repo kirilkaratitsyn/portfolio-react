@@ -38,36 +38,54 @@ function Header() {
   ];
 
   return (
-    <header className="sticky w-full top-0 left-0 z-50">
-      <div className="header flex flex-row justify-between items-center p-[15px] backdrop-blur-md bg-black/30 border-b border-white/10">
-        <h1 className={`primary-gradient name ${isMenuOpen ? 'invisible' : ''}`}>
-          <a href="#hero">KARATITSYN</a>
-        </h1>
-        <ul className={`nav md:flex md:flex-row text-[14px] md:text-[16px] gap-[25px] text-center ${isMenuOpen ? 'open backdrop-blur-md bg-black/80' : ''}`}>
-          {links.map((link, index) => (
-            <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
-              <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
-                {link.name}
-              </a>
-              {index < links.length - 1 && <div className="h-[1px] bg-white opacity-20 my-4 md:hidden" />}
-            </li>
-          ))}
-          <div className="mobile-time-location md:hidden w-full text-center">
-            <div className="h-[1px] bg-white opacity-20 my-4" />
-            <span>{currentTime}</span> Berlin, DE
+    <>
+      <header className="sticky w-full top-0 left-0 z-50">
+        <div className="header flex flex-row justify-between items-center p-[15px] backdrop-blur-md bg-black/30 border-b border-white/10">
+          <h1 className={`primary-gradient name ${isMenuOpen ? 'invisible' : ''}`}>
+            <a href="#hero">KARATITSYN</a>
+          </h1>
+          <ul className="nav md:flex md:flex-row text-[14px] md:text-[16px] gap-[25px] text-center">
+            {links.map((link, index) => (
+              <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
+                <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
+                  {link.name}
+                </a>
+                {index < links.length - 1 && <div className="h-[1px] bg-white opacity-20 my-4 md:hidden" />}
+              </li>
+            ))}
+            <div className="mobile-time-location md:hidden w-full text-center">
+              <div className="h-[1px] bg-white opacity-20 my-4" />
+              <span>{currentTime}</span> Berlin, DE
+            </div>
+          </ul>
+          <div className="md:flex hidden ">
+            <span className="mr-1">{currentTime}</span> Berlin, DE
           </div>
-        </ul>
-        <div className="md:flex hidden ">
-          <span className="mr-1">{currentTime}</span> Berlin, DE
+          <div 
+            className={`burger flex relative z-[60] items-center justify-end w-[30px] h-[18px] md:hidden ${isMenuOpen ? 'active' : ''}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span></span>
+          </div>
         </div>
-        <div 
-          className={`burger flex relative z-50 items-center justify-end w-[30px] h-[18px] md:hidden ${isMenuOpen ? 'active' : ''}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <span></span>
+      </header>
+      
+      {/* Mobile Navigation Menu - positioned outside header */}
+      <ul className={`nav md:hidden text-[14px] md:text-[16px] gap-[25px] text-center ${isMenuOpen ? 'open backdrop-blur-md bg-black/80' : ''}`}>
+        {links.map((link, index) => (
+          <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
+            <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
+              {link.name}
+            </a>
+            {index < links.length - 1 && <div className="h-[1px] bg-white opacity-20 my-4 md:hidden" />}
+          </li>
+        ))}
+        <div className="mobile-time-location md:hidden w-full text-center">
+          <div className="h-[1px] bg-white opacity-20 my-4" />
+          <span>{currentTime}</span> Berlin, DE
         </div>
-      </div>
-    </header>
+      </ul>
+    </>
   );
 }
 
