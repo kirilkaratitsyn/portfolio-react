@@ -292,13 +292,13 @@ const resources = {
             title: "Honey Sunny Paradise",
             url: "https://www.honeysunnyparadise.com/",
             image: "/source/works_1.webp",
-            tech: "Клієнт із США, що продає гавайський мед, звернувся до мене по якісний і простий інтернет-магазин, повністю налаштований мною, було підключено доставку FedEx"
+            tech: "Клієнт із США, що продає гавайський мед, потребував якісний, простий інтернет-магазин. Я повністю налаштував його та інтегрував доставку FedEx."
           },
           {
             title: "Craft-Minds(PDPs)",
             url: "https://craft-minds.com/",
             image: "/source/6718b31b0e47a451312f3357 1.png",
-            tech: "Співпрацюю з клієнтом на постійній основі, розробляю унікальні посадки для продуктів, також допрацьовував тему своїми секціями"
+            tech: "Постійна співпраця з клієнтом, розробка унікальних посадочних сторінок продуктів та покращення теми власними секціями."
           },
           {
             title: "Pair Stich",
@@ -310,7 +310,7 @@ const resources = {
             title: "Kramucci",
             url: "https://kramucci.com/",
             image: "/source/Kramucci - Premium Italian Women Bags.webp",
-            tech: "Перенесено польську версію сайту на англійську з доопрацюванням."
+            tech: "Перенесено польську версію сайту на англійську з додатковими покращеннями."
           },
           {
             title: "Steppyshoes",
@@ -328,52 +328,87 @@ const resources = {
             title: "Canvaswall",
             url: "https://canvaswallartstore.com/",
             image: "/source/TheCanvasWallArt.webp",
-            tech: "Розроблено та впроваджено кілька кастомних секцій згідно з макетом і технічними вимогами."
+            tech: "Розроблено та впроваджено кілька кастомних секцій згідно з дизайном і технічними вимогами."
           },
           {
             title: "The Vegan Wellness",
             url: "https://theveganwellnessco.uk/",
             image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
-            tech: "Розробив Shopify-магазин із кастомною темою з нуля, реалізував систему підписки, інтегрував секції з метаполями для зручного адміністрування."
+            tech: "Розробив Shopify-магазин із кастомною темою з нуля, реалізував систему підписки та інтегрував секції з метаполями для зручного адміністрування."
           },
           {
             title: "Junofires",
             url: "https://junofires.nl/",
             image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
-            tech: "Оптимізував фільтри в Shopify-магазині, додав функцію автоматичного відображення відповідного зображення при фільтрації за кольором, що покращило UX і навігацію."
+            tech: "Оптимізував фільтри в Shopify-магазині, додав функцію автоматичного відображення зображення при фільтрації за кольором, покращивши UX і навігацію."
           },
           {
             title: "Lerros",
             url: "https://www.lerros.com/",
             image: "/source/Buy fashion for men conveniently online.webp",
-            tech: "Оновив тему в Shopify-магазині, коректно переніс контент і метаполя, зберіг структуру даних і налаштував відображення товарів для стабільної роботи магазину."
+            tech: "Оновив тему в Shopify-магазині, коректно переніс контент і метаполя, зберіг структуру даних і налаштував відображення товарів для стабільної роботи."
+          },
+          {
+            title: "Kiki Green",
+            url: "https://kikigreen.com/",
+            image: "/source/kiki-green.png",
+            tech: "Розробив повний цикл e-commerce рішення з нуля, включаючи створення повноцінного інтернет-магазину та інтеграцію з різними плагінами, такими як програми лояльності та підписка на продукти."
+          },
+          {
+            title: "Larson Jewelers",
+            url: "https://www.larsonjewelers.com/collections/mens-tungsten-wedding-bands-desktop-1",
+            image: "/source/larson.png",
+            tech: "Створив нову сторінку колекцій та реалізував 4 додаткові посилання для тестування кампаній, покращивши структуру навігації сайту та можливості A/B тестування."
+          },
+          {
+            title: "The Magic Scent",
+            url: "https://themagicscent.com/pages/build-your-pack",
+            image: "/source/Magic-Scent.png",
+            tech: "Створив кастомну сторінку 'Створи свій набір' та розробив нову сторінку колекцій для продуктів аромамаркетингу, покращивши користувацький досвід та організацію продуктів."
+          },
+          {
+            title: "Junior's Cheesecake",
+            url: "https://juniorscheesecake.com/",
+            image: "/source/Juniors Cheesecake.png",
+            tech: "Створив нові кастомні секції на основі дизайну Figma, розробив email шаблони та їх обробку, а також реалізував функціональність сторінки подачі."
+          },
+          {
+            title: "Spring Mountain Vineyard",
+            url: "https://club.springmountainvineyard.com/",
+            image: "/source/Spring Mountain Vineyard.png",
+            tech: "Редизайнив сторінку колекції з покращеним дизайном фільтрів та карток продуктів, реалізував динамічну логіку хлібних крихт, яка оновлюється без перезавантаження сторінки для кращого UX."
           }
         ]
       },
       testimonials: {
         title: "Відгуки",
-        reviews: {
-          oleksandr: {
+        reviews: [
+          {
             name: "Олександр",
+            image: "/source/1.png",
             text: "Кирило - справжній рятівник! Він виправив усі проблеми на моєму сайті Shopify і навіть дав поради щодо його покращення. Я дуже задоволений результатами."
           },
-          anastasia: {
+          {
             name: "Анастасія",
+            image: "/source/4.png",
             text: "Я була така розгублена, намагаючись налаштувати свій онлайн-магазин, але Кирило зробив це легко! Тепер у мене є красивий веб-сайт, який дійсно приносить продажі. Дякую, Кирило!"
           },
-          dmytro: {
+          {
             name: "Дмитро",
+            image: "/source/3.png",
             text: "Робота з Кирилом була фантастичним досвідом. Він справжній експерт у Shopify і дійсно дбає про своїх клієнтів. Я дуже рекомендую його!"
           },
-          artem: {
+          {
             name: "Артем",
+            image: "/source/2.png",
             text: "Кирило зробив все можливе, щоб створити приголомшливий веб-сайт для мого бізнесу. Він справжній професіонал і з ним приємно працювати."
           },
-          hanna: {
+          {
             name: "Ганна",
+            image: "/source/5.png",
             text: "Мій новий веб-сайт - це все, що я хотіла, і навіть більше! Кирило неймовірно талановитий і з ним легко працювати. Я не можу достатньо подякувати йому."
           }
-        }
+        ]
       },
       contact: {
         title: "ДАВАЙТЕ ПРАЦЮВАТИ РАЗОМ",
@@ -382,8 +417,8 @@ const resources = {
         book_call: "Забронювати дзвінок",
         linkedin: "LinkedIn",
         github: "GitHub",
-        preferMessage: "Prefer to send a direct message?",
-        sendMessage: "Send Message"
+        preferMessage: "Надаєте перевагу прямому повідомленню?",
+        sendMessage: "Надіслати повідомлення"
       },
       faq: {
         title: "FAQ",
