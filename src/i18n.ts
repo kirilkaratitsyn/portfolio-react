@@ -149,6 +149,48 @@ const resources = {
           image: "/source/Spring Mountain Vineyard.png",
           tech: "Redesigned the collection page with improved filter design and product cards, implemented dynamic breadcrumb logic that updates without page refresh for better UX."
         },
+        {
+          title: "Magic Scents (TMS)",
+          url: "https://themagicscent.com/pages/homepage-new",
+          image: "/source/magic-scents.png",
+          tech: "Built a new homepage and product page fully according to the Figma design (pixel-perfect) and provided continuous store support for European online retailer of scent diffusers and premium fragrances."
+        },
+        {
+          title: "Studio Nono",
+          url: "https://studio-nonna.com/",
+          image: "/source/studio-nono.png",
+          tech: "Enhanced the existing German jewelry store by adding new settings, fixing bugs, and developing new sections and features to increase store stability and flexibility for content management."
+        },
+        {
+          title: "Mister Maria",
+          url: "https://mrmaria.co.uk/",
+          image: "/source/mrmaria.png",
+          tech: "Migrated the store from WordPress to Shopify, customizing a ready-made theme with significant adjustments to closely match the previous site's look and feel for one of the largest sellers of designer toys and home décor."
+        },
+        {
+          title: "Barney",
+          url: "https://barneydk.myshopify.com/",
+          image: "/source/barneydk.png",
+          tech: "Migrated the Danish retailer store from WordPress to a new Shopify theme, improved and customized functionality, and imported all data including orders, products, and customers for 7,000+ gardening and outdoor products."
+        },
+        {
+          title: "Petralyte",
+          url: "https://petralyte.com/",
+          image: "/source/petralyte.png",
+          tech: "Designed and implemented new sections and developed a custom landing page for European seller of vet-formulated electrolytes in unique flavors for pets, enhancing marketing campaigns with high-converting content."
+        },
+        {
+          title: "Badass Labs",
+          url: "https://www.badass-labs.com/",
+          image: "/source/badasslabs.png",
+          tech: "Delivered bug fixes and improvements, built new blocks and features, and merged 7 regional stores into one centralized store with region and language switcher for automotive cleaning accessories and detailing products."
+        },
+        {
+          title: "Bloomin' Amazing",
+          url: "https://www.bloomingamazing.ie/",
+          image: "/source/blooming-amazing.png",
+          tech: "Improved the purchase flow (cart and checkout), fixed bugs, and provided ongoing support for Irish flower delivery service, resulting in increased checkout success rates and improved customer satisfaction."
+        },
         ]
       },
       testimonials: {
@@ -377,6 +419,48 @@ const resources = {
             url: "https://club.springmountainvineyard.com/",
             image: "/source/Spring Mountain Vineyard.png",
             tech: "Редизайнив сторінку колекції з покращеним дизайном фільтрів та карток продуктів, реалізував динамічну логіку хлібних крихт, яка оновлюється без перезавантаження сторінки для кращого UX."
+          },
+          {
+            title: "Magic Scents (TMS)",
+            url: "https://themagicscent.com/pages/homepage-new",
+            image: "/source/magic-scents.png",
+            tech: "Створив нову головну сторінку та сторінку продукту повністю згідно з дизайном Figma (піксель-перфект) та надав постійну підтримку магазину для європейського онлайн-ретейлера дифузорів ароматів та преміум парфумів."
+          },
+          {
+            title: "Studio Nono",
+            url: "https://studio-nonna.com/",
+            image: "/source/studio-nono.png",
+            tech: "Покращив існуючий німецький ювелірний магазин, додавши нові налаштування, виправивши помилки та розробивши нові секції та функції для підвищення стабільності магазину та гнучкості управління контентом."
+          },
+          {
+            title: "Mister Maria",
+            url: "https://mrmaria.co.uk/",
+            image: "/source/mrmaria.png",
+            tech: "Переніс магазин з WordPress на Shopify, налаштував готову тему зі значними коригуваннями для максимального відповідності попередньому вигляду сайту для одного з найбільших продавців дизайнерських іграшок та домашнього декору."
+          },
+          {
+            title: "Barney",
+            url: "https://barneydk.myshopify.com/",
+            image: "/source/barneydk.png",
+            tech: "Переніс магазин данського ретейлера з WordPress на нову тему Shopify, покращив та налаштував функціональність, імпортував усі дані включаючи замовлення, продукти та клієнтів для 7,000+ товарів для саду та активного відпочинку."
+          },
+          {
+            title: "Petralyte",
+            url: "https://petralyte.com/",
+            image: "/source/petralyte.png",
+            tech: "Спроектував та реалізував нові секції та розробив кастомну посадочну сторінку для європейського продавця ветеринарних електролітів унікальних смаків для домашніх тварин, покращивши маркетингові кампанії висококонверсійним контентом."
+          },
+          {
+            title: "Badass Labs",
+            url: "https://www.badass-labs.com/",
+            image: "/source/badasslabs.png",
+            tech: "Виправив помилки та покращив функціональність, створив нові блоки та функції, об'єднав 7 регіональних магазинів в один централізований з перемикачем регіону та мови для автомобільних аксесуарів для чищення та деталювання."
+          },
+          {
+            title: "Bloomin' Amazing",
+            url: "https://www.bloomingamazing.ie/",
+            image: "/source/blooming-amazing.png",
+            tech: "Покращив процес покупки (кошик та оформлення замовлення), виправив помилки та надав постійну підтримку для ірландської служби доставки квітів, що призвело до підвищення успішності оформлення замовлень та задоволеності клієнтів."
           }
         ]
       },
