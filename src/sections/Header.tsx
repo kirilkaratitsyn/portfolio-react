@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Header() {
@@ -28,13 +29,18 @@ function Header() {
     }
   }, [isMenuOpen]);
 
-  const links = [
-    { name: t('header.about'), href: "#about_me" },
-    { name: t('header.process'), href: "#process" },
-    { name: t('header.faq'), href: "#faq" },
-    { name: t('header.works'), href: "#work" },
-    { name: t('header.contact'), href: "#contact" },
-    { name: t('header.resume'), href: "source/Resume.pdf", download: true },
+  type NavigationLink =
+    | { name: string; to: string }
+    | { name: string; href: string; download?: boolean };
+
+  const links: NavigationLink[] = [
+    { name: t('header.about'), to: '/#about_me' },
+    { name: t('header.process'), to: '/#process' },
+    { name: t('header.faq'), to: '/#faq' },
+    { name: t('header.works'), to: '/#work' },
+    { name: t('header.blog'), to: '/blog' },
+    { name: t('header.contact'), to: '/#contact' },
+    { name: t('header.resume'), href: 'source/Resume.pdf', download: true },
   ];
 
   return (
@@ -42,14 +48,22 @@ function Header() {
       <header className="sticky w-full top-0 left-0 z-50">
         <div className="header flex flex-row justify-between items-center p-[15px] backdrop-blur-md bg-black/30 border-b border-white/10">
           <h1 className={`primary-gradient name ${isMenuOpen ? 'invisible' : ''}`}>
-            <a href="#hero">KARATITSYN</a>
+            <Link to="/#hero" onClick={() => setIsMenuOpen(false)}>
+              KARATITSYN
+            </Link>
           </h1>
           <ul className="nav md:flex md:flex-row text-[14px] md:text-[16px] gap-[25px] text-center">
             {links.map((link, index) => (
               <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
-                <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
-                  {link.name}
-                </a>
+                {'href' in link ? (
+                  <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link to={link.to} onClick={() => setIsMenuOpen(false)}>
+                    {link.name}
+                  </Link>
+                )}
                 {index < links.length - 1 && <div className="h-[1px] bg-white opacity-20 my-4 md:hidden" />}
               </li>
             ))}
@@ -74,9 +88,15 @@ function Header() {
       <ul className={`nav md:hidden text-[14px] md:text-[16px] gap-[25px] text-center ${isMenuOpen ? 'open backdrop-blur-md bg-black/80' : ''}`}>
         {links.map((link, index) => (
           <li key={link.name} className="w-full md:w-auto text-center hover:text-[#C2BFBD] transition-all duration-100">
-            <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
-              {link.name}
-            </a>
+            {'href' in link ? (
+              <a href={link.href} onClick={() => setIsMenuOpen(false)} download={link.download}>
+                {link.name}
+              </a>
+            ) : (
+              <Link to={link.to} onClick={() => setIsMenuOpen(false)}>
+                {link.name}
+              </Link>
+            )}
             {index < links.length - 1 && <div className="h-[1px] bg-white opacity-20 my-4 md:hidden" />}
           </li>
         ))}

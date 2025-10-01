@@ -233,6 +233,53 @@ const resources = {
         preferMessage: "Prefer to send a direct message?",
         sendMessage: "Send Message"
       },
+      blog: {
+        title: "Blog",
+        subtitle: "Thoughts on creating high-performing online experiences.",
+        readMore: "Read more",
+        backToList: "Back to all articles",
+        notFound: "Article not found.",
+        featuredTitle: "Featured insights",
+        featuredSubtitle: "Fresh takeaways from recent projects and launches.",
+        viewAll: "View all",
+        estimatedRead: "{{time}} read",
+        posts: [
+          {
+            id: "shopify-conversion-boost",
+            slug: "shopify-conversion-boost",
+            title: "5 quick wins to boost your Shopify conversion",
+            date: "May 15, 2024",
+            readingTime: "4 min",
+            excerpt: "Simple UX tweaks and speed optimizations that immediately make visitors trust your store and hit the buy button more often.",
+            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Shopify", "Conversion"],
+            content: [
+              "Conversion uplift rarely requires a full redesign. Small, focused improvements stacked together get you there faster.",
+              "Start with speed. Compress hero images, lazy-load below-the-fold sections and keep third-party scripts in check. A fast store feels professional and removes hesitation.",
+              "Next, simplify the product page. Clear call-to-actions, upfront shipping information and social proof near the add-to-cart button reduce friction.",
+              "Use bundles or progress bars in the cart to lift average order value. Customers love seeing how close they are to free shipping or a bonus gift.",
+              "Finally, track everything. Set up basic funnels in Shopify analytics or GA4 so you can double down on what works and cut the rest."
+            ]
+          },
+          {
+            id: "landing-page-launch-checklist",
+            slug: "landing-page-launch-checklist",
+            title: "Landing page launch checklist for busy founders",
+            date: "April 4, 2024",
+            readingTime: "3 min",
+            excerpt: "Before you launch, run through this lightweight checklist to make sure your offer is clear, fast and ready to convert.",
+            image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Checklist", "Launch"],
+            content: [
+              "Publishing a landing page without checks is like shipping code without tests. A tight review keeps conversions from leaking.",
+              "Headline first. It should explain what you offer and why it matters in one sentence. Pair it with a subheading that answers who it is for.",
+              "Make sure the primary call-to-action is above the fold and repeated after each major section. Consistency turns interest into action.",
+              "Proof matters. Add testimonials, logos or quick stats to show that real people trust you.",
+              "Wrap it up with tracking pixels and form submissions routed to the right inbox or CRM so you can follow up fast."
+            ]
+          }
+        ]
+      },
       faq: {
         title: "FAQ",
         questions: [
@@ -268,6 +315,7 @@ const resources = {
         process: "Process",
         faq: "FAQ",
         works: "Works",
+        blog: "Blog",
         contact: "Contact Me",
         resume: "Resume"
       }
@@ -504,6 +552,53 @@ const resources = {
         preferMessage: "Надаєте перевагу прямому повідомленню?",
         sendMessage: "Надіслати повідомлення"
       },
+      blog: {
+        title: "Блог",
+        subtitle: "Ділюся практичними ідеями про ефективні онлайн-проєкти.",
+        readMore: "Читати",
+        backToList: "Повернутися до всіх статей",
+        notFound: "Статтю не знайдено.",
+        featuredTitle: "Вибрані статті",
+        featuredSubtitle: "Нові ідеї та висновки з актуальних проєктів.",
+        viewAll: "Переглянути всі",
+        estimatedRead: "{{time}} читати",
+        posts: [
+          {
+            id: "shopify-conversion-boost",
+            slug: "shopify-conversion-boost",
+            title: "5 швидких кроків, щоб підняти конверсію Shopify",
+            date: "15 травня 2024",
+            readingTime: "4 хв",
+            excerpt: "Кілька легких змін у швидкості та UX, які змушують покупців довіряти магазину і частіше натискати “Купити”.",
+            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Shopify", "Конверсія"],
+            content: [
+              "Щоб підняти конверсію, не завжди потрібен повний редизайн. Послідовні точкові покращення працюють швидше.",
+              "Почніть зі швидкості. Стисніть зображення, використовуйте ліниве завантаження для блоків нижче першого екрану та контролюйте сторонні скрипти.",
+              "Спростіть картку товару. Чіткі CTA, інформація про доставку та соціальні докази поруч із кнопкою додавання в кошик зменшують тертя.",
+              "Додайте набори або прогрес-бари в кошику, щоб підвищити середній чек. Клієнтам подобається бачити, наскільки вони близькі до безкоштовної доставки чи подарунка.",
+              "І відстежуйте все. Налаштуйте воронки в Shopify або GA4, щоб ухвалювати рішення на основі даних."
+            ]
+          },
+          {
+            id: "landing-page-launch-checklist",
+            slug: "landing-page-launch-checklist",
+            title: "Чекліст запуску лендингу для зайнятих засновників",
+            date: "4 квітня 2024",
+            readingTime: "3 хв",
+            excerpt: "Перед запуском пройдіться по швидкому чеклісту, щоб переконатися, що сторінка швидка, зрозуміла і готова до конверсій.",
+            image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Чекліст", "Запуск"],
+            content: [
+              "Публікувати лендинг без перевірок — як відправляти код без тестів. Швидкий огляд зберігає конверсії.",
+              "Почніть із заголовка. Він має пояснити пропозицію та користь в одному реченні. Підзаголовок відповідає на питання “для кого”.",
+              "Головний заклик до дії повинен бути вище згину і дублюватися після кожного блоку. Постійність конвертує інтерес у дію.",
+              "Додайте соціальний доказ: відгуки, логотипи або цифри, які підтверджують довіру.",
+              "Завершіть налаштуванням аналітики і маршрутизацією заявок у потрібну пошту чи CRM, щоб швидко відповідати."
+            ]
+          }
+        ]
+      },
       faq: {
         title: "FAQ",
         questions: [
@@ -539,6 +634,7 @@ const resources = {
         process: "Процес",
         faq: "FAQ",
         works: "Роботи",
+        blog: "Блог",
         contact: "Контакти",
         resume: "Резюме"
       }
