@@ -193,6 +193,50 @@ const resources = {
         },
         ]
       },
+      upworkReviews: {
+        title: "Upwork Reviews",
+        subtitle: "Trusted by clients worldwide. 100% 5-star reviews with proven results—fast delivery, clear communication, and solutions that exceed expectations.",
+        seeMore: "See more",
+        openOnUpwork: "Open on Upwork",
+        seeMoreReviews: "See more reviews",
+        reviews: [
+          {
+            title: "Shopify expert needed for some final adjustments and mobile ui",
+            rating: 5,
+            ratingLabel: "Rating is 5.0 out of 5.",
+            timeframe: "Sep 20, 2025 - Oct 29, 2025",
+            contractType: "Fixed price",
+            feedback: "\"Kiril Did a super job on my Shopify store. Very skilled, fast, and easy to communicate with. He understood exactly what I wanted and delivered beyond expectations. Highly recommended… See more\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Looking for a Shopify Developer (Small One-Time Task)",
+            rating: 5,
+            ratingLabel: "Rating is 5.0 out of 5.",
+            timeframe: "Oct 27, 2025 - Oct 28, 2025",
+            contractType: "Fixed price",
+            feedback: "\"Kiril did a great job! He quickly understood the requirements, implemented everything exactly as shown in the loom video, and delivered fast, clean results. Excellent communication and professional work. I… See more\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Shopify Developer Needed to Fix Site Technical Errors",
+            rating: 5,
+            ratingLabel: "Rating is 5.0 out of 5.",
+            timeframe: "Oct 22, 2025 - Oct 23, 2025",
+            contractType: "Fixed price",
+            feedback: "\"Perfect Job by Kiril – Highly Recommended Kiril did an outstanding job fixing critical technical issues on our Shopify Rise theme site. He quickly resolved 404 URL errors, language switching… See more\"",
+            showSeeMore: true
+          },
+          {
+            title: "Shopify CRO Developer Needed to Create a \"Bundle Builder\"",
+            rating: 5,
+            ratingLabel: "Rating is 5.0 out of 5.",
+            timeframe: "Oct 29, 2025 - Nov 2, 2025",
+            contractType: "Fixed price",
+            showSeeMore: false
+          }
+        ]
+      },
       testimonials: {
         title: "Testimonials",
         reviews: [
@@ -509,6 +553,50 @@ const resources = {
             url: "https://www.bloomingamazing.ie/",
             image: "/source/blooming-amazing.png",
             tech: "Покращив процес покупки (кошик та оформлення замовлення), виправив помилки та надав постійну підтримку для ірландської служби доставки квітів, що призвело до підвищення успішності оформлення замовлень та задоволеності клієнтів."
+          }
+        ]
+      },
+      upworkReviews: {
+        title: "Відгуки з Upwork",
+        subtitle: "Надійність, доведена клієнтами по всьому світу. 100% відгуків на 5 зірок з доведеними результатами—швидка реалізація, зрозуміла комунікація та рішення, які перевершують очікування.",
+        seeMore: "Дивитися більше",
+        openOnUpwork: "Відкрити на Upwork",
+        seeMoreReviews: "Дивитися більше відгуків",
+        reviews: [
+          {
+            title: "Потрібен експерт з Shopify для фінальних налаштувань та мобільного інтерфейсу",
+            rating: 5,
+            ratingLabel: "Оцінка 5,0 з 5.",
+            timeframe: "20 вересня 2025 - 29 жовтня 2025",
+            contractType: "Фіксована ціна",
+            feedback: "\"Кіріл зробив чудову роботу над моїм магазином Shopify. Дуже досвідчений, швидкий і легко спілкується. Він точно зрозумів, що я хотів, і виконав роботу краще за очікування. Настійно рекомендую… Дивитися більше\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Шукаю розробника Shopify (Невелике разове завдання)",
+            rating: 5,
+            ratingLabel: "Оцінка 5,0 з 5.",
+            timeframe: "27 жовтня 2025 - 28 жовтня 2025",
+            contractType: "Фіксована ціна",
+            feedback: "\"Кіріл зробив чудову роботу! Він швидко зрозумів вимоги, реалізував все точно так, як показано у відео, і надав швидкі, чисті результати. Відмінна комунікація та професійна робота. Я… Дивитися більше\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Потрібен розробник Shopify для виправлення технічних помилок на сайті",
+            rating: 5,
+            ratingLabel: "Оцінка 5,0 з 5.",
+            timeframe: "22 жовтня 2025 - 23 жовтня 2025",
+            contractType: "Фіксована ціна",
+            feedback: "\"Ідеальна робота від Кіріла – Настійно рекомендую. Кіріл зробив видатну роботу з виправлення критичних технічних проблем на нашому сайті Shopify Rise theme. Він швидко вирішив помилки 404 URL, перемикання мов… Дивитися більше\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Потрібен розробник Shopify CRO для створення \"Bundle Builder\"",
+            rating: 5,
+            ratingLabel: "Оцінка 5,0 з 5.",
+            timeframe: "29 жовтня 2025 - 2 листопада 2025",
+            contractType: "Фіксована ціна",
+            showSeeMore: false,
           }
         ]
       },
