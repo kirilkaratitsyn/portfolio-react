@@ -763,6 +763,387 @@ const resources = {
         resume: "Резюме"
       }
     }
+  },
+  de: {
+    translation: {
+      hero: {
+        web: "Web",
+        title: "Ich bin Kiril",
+        subtitle: "Ich erstelle Websites, die Ihr Unternehmen online zum Strahlen bringen.",
+        book_call: "Termin vereinbaren",
+        send_message: "Nachricht senden",
+        or: "oder",
+        words: ["Entwickler", "Magier", "Experte", "Meister", "Spezialist", "Guru", "Virtuose", "Maestro"]
+      },
+      about: {
+        title: "Mein Name ist Kiril Karatitsyn",
+        text: "Ich erstelle schöne Websites und Online-Shops, die Unternehmen helfen, mehr online zu verkaufen. Spezialisiert auf die Entwicklung von Websites, die einfach zu bedienen sind und auf jedem Gerät großartig aussehen.",
+        text_2: "Der Fokus liegt darauf, Websites zu erstellen, die schnell sind, einfach zu navigieren und Besucher in Kunden verwandeln. Ob Sie eine neue Website benötigen oder Ihre bestehende verbessern möchten, lassen Sie uns das umsetzen.",
+        lets_work: "Lassen Sie uns zusammenarbeiten"
+      },
+      process: {
+        title: "Mein Prozess",
+        steps: {
+          step1: {
+            title: "1. Erstes Gespräch 🚀",
+            description: "Lassen Sie uns Ihre Geschäftsziele und Website-Anforderungen besprechen. Planung der perfekten Lösung - von einfachen Websites bis hin zu vollständigen Online-Shops. 🎯"
+          },
+          step2: {
+            title: "2. Recherche 🔍",
+            description: "Analyse der Branchenbest Practices, um sicherzustellen, dass Ihre Website hervorsticht und die richtigen Kunden anzieht. 📊"
+          },
+          step3: {
+            title: "3. Design 🎨",
+            description: "Erstellung moderner, ansprechender Designs, die auf Telefonen, Tablets und Computern großartig aussehen. 💫"
+          },
+          step4: {
+            title: "4. Entwicklung 💻",
+            description: "Erstellung Ihrer Website mit den besten Tools, um sie schnell, sicher und einfach zu aktualisieren. ⚡"
+          },
+          step5: {
+            title: "5. Prüfung & Test ✅",
+            description: "Gründliches Testen stellt sicher, dass alles perfekt funktioniert, mit Anpassungen nach Bedarf. 🔄"
+          },
+          step6: {
+            title: "6. Live gehen 🚀",
+            description: "Ihre Website geht live mit kontinuierlicher Unterstützung, um eine optimale Leistung zu gewährleisten. 🌟"
+          }
+        },
+        book_call: "Termin vereinbaren"
+      },
+      works: {
+        title: "Projekte",
+        loadMore: "Mehr laden",
+        visitWebsite: "Website besuchen",
+        contactCard: {
+          title: "Ihr Projekt hier",
+          text: "Haben Sie ein Projekt im Kopf? Lassen Sie uns zusammenarbeiten, um eine atemberaubende Website zu erstellen, die Ihrem Unternehmen hilft, online zu wachsen.",
+          button: "Kontaktieren Sie mich"
+        },
+        projects: [
+          {
+            title: "Honey Sunny Paradise",
+            url: "https://www.honeysunnyparadise.com/",
+            image: "/source/works_1.webp",
+            tech: "US-Kunde, der hawaiianischen Honig verkauft, benötigte einen qualitativ hochwertigen, einfachen Online-Shop. Ich habe ihn vollständig konfiguriert und FedEx-Versand integriert."
+          },
+          {
+            title: "Craft-Minds(PDPs)",
+            url: "https://craft-minds.com/",
+            image: "/source/6718b31b0e47a451312f3357 1.png",
+            tech: "Laufende Zusammenarbeit mit dem Kunden, Entwicklung einzigartiger Produkt-Landingpages und Verbesserung des Themes mit benutzerdefinierten Abschnitten."
+          },
+          {
+            title: "Pair Stich",
+            url: "https://pairstitch.pl/",
+            image: "/source/Pairstich.webp",
+            tech: "Implementierung eines benutzerdefinierten Farbwählers, der sich dynamisch basierend auf Kleidungstyp ändert und die 100-Varianten-Grenze umgeht."
+          },
+          {
+            title: "Kramucci",
+            url: "https://kramucci.com/",
+            image: "/source/Kramucci - Premium Italian Women Bags.webp",
+            tech: "Migration der polnischen Site-Version ins Englische mit zusätzlichen Verbesserungen."
+          },
+          {
+            title: "Steppyshoes",
+            url: "https://steppyshoes.com/",
+            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
+            tech: "Migration der englischen Version der Site ins Französische und Hinzufügung benutzerdefinierter Abschnitte."
+          },
+          {
+            title: "Haftx",
+            url: "https://haftx.com/",
+            image: "/source/HaftX.webp",
+            tech: "Entwicklung eines benutzerdefinierten Farbwählers, der sich an den Kleidungstyp anpasst und die 100-Varianten-Beschränkung überwindet."
+          },
+          {
+            title: "Canvaswall",
+            url: "https://canvaswallartstore.com/",
+            image: "/source/TheCanvasWallArt.webp",
+            tech: "Entwicklung und Implementierung mehrerer benutzerdefinierter Abschnitte gemäß Design- und technischen Anforderungen."
+          },
+          {
+            title: "The Vegan Wellness",
+            url: "https://theveganwellnessco.uk/",
+            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
+            tech: "Entwicklung eines Shopify-Shops mit benutzerdefiniertem Theme von Grund auf, Implementierung eines Abonnement-Systems und Integration von Abschnitten mit Metafeldern für einfache Verwaltung."
+          },
+          {
+            title: "Junofires",
+            url: "https://junofires.nl/",
+            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            tech: "Optimierung der Filter in einem Shopify-Shop, Hinzufügung automatischer Bildanzeigefunktionalität beim Filtern nach Farbe, Verbesserung von UX und Navigation."
+          },
+          {
+            title: "Lerros",
+            url: "https://www.lerros.com/",
+            image: "/source/Buy fashion for men conveniently online.webp",
+            tech: "Aktualisierung des Themes in einem Shopify-Shop, korrekte Übertragung von Inhalten und Metafeldern, Erhaltung der Datenstruktur und Konfiguration der Produktanzeige für stabilen Betrieb."
+          },
+          {
+            title: "Kiki Green",
+            url: "https://kikigreen.com/",
+            image: "/source/kiki-green.png",
+            tech: "Entwicklung einer vollständigen E-Commerce-Lösung von Grund auf, einschließlich vollständiger Online-Shop-Erstellung und Integration mit verschiedenen Plugins wie Treueprogrammen und Produktabonnements."
+          },
+          {
+            title: "Larson Jewelers",
+            url: "https://www.larsonjewelers.com/collections/mens-tungsten-wedding-bands-desktop-1",
+            image: "/source/larson.png",
+            tech: "Erstellung einer neuen Kollektionsseite und Implementierung von 4 zusätzlichen Links für Kampagnentestzwecke, Verbesserung der Navigationsstruktur der Site und A/B-Test-Fähigkeiten."
+          },
+          {
+            title: "The Magic Scent",
+            url: "https://themagicscent.com/pages/build-your-pack",
+            image: "/source/Magic-Scent.png",
+            tech: "Erstellung einer benutzerdefinierten 'Build Your Pack'-Seite und Entwicklung einer neuen Kollektionsseite für Duftmarketing-Produkte, Verbesserung der Benutzererfahrung und Produktorganisation."
+          },
+          {
+            title: "Junior's Cheesecake",
+            url: "https://juniorscheesecake.com/",
+            image: "/source/Juniors Cheesecake.png",
+            tech: "Erstellung neuer benutzerdefinierter Abschnitte basierend auf Figma-Design, Entwicklung von E-Mail-Vorlagen und -Handhabung sowie Implementierung der Serving-Seiten-Funktionalität."
+          },
+          {
+            title: "Spring Mountain Vineyard",
+            url: "https://club.springmountainvineyard.com/",
+            image: "/source/Spring Mountain Vineyard.png",
+            tech: "Neugestaltung der Kollektionsseite mit verbessertem Filterdesign und Produktkarten, Implementierung dynamischer Breadcrumb-Logik, die sich ohne Seitenaktualisierung aktualisiert für bessere UX."
+          },
+          {
+            title: "Magic Scents (TMS)",
+            url: "https://themagicscent.com/pages/homepage-new",
+            image: "/source/magic-scents.png",
+            tech: "Erstellung einer neuen Homepage und Produktseite vollständig gemäß Figma-Design (pixelgenau) und kontinuierliche Shop-Unterstützung für europäischen Online-Händler von Duftdiffusoren und Premium-Parfums."
+          },
+          {
+            title: "Studio Nono",
+            url: "https://studio-nonna.com/",
+            image: "/source/studio-nono.png",
+            tech: "Verbesserung des bestehenden deutschen Schmuckgeschäfts durch Hinzufügen neuer Einstellungen, Beheben von Fehlern und Entwicklung neuer Abschnitte und Funktionen zur Erhöhung der Shop-Stabilität und Flexibilität für Content-Management."
+          },
+          {
+            title: "Mister Maria",
+            url: "https://mrmaria.co.uk/",
+            image: "/source/mrmaria.png",
+            tech: "Migration des Shops von WordPress zu Shopify, Anpassung eines vorgefertigten Themes mit erheblichen Anpassungen, um dem vorherigen Aussehen der Site für einen der größten Händler von Designer-Spielzeug und Wohnaccessoires nahe zu kommen."
+          },
+          {
+            title: "Barney",
+            url: "https://barneydk.myshopify.com/",
+            image: "/source/barneydk.png",
+            tech: "Migration des dänischen Einzelhändlershops von WordPress zu einem neuen Shopify-Theme, Verbesserung und Anpassung der Funktionalität sowie Import aller Daten einschließlich Bestellungen, Produkten und Kunden für 7.000+ Garten- und Outdoor-Produkte."
+          },
+          {
+            title: "Petralyte",
+            url: "https://petralyte.com/",
+            image: "/source/petralyte.png",
+            tech: "Design und Implementierung neuer Abschnitte und Entwicklung einer benutzerdefinierten Landingpage für europäischen Händler von tierärztlich formulierten Elektrolyten in einzigartigen Geschmacksrichtungen für Haustiere, Verbesserung von Marketingkampagnen mit hochkonvertierendem Inhalt."
+          },
+          {
+            title: "Badass Labs",
+            url: "https://www.badass-labs.com/",
+            image: "/source/badasslabs.png",
+            tech: "Lieferung von Fehlerbehebungen und Verbesserungen, Erstellung neuer Blöcke und Funktionen sowie Zusammenführung von 7 regionalen Shops in einen zentralisierten Shop mit Regions- und Sprachumschalter für Automobilreinigungszubehör und Detaillierungsprodukte."
+          },
+          {
+            title: "Bloomin' Amazing",
+            url: "https://www.bloomingamazing.ie/",
+            image: "/source/blooming-amazing.png",
+            tech: "Verbesserung des Kaufprozesses (Warenkorb und Checkout), Beheben von Fehlern und kontinuierliche Unterstützung für irischen Blumenlieferdienst, was zu erhöhten Checkout-Erfolgsraten und verbesserter Kundenzufriedenheit führte."
+          },
+          {
+            title: "Casual Cowboy",
+            url: "https://www.casual-cowboy.com/",
+            image: "/source/cowboys.png",
+            tech: "Entwicklung einer vollständig anpassbaren Kollektionsseite mit erweiterten Filtern, benutzerdefinierten Produktdetailseiten (PDP) und Integration benutzerdefinierter Klaviyo-API-Formulare in Header und Footer für verbesserte E-Mail-Marketing-Fähigkeiten."
+          },
+          {
+            title: "Mellow Playground",
+            url: "https://mellowplayground.com/",
+            image: "/source/mellow.png",
+            tech: "Erstellung eines vollständig anpassbaren Warenkorb-Upsell-Systems mit Countdown-Timer, vollständig konfigurierbar über den Theme-Editor ohne hartcodierte Werte, ermöglicht einfache Produktauswahl, Preisgestaltung und Timer-Einstellungen für dynamische Werbeangebote."
+          },
+          {
+            title: "Lunesi",
+            url: "https://lunesi.co.uk/",
+            image: "/source/lunesi.png",
+            tech: "Entwicklung eines dynamischen Warenkorb-Upsell-Bereichs, der Produkte intelligent basierend auf dem Warenkorbinhalt anzeigt, vollständig konfigurierbar über den Theme-Editor. Verbesserter Header mit anpassbaren Farbschemata und konfigurierbarem Ankündigungsbanner für flexibles Branding und Werbeaktionen."
+          }
+        ]
+      },
+      upworkReviews: {
+        title: "Upwork Bewertungen",
+        subtitle: "Vertraut von Kunden weltweit. 100% 5-Sterne-Bewertungen mit bewährten Ergebnissen—schnelle Lieferung, klare Kommunikation und Lösungen, die Erwartungen übertreffen.",
+        seeMore: "Mehr anzeigen",
+        openOnUpwork: "Auf Upwork öffnen",
+        seeMoreReviews: "Mehr Bewertungen anzeigen",
+        reviews: [
+          {
+            title: "Shopify-Experte für einige finale Anpassungen und mobile UI",
+            rating: 5,
+            ratingLabel: "Bewertung ist 5,0 von 5.",
+            timeframe: "20. Sep. 2025 - 29. Okt. 2025",
+            contractType: "Festpreis",
+            feedback: "\"Kiril hat einen super Job in meinem Shopify-Shop gemacht. Sehr geschickt, schnell und einfach zu kommunizieren. Er verstand genau, was ich wollte, und lieferte über die Erwartungen hinaus. Sehr empfehlenswert… Mehr anzeigen\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Suche nach Shopify-Entwickler (Kleine einmalige Aufgabe)",
+            rating: 5,
+            ratingLabel: "Bewertung ist 5,0 von 5.",
+            timeframe: "27. Okt. 2025 - 28. Okt. 2025",
+            contractType: "Festpreis",
+            feedback: "\"Kiril hat einen großartigen Job gemacht! Er verstand schnell die Anforderungen, implementierte alles genau wie im Loom-Video gezeigt, und lieferte schnelle, saubere Ergebnisse. Ausgezeichnete Kommunikation und professionelle Arbeit. Ich… Mehr anzeigen\"",
+            showSeeMore: true,
+          },
+          {
+            title: "Shopify-Entwickler benötigt, um technische Fehler auf der Site zu beheben",
+            rating: 5,
+            ratingLabel: "Bewertung ist 5,0 von 5.",
+            timeframe: "22. Okt. 2025 - 23. Okt. 2025",
+            contractType: "Festpreis",
+            feedback: "\"Perfekter Job von Kiril – Sehr empfehlenswert. Kiril hat einen herausragenden Job bei der Behebung kritischer technischer Probleme auf unserer Shopify Rise Theme-Site gemacht. Er löste schnell 404 URL-Fehler, Sprachumschaltung… Mehr anzeigen\"",
+            showSeeMore: true
+          },
+          {
+            title: "Shopify CRO-Entwickler benötigt, um einen \"Bundle Builder\" zu erstellen",
+            rating: 5,
+            ratingLabel: "Bewertung ist 5,0 von 5.",
+            timeframe: "29. Okt. 2025 - 2. Nov. 2025",
+            contractType: "Festpreis",
+            showSeeMore: false
+          }
+        ]
+      },
+      testimonials: {
+        title: "Referenzen",
+        reviews: [
+          {
+            name: "Oleksandr",
+            image: "/source/1.png",
+            text: "Kiril ist ein Lebensretter! Er hat alle Probleme auf meiner Shopify-Site behoben und mir sogar Tipps zur Verbesserung gegeben. Ich bin so glücklich mit den Ergebnissen."
+          },
+          {
+            name: "Anastasia",
+            image: "/source/4.png",
+            text: "Ich war so verloren beim Versuch, meinen Online-Shop einzurichten, aber Kiril hat es zum Kinderspiel gemacht! Jetzt habe ich eine schöne Website, die tatsächlich Verkäufe bringt. Danke, Kiril!"
+          },
+          {
+            name: "Dmytro",
+            image: "/source/3.png",
+            text: "Die Zusammenarbeit mit Kiril war eine fantastische Erfahrung. Er ist ein echter Shopify-Experte und kümmert sich wirklich um seine Kunden. Ich empfehle ihn sehr!"
+          },
+          {
+            name: "Artem",
+            image: "/source/2.png",
+            text: "Kiril hat alles getan, um eine atemberaubende Website für mein Unternehmen zu erstellen. Er ist ein echter Profi und es macht Spaß, mit ihm zu arbeiten."
+          },
+          {
+            name: "Hanna",
+            image: "/source/5.png",
+            text: "Meine neue Website ist alles, was ich wollte und mehr! Kiril ist unglaublich talentiert und einfach zu arbeiten. Ich kann ihm nicht genug danken."
+          }
+        ]
+      },
+      contact: {
+        title: "LASSEN SIE UNS ZUSAMMENARBEITEN",
+        subtitle: "alles beginnt mit einem Gespräch",
+        email: "karatitsynkiril@gmail.com",
+        book_call: "Termin vereinbaren",
+        linkedin: "LinkedIn",
+        github: "GitHub",
+        preferMessage: "Bevorzugen Sie eine direkte Nachricht?",
+        sendMessage: "Nachricht senden"
+      },
+      blog: {
+        title: "Blog",
+        subtitle: "Gedanken zur Schaffung hochperformanter Online-Erlebnisse.",
+        readMore: "Weiterlesen",
+        backToList: "Zurück zu allen Artikeln",
+        notFound: "Artikel nicht gefunden.",
+        featuredTitle: "Ausgewählte Einblicke",
+        featuredSubtitle: "Frische Erkenntnisse aus aktuellen Projekten und Launches.",
+        viewAll: "Alle anzeigen",
+        estimatedRead: "{{time}} Lesezeit",
+        posts: [
+          {
+            id: "shopify-conversion-boost",
+            slug: "shopify-conversion-boost",
+            title: "5 schnelle Gewinne, um Ihre Shopify-Konversion zu steigern",
+            date: "15. Mai 2024",
+            readingTime: "4 Min",
+            excerpt: "Einfache UX-Anpassungen und Geschwindigkeitsoptimierungen, die Besucher sofort dazu bringen, Ihrem Shop zu vertrauen und häufiger auf die Kauf-Schaltfläche zu klicken.",
+            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Shopify", "Konversion"],
+            content: [
+              "Konversionssteigerung erfordert selten ein vollständiges Redesign. Kleine, fokussierte Verbesserungen, die zusammen gestapelt werden, bringen Sie schneller ans Ziel.",
+              "Beginnen Sie mit der Geschwindigkeit. Komprimieren Sie Hero-Bilder, verzögern Sie das Laden von Abschnitten unterhalb der Falte und halten Sie Drittanbieter-Skripte unter Kontrolle. Ein schneller Shop wirkt professionell und beseitigt Zögern.",
+              "Vereinfachen Sie als Nächstes die Produktseite. Klare Handlungsaufforderungen, vorab Versandinformationen und sozialer Beweis in der Nähe der Warenkorb-Schaltfläche reduzieren Reibung.",
+              "Verwenden Sie Bundles oder Fortschrittsbalken im Warenkorb, um den durchschnittlichen Bestellwert zu erhöhen. Kunden lieben es zu sehen, wie nah sie an kostenlosem Versand oder einem Bonusgeschenk sind.",
+              "Verfolgen Sie schließlich alles. Richten Sie grundlegende Funnels in Shopify Analytics oder GA4 ein, damit Sie auf das setzen können, was funktioniert, und den Rest kürzen."
+            ]
+          },
+          {
+            id: "landing-page-launch-checklist",
+            slug: "landing-page-launch-checklist",
+            title: "Landingpage-Launch-Checkliste für beschäftigte Gründer",
+            date: "4. April 2024",
+            readingTime: "3 Min",
+            excerpt: "Bevor Sie starten, gehen Sie diese leichte Checkliste durch, um sicherzustellen, dass Ihr Angebot klar, schnell und bereit zur Konversion ist.",
+            image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+            tags: ["Checkliste", "Launch"],
+            content: [
+              "Eine Landingpage ohne Überprüfungen zu veröffentlichen ist wie Code ohne Tests zu versenden. Eine gründliche Überprüfung verhindert, dass Konversionen verloren gehen.",
+              "Zuerst die Überschrift. Sie sollte in einem Satz erklären, was Sie anbieten und warum es wichtig ist. Kombinieren Sie es mit einer Unterüberschrift, die beantwortet, für wen es ist.",
+              "Stellen Sie sicher, dass die primäre Handlungsaufforderung über der Falte liegt und nach jedem Hauptabschnitt wiederholt wird. Konsistenz verwandelt Interesse in Aktion.",
+              "Beweis zählt. Fügen Sie Referenzen, Logos oder schnelle Statistiken hinzu, um zu zeigen, dass echte Menschen Ihnen vertrauen.",
+              "Schließen Sie es mit Tracking-Pixeln und Formularübermittlungen ab, die an das richtige Postfach oder CRM weitergeleitet werden, damit Sie schnell nachfassen können."
+            ]
+          }
+        ]
+      },
+      faq: {
+        title: "FAQ",
+        questions: [
+          {
+            question: "Was macht Ihre Websites besonders? 💻",
+            answer: "Ich erstelle Websites, die schnell sind, großartig aussehen und für Ihre Kunden einfach zu verwenden sind. Sie funktionieren perfekt auf Telefonen, Tablets und Computern. 🚀"
+          },
+          {
+            question: "Warum Shopify für meinen Online-Shop wählen? 🛍️",
+            answer: "Shopify ist der sicherste und einfachste Weg, einen Online-Shop zu betreiben. Es hat alles, was Sie brauchen, um schnell online zu verkaufen. 🔒"
+          },
+          {
+            question: "Warum mit mir arbeiten? 🌟",
+            answer: "Ich erstelle Websites, die nicht nur schön aussehen, sondern auch Ihrem Unternehmen beim Wachstum helfen. Ich bin hier, um Sie in jedem Schritt zu unterstützen. ⚡"
+          },
+          {
+            question: "Wie viel kostet es? 💰",
+            answer: "Jedes Projekt ist einzigartig - lassen Sie uns Ihre spezifischen Bedürfnisse und Ziele besprechen, um die richtige Lösung für Ihr Budget zu finden. 📊"
+          },
+          {
+            question: "Unterstützung nach dem Launch? 🔄",
+            answer: "Ja! Ich biete kontinuierliche Unterstützung, um sicherzustellen, dass Ihre Website auf dem neuesten Stand bleibt und optimal funktioniert. 🛡️"
+          },
+          {
+            question: "Wer bevorzugen Sie, einen Hund oder eine Katze? 🐱",
+            answer: "Katzen sind meine Favoriten! Sie sind unabhängig, anmutig und perfekte Programmierbegleiter. 😺"
+          }
+        ],
+        book_call: "Termin vereinbaren"
+      },
+      header: {
+        about: "Über mich",
+        process: "Prozess",
+        faq: "FAQ",
+        works: "Projekte",
+        blog: "Blog",
+        contact: "Kontakt",
+        resume: "Lebenslauf"
+      }
+    }
   }
 };
 

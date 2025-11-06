@@ -44,6 +44,16 @@ function LanguageSwitcher() {
       >
         UA
       </button>
+      <button 
+        onClick={() => changeLanguage('de')} 
+        className={`text-sm font-medium transition-all duration-300 ${
+          i18n.language === 'de' 
+            ? isDarkMode ? 'text-black scale-110' : 'text-white scale-110'
+            : isDarkMode ? 'text-black/50 hover:text-black' : 'text-white/50 hover:text-white'
+        }`}
+      >
+        DE
+      </button>
     </div>
   );
 }
