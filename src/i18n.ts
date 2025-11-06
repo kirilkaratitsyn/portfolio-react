@@ -209,6 +209,12 @@ const resources = {
           image: "/source/lunesi.png",
           tech: "Developed a dynamic cart drawer upsell section that intelligently displays products based on cart contents, fully configurable through the theme editor. Enhanced header with customizable color schemes and a configurable announcement banner for flexible branding and promotions."
         },
+        {
+          title: "Nimfa",
+          url: "https://nimfa.nl/",
+          image: "/source/nimfa.png",
+          tech: "Built a custom Shopify theme from scratch with pixel-perfect implementation according to Figma design. Developed blog functionality, upsell sections, and full multilingual support (English, Ukrainian, Dutch) for the premium intimate care brand."
+        },
         ]
       },
       upworkReviews: {
@@ -589,6 +595,12 @@ const resources = {
             url: "https://lunesi.co.uk/",
             image: "/source/lunesi.png",
             tech: "Розробив динамічну секцію апселла в кошику, яка інтелектуально відображає продукти на основі вмісту кошика, повністю налаштовувану через редактор теми. Покращив хедер з налаштовуваними кольоровими схемами та конфігурованим банером оголошень для гнучкого брендингу та промо-акцій."
+          },
+          {
+            title: "Nimfa",
+            url: "https://nimfa.nl/",
+            image: "/source/nimfa.png",
+            tech: "Створив кастомну тему Shopify з нуля з піксель-перфектною реалізацією згідно з дизайном Figma. Розробив функціональність блогу, секції апселлів та повну багатомовну підтримку (англійська, українська, голландська) для преміум бренду інтимного догляду."
           }
         ]
       },
@@ -970,6 +982,12 @@ const resources = {
             url: "https://lunesi.co.uk/",
             image: "/source/lunesi.png",
             tech: "Entwicklung eines dynamischen Warenkorb-Upsell-Bereichs, der Produkte intelligent basierend auf dem Warenkorbinhalt anzeigt, vollständig konfigurierbar über den Theme-Editor. Verbesserter Header mit anpassbaren Farbschemata und konfigurierbarem Ankündigungsbanner für flexibles Branding und Werbeaktionen."
+          },
+          {
+            title: "Nimfa",
+            url: "https://nimfa.nl/",
+            image: "/source/nimfa.png",
+            tech: "Erstellung eines benutzerdefinierten Shopify-Themes von Grund auf mit pixelgenauer Implementierung gemäß Figma-Design. Entwicklung von Blog-Funktionalität, Upsell-Bereichen und vollständiger mehrsprachiger Unterstützung (Englisch, Ukrainisch, Niederländisch) für die Premium-Marke für intime Pflege."
           }
         ]
       },
