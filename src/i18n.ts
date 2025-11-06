@@ -191,6 +191,24 @@ const resources = {
           image: "/source/blooming-amazing.png",
           tech: "Improved the purchase flow (cart and checkout), fixed bugs, and provided ongoing support for Irish flower delivery service, resulting in increased checkout success rates and improved customer satisfaction."
         },
+        {
+          title: "Casual Cowboy",
+          url: "https://www.casual-cowboy.com/",
+          image: "/source/cowboys.png",
+          tech: "Developed a fully customizable collection page with advanced filtering, custom product detail pages (PDP), and integrated custom Klaviyo API forms in both header and footer for enhanced email marketing capabilities."
+        },
+        {
+          title: "Mellow Playground",
+          url: "https://mellowplayground.com/",
+          image: "/source/mellow.png",
+          tech: "Built a fully customizable cart upsell system with countdown timer, completely configurable through the theme editor with no hardcoded values, allowing easy product selection, pricing, and timer settings for dynamic promotional offers."
+        },
+        {
+          title: "Lunesi",
+          url: "https://lunesi.co.uk/",
+          image: "/source/lunesi.png",
+          tech: "Developed a dynamic cart drawer upsell section that intelligently displays products based on cart contents, fully configurable through the theme editor. Enhanced header with customizable color schemes and a configurable announcement banner for flexible branding and promotions."
+        },
         ]
       },
       upworkReviews: {
@@ -553,6 +571,24 @@ const resources = {
             url: "https://www.bloomingamazing.ie/",
             image: "/source/blooming-amazing.png",
             tech: "Покращив процес покупки (кошик та оформлення замовлення), виправив помилки та надав постійну підтримку для ірландської служби доставки квітів, що призвело до підвищення успішності оформлення замовлень та задоволеності клієнтів."
+          },
+          {
+            title: "Casual Cowboy",
+            url: "https://www.casual-cowboy.com/",
+            image: "/source/cowboys.png",
+            tech: "Розробив повністю налаштовувану сторінку колекції з розширеним фільтруванням, кастомні сторінки деталей продукту (PDP), та інтегрував кастомні форми Klaviyo API в шапці та футері для покращення можливостей email-маркетингу."
+          },
+          {
+            title: "Mellow Playground",
+            url: "https://mellowplayground.com/",
+            image: "/source/mellow.png",
+            tech: "Створив повністю налаштовувану систему апселла в кошику з таймером зворотного відліку, повністю конфігуровану через редактор теми без жодних захардкоджених значень, що дозволяє легко вибирати продукти, ціни та налаштування таймера для динамічних промо-пропозицій."
+          },
+          {
+            title: "Lunesi",
+            url: "https://lunesi.co.uk/",
+            image: "/source/lunesi.png",
+            tech: "Розробив динамічну секцію апселла в кошику, яка інтелектуально відображає продукти на основі вмісту кошика, повністю налаштовувану через редактор теми. Покращив хедер з налаштовуваними кольоровими схемами та конфігурованим банером оголошень для гнучкого брендингу та промо-акцій."
           }
         ]
       },
