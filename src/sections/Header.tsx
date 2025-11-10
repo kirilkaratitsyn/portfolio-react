@@ -39,8 +39,7 @@ function Header() {
     { name: t('header.faq'), to: '/#faq' },
     { name: t('header.works'), to: '/#work' },
     { name: t('header.blog'), to: '/blog' },
-    { name: t('header.contact'), to: '/#contact' },
-    { name: t('header.resume'), href: 'source/Resume.pdf', download: true },
+    { name: t('header.contact'), to: '/#contact' }
   ];
 
   return (
