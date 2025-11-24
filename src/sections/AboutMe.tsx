@@ -74,7 +74,7 @@ function AboutMe() {
           <div className="media mt-6  lg:mt-0">
             <img 
               className="lazy rounded-[10px]  shadow-white" 
-              data-src="/source/me.JPG" 
+              data-src="/source/me.jpeg" 
               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
               width="315" 
               alt="Kiril Karatitsyn" 
