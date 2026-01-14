@@ -4,7 +4,6 @@ import Hero from '../sections/Hero';
 import AboutMe from '../sections/AboutMe';
 import Works from '../sections/Works';
 import FeaturedPosts from '../sections/FeaturedPosts';
-import UpworkReviews from '../sections/UpworkReviews';
 import Process from '../sections/Process';
 import FAQ from '../sections/FAQ';
 import Contact from '../sections/Contact';
@@ -28,7 +27,6 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Works />
-      <UpworkReviews />
       <FeaturedPosts />
       <Process />
       <FAQ />
