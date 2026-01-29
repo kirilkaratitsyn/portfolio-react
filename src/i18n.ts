@@ -215,6 +215,60 @@ const resources = {
           image: "/source/nimfa.png",
           tech: "Built a custom Shopify theme from scratch with pixel-perfect implementation according to Figma design. Developed blog functionality, upsell sections, and full multilingual support (English, Ukrainian, Dutch) for the premium intimate care brand."
         },
+          {
+            title: "Melinava",
+            url: "https://melinava.nl/",
+            image: "/source/melinava.png",
+            tech: "Final pre-launch polish and QA before going live. I owned the full “ready for traffic” checklist: key customer journeys, cart and checkout sanity checks, responsive issues, speed, and visual bugs so the site was stable and conversion ready."
+          },
+          {
+            title: "Petaljet",
+            url: "https://petaljet.com/",
+            image: "/source/petaljet.png",
+            tech: "Ongoing store support within a team. I improve SEO and performance across key pages, ship changes fast, keep releases clean, and handle day to day updates without breaking the storefront."
+          },
+          {
+            title: "Indian Affairs",
+            url: "https://indianaffairs.de/",
+            image: "/source/indian-affairs.png",
+            tech: "Migrated the store from a legacy theme to Shopify Online Store 2.0 (Prestige). I transferred all content, rebuilt custom functionality, implemented client requirements from the spec, and aligned styling and UX across the site."
+          },
+          {
+            title: "SafeTag Tracking",
+            url: "https://safetagtracking.com/",
+            image: "/source/safeatags.png",
+            tech: "Custom Shopify theme development from Figma with full customization and multilingual setup. Built flexible sections for easy content management, delivered pixel accurate UI, and set the foundation for scaling pages and markets."
+          },
+          {
+            title: "Virea",
+            url: "https://virea.se/",
+            image: "/source/virea.png",
+            tech: "Implemented a refreshed design for the homepage, product pages, and core templates. The store is on continuous support: new features, performance optimization, UX improvements, and regular technical iterations."
+          },
+          {
+            title: "M-Oceans",
+            url: "https://m-oceans.com/",
+            image: "/source/m-oceans.png",
+            tech: "Migrated from an old theme to a new Shopify 2.0 architecture and carried over custom logic. Added new functionality, improved page structure, and ensured all critical store flows worked reliably after launch."
+          },
+          {
+            title: "Silk Tallow",
+            url: "https://silktallow.com/",
+            image: "/source/silk-tallow.png",
+            tech: "Built advanced Mystery Gift and Free Gift logic that works without page reloads. Integrated it seamlessly into the storefront design for a smooth experience, including rules, cart behavior, and edge case handling."
+          },
+          {
+            title: "Bella Bloom Box",
+            url: "https://bellabloombox.se/",
+            image: "/source/httpsbellabloombox.png",
+            tech: "Built a full Shopify store based on a Lovable design. Translated the design into theme sections and templates, set up content structure, and made it easy for the client to manage without code."
+          },
+          {
+            title: "Bazar Bizar",
+            url: "https://bazarbizar.be/",
+            image: "/source/bazarbizar.png",
+            tech: "Worked on a large, complex Shopify store with many templates and custom logic. Delivered deep customization across sections and layouts, implemented functional improvements, and supported larger changes while keeping the site stable."
+          },
         ]
       },
       upworkReviews: {
@@ -601,6 +655,60 @@ const resources = {
             url: "https://nimfa.nl/",
             image: "/source/nimfa.png",
             tech: "Створив кастомну тему Shopify з нуля з піксель-перфектною реалізацією згідно з дизайном Figma. Розробив функціональність блогу, секції апселлів та повну багатомовну підтримку (англійська, українська, голландська) для преміум бренду інтимного догляду."
+          },
+          {
+            title: "Melinava",
+            url: "https://melinava.nl/",
+            image: "/source/melinava.png",
+            tech: "Фінальна підготовка перед запуском: QA і полірування всіх деталей. Вів повний чекліст “готово до трафіку”: ключові сценарії користувача, перевірки кошика та checkout, адаптив, швидкість і візуальні баги — щоб сайт був стабільний і готовий до конверсій."
+          },
+          {
+            title: "Petaljet",
+            url: "https://petaljet.com/",
+            image: "/source/petaljet.png",
+            tech: "Постійна підтримка магазину в команді. Підсилюю SEO і продуктивність на ключових сторінках, швидко доставляю зміни, тримаю релізи чистими та виконую щоденні оновлення без ризику “поламати” storefront."
+          },
+          {
+            title: "Indian Affairs",
+            url: "https://indianaffairs.de/",
+            image: "/source/indian-affairs.png",
+            tech: "Міграція з legacy-теми на Shopify Online Store 2.0 (Prestige). Переніс увесь контент, відбудував кастомну функціональність, реалізував вимоги зі спеки та вирівняв стилі й UX по всьому сайту."
+          },
+          {
+            title: "SafeTag Tracking",
+            url: "https://safetagtracking.com/",
+            image: "/source/safeatags.png",
+            tech: "Розробка кастомної Shopify-теми з Figma з повною кастомізацією та мультимовністю. Побудував гнучкі секції для зручного керування контентом, зробив pixel-accurate UI і заклав фундамент для масштабування сторінок та маркетів."
+          },
+          {
+            title: "Virea",
+            url: "https://virea.se/",
+            image: "/source/virea.png",
+            tech: "Впровадив оновлений дизайн для головної, PDP та базових шаблонів. Магазин на постійній підтримці: нові фічі, оптимізація швидкості, UX-покращення та регулярні технічні ітерації."
+          },
+          {
+            title: "M-Oceans",
+            url: "https://m-oceans.com/",
+            image: "/source/m-oceans.png",
+            tech: "Міграція зі старої теми на Shopify 2.0 архітектуру з перенесенням кастомної логіки. Додав нову функціональність, покращив структуру сторінок і забезпечив надійну роботу критичних флоу після запуску."
+          },
+          {
+            title: "Silk Tallow",
+            url: "https://silktallow.com/",
+            image: "/source/silk-tallow.png",
+            tech: "Реалізував складну логіку Mystery Gift і Free Gift без перезавантаження сторінки. Акуратно інтегрував у дизайн storefront: правила, поведінка кошика та обробка edge cases."
+          },
+          {
+            title: "Bella Bloom Box",
+            url: "https://bellabloombox.se/",
+            image: "/source/httpsbellabloombox.png",
+            tech: "Зібрав повний Shopify-магазин на базі дизайну Lovable. Переклав дизайн у секції та шаблони теми, налаштував структуру контенту й зробив керування максимально простим для клієнта без коду."
+          },
+          {
+            title: "Bazar Bizar",
+            url: "https://bazarbizar.be/",
+            image: "/source/bazarbizar.png",
+            tech: "Працював з великим складним Shopify-магазином із багатьма шаблонами та кастомною логікою. Робив глибоку кастомізацію секцій і лейаутів, впроваджував функціональні покращення та підтримував великі зміни, зберігаючи стабільність."
           }
         ]
       },
@@ -988,6 +1096,60 @@ const resources = {
             url: "https://nimfa.nl/",
             image: "/source/nimfa.png",
             tech: "Erstellung eines benutzerdefinierten Shopify-Themes von Grund auf mit pixelgenauer Implementierung gemäß Figma-Design. Entwicklung von Blog-Funktionalität, Upsell-Bereichen und vollständiger mehrsprachiger Unterstützung (Englisch, Ukrainisch, Niederländisch) für die Premium-Marke für intime Pflege."
+          },
+          {
+            title: "Melinava",
+            url: "https://melinava.nl/",
+            image: "/source/melinava.png",
+            tech: "Finale Pre-Launch-Politur und QA vor dem Go-Live. Ich verantwortete die komplette “ready for traffic” Checkliste: zentrale Customer Journeys, Cart- und Checkout-Sanity-Checks, Responsive-Issues, Speed und visuelle Bugs — damit der Shop stabil und conversion-ready ist."
+          },
+          {
+            title: "Petaljet",
+            url: "https://petaljet.com/",
+            image: "/source/petaljet.png",
+            tech: "Laufender Store-Support im Team. Ich verbessere SEO und Performance auf wichtigen Seiten, shippe Changes schnell, halte Releases sauber und übernehme tägliche Updates ohne den Storefront zu gefährden."
+          },
+          {
+            title: "Indian Affairs",
+            url: "https://indianaffairs.de/",
+            image: "/source/indian-affairs.png",
+            tech: "Migration vom Legacy-Theme auf Shopify Online Store 2.0 (Prestige). Ich habe Inhalte übertragen, Custom-Funktionalität neu aufgebaut, Anforderungen aus der Spezifikation umgesetzt und Styling sowie UX über die gesamte Site hinweg vereinheitlicht."
+          },
+          {
+            title: "SafeTag Tracking",
+            url: "https://safetagtracking.com/",
+            image: "/source/safeatags.png",
+            tech: "Custom Shopify Theme Development aus Figma mit voller Customization und mehrsprachigem Setup. Flexible Sections für einfaches Content-Management, pixelgenaues UI und eine solide Basis zum Skalieren von Seiten und Markets."
+          },
+          {
+            title: "Virea",
+            url: "https://virea.se/",
+            image: "/source/virea.png",
+            tech: "Umsetzung eines Refresh-Designs für Homepage, Produktseiten und Core-Templates. Kontinuierlicher Support: neue Features, Performance-Optimierung, UX-Verbesserungen und regelmäßige technische Iterationen."
+          },
+          {
+            title: "M-Oceans",
+            url: "https://m-oceans.com/",
+            image: "/source/m-oceans.png",
+            tech: "Migration von einem alten Theme auf eine neue Shopify-2.0-Architektur inklusive Übernahme von Custom-Logik. Neue Funktionalität ergänzt, Seitenstruktur verbessert und alle kritischen Store-Flows nach dem Launch zuverlässig abgesichert."
+          },
+          {
+            title: "Silk Tallow",
+            url: "https://silktallow.com/",
+            image: "/source/silk-tallow.png",
+            tech: "Advanced Mystery-Gift- und Free-Gift-Logik ohne Page Reloads gebaut. Nahtlos ins Storefront-Design integriert — inklusive Regeln, Cart-Verhalten und Edge-Case-Handling."
+          },
+          {
+            title: "Bella Bloom Box",
+            url: "https://bellabloombox.se/",
+            image: "/source/httpsbellabloombox.png",
+            tech: "Kompletten Shopify-Store basierend auf einem Lovable-Design gebaut. Design in Theme-Sections und Templates übersetzt, Content-Struktur aufgesetzt und so umgesetzt, dass der Kunde ohne Code verwalten kann."
+          },
+          {
+            title: "Bazar Bizar",
+            url: "https://bazarbizar.be/",
+            image: "/source/bazarbizar.png",
+            tech: "Arbeit an einem großen, komplexen Shopify-Store mit vielen Templates und Custom-Logik. Tiefgreifende Anpassungen an Sections und Layouts, funktionale Verbesserungen und Support größerer Changes — bei stabiler Basis."
           }
         ]
       },
