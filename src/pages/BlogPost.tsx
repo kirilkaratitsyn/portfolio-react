@@ -11,7 +11,7 @@ const BlogPost = () => {
   const post = blog.posts.find((item) => item.slug === slug);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [slug]);
 
   if (!post) {

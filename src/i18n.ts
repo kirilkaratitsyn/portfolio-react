@@ -5,54 +5,338 @@ const resources = {
   en: {
     translation: {
       hero: {
-        web: "Web",
-        title: "I'm Kiril",
-        subtitle: "I build websites that make your business shine online.",
+        eyebrow: "Shopify Developer",
+        title: "I build Shopify stores that",
+        titleAccent: "convert, scale, and stay easy to manage.",
+        subtitle: "Custom themes, Online Store 2.0 migrations, integrations, CRO-focused storefront work, and long-term support for brands that need more than a generic setup.",
+        description: "If your store needs cleaner UX, faster pages, stronger merchandising, or custom functionality, I can help you ship it without breaking the storefront.",
         book_call: "Book a Call",
         send_message: "Send me a message",
+        proofItems: [
+          "5-star Upwork reviews from recent Shopify clients.",
+          "Hands-on work across custom builds, migrations, CRO, and support retainers.",
+          "Focused on Shopify-first execution with clean UX and reliable releases."
+        ],
+        servicePills: [
+          "Store builds & migrations",
+          "Theme customization",
+          "Integrations & APIs",
+          "Performance & SEO"
+        ],
         or: "or",
         words: ["Developer", "Magician", "Expert", "Master", "Specialist", "Guru", "Virtuoso", "Maestro"]
       },
       about: {
-        title: "My name is Kiril Karatitsyn",
-        text: "I create beautiful websites and online-shops that help businesses sell more online. Specializing in developing sites that are easy to use and look great on any device.",
-        text_2: "The focus is on making websites that are fast, easy to navigate, and help turn visitors into customers. Whether you need a new website or want to improve your existing one, let's make it happen.",
+        eyebrow: "Why Shopify Teams Hire Me",
+        title: "A Shopify partner who thinks beyond implementation",
+        text: "I work with Shopify brands that need more than quick fixes. The goal is to turn store requirements into clean, conversion-aware solutions that are fast to ship and easy to manage after launch.",
+        text_2: "That includes custom Liquid work, Online Store 2.0 migrations, integrations, merchandising improvements, multilingual storefronts, and ongoing support for stores that keep evolving after release.",
+        highlights: [
+          "Custom theme development with flexible sections and clean storefront logic.",
+          "CRO-minded implementation focused on product discovery, cart behavior, and speed."
+        ],
         lets_work: "Let's Work Together"
       },
+      services: {
+        eyebrow: "Services",
+        title: "Shopify services built around business outcomes",
+        subtitle: "Each engagement is focused on making the store easier to grow, easier to manage, and stronger at converting traffic into revenue.",
+        items: [
+          {
+            title: "Store builds & migrations",
+            description: "Launch a new Shopify store or move from a legacy theme to a cleaner Online Store 2.0 setup without losing critical content or customer flows."
+          },
+          {
+            title: "Theme customization",
+            description: "Build or refine sections, templates, and product experiences so the storefront matches your brand and supports merchandising goals."
+          },
+          {
+            title: "Integrations & APIs",
+            description: "Connect apps, subscriptions, payments, CRMs, and external systems in a way that works reliably inside the storefront and admin."
+          },
+          {
+            title: "Performance & SEO",
+            description: "Improve load speed, reduce frontend friction, and strengthen technical foundations that help both rankings and conversion."
+          },
+          {
+            title: "Custom Shopify functionality",
+            description: "Implement advanced storefront behavior like upsells, gifts, bundle flows, dynamic cart logic, or specialized product interactions."
+          },
+          {
+            title: "Ongoing support & audits",
+            description: "Get a reliable technical partner for store audits, launch readiness, bug fixing, maintenance, and continuous iteration after release."
+          }
+        ]
+      },
+      caseStudies: {
+        eyebrow: "Case Studies",
+        title: "Featured Shopify work",
+        subtitle: "Three projects that show how I approach custom theme builds, migrations, and advanced storefront functionality without relying on generic solutions.",
+        viewCase: "View Case Study",
+        visitStore: "Visit Store",
+        backToCases: "Back to all projects",
+        notFound: "Case study not found.",
+        mediaTitle: "Media",
+        desktopLabel: "Desktop",
+        mobileLabel: "Mobile",
+        mobilePlaceholder: "Mobile version placeholder. A dedicated mobile preview will be added here later.",
+        aboutBrandTitle: "About the brand",
+        readMore: "Read more",
+        challengeTitle: "Challenge",
+        scopeTitle: "Scope",
+        solutionTitle: "Solution",
+        stackTitle: "Stack & capabilities",
+        outcomeTitle: "Outcome",
+        screenshotTitle: "Project highlights",
+        moreProjectsTitle: "More Shopify projects",
+        moreProjectsSubtitle: "A broader sample of Shopify work across migrations, CRO, support, custom sections, and storefront enhancements.",
+        items: [
+          {
+            id: "nimfa",
+            slug: "nimfa",
+            title: "Nimfa",
+            summary: "A premium sex shop needed a custom Shopify build from Figma with multilingual support, scalable sections, and a storefront polished enough to launch as a premium product.",
+            brandSummary: "Nimfa is a premium intimate wellness brand and sex shop built around discreet, stylish, and shame-free self-care for women.",
+            brandDescription: "Nimfa positions intimacy as something natural, elegant, and free from judgment. The brand presents intimate wellness and pleasure products in a softer premium context, with a focus on self-acceptance, privacy, and a shopping experience that feels closer to modern self-care than to a traditional adult store.",
+            image: "/source/desktop/nimfa-desktop.webp",
+            mobileImage: "/source/mobile/nimfa-mobile.webp",
+            liveUrl: "https://nimfa.nl/",
+            tags: ["Custom Theme", "Multilingual", "Figma to Shopify"],
+            challenge: "The store needed to feel premium from day one while staying manageable for the client team. That meant translating a detailed design into Shopify without sacrificing flexibility, multilingual structure, or future content control.",
+            scope: [
+              "Build a custom Shopify theme from scratch based on Figma.",
+              "Create flexible sections for landing, product, and editorial content.",
+              "Support multilingual storefront content and admin-friendly updates."
+            ],
+            solution: [
+              "Implemented a pixel-accurate storefront with reusable theme sections and templates.",
+              "Built blog and upsell functionality directly into the theme so content and merchandising could grow together.",
+              "Structured the setup so the client could manage content changes without depending on code for every update."
+            ],
+            outcome: [
+              "Delivered a premium Shopify storefront aligned with the original design direction.",
+              "Made multilingual growth easier by building the content structure into the theme from the start.",
+              "Set up the store for future merchandising and editorial updates without a rebuild."
+            ],
+            stack: ["Shopify", "Liquid", "Theme sections", "Multilingual setup", "Figma implementation"],
+            screenshotCaptions: [
+              "Custom storefront styling aligned closely to the approved Figma direction.",
+              "Theme architecture designed for repeated content changes without code edits.",
+              "Multilingual-ready setup for a premium Shopify brand."
+            ]
+          },
+          {
+            id: "indian-affairs",
+            slug: "indian-affairs",
+            title: "Indian Affairs",
+            summary: "A legacy store needed to move to Shopify Online Store 2.0 while preserving structure, rebuilding custom functionality, and cleaning up the experience across the site.",
+            brandSummary: "Indian Affairs is a fashion brand for children and adults, known for timeless pieces, natural materials, and handcrafted details rooted in Indian textile traditions.",
+            brandDescription: "Indian Affairs offers clothing and accessories across kidswear and adult categories, with a strong focus on timeless design, soft materials, and artisanal character. Many pieces highlight techniques such as hand block printing and emphasize a slower, more thoughtful product feel than fast-moving trend fashion.",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            mobileImage: "/source/mobile/indian-affairs-mobile.webp",
+            liveUrl: "https://indianaffairs.de/",
+            tags: ["Migration", "Online Store 2.0", "Theme rebuild"],
+            challenge: "The migration could not be treated like a visual refresh alone. Content, custom logic, and day-to-day store operations had to survive the move to a newer architecture without introducing instability.",
+            scope: [
+              "Migrate the storefront from a legacy setup to Shopify Online Store 2.0.",
+              "Transfer content and rebuild custom behavior in the new theme architecture.",
+              "Align styling, UX, and core customer journeys across the site."
+            ],
+            solution: [
+              "Rebuilt key functionality inside the OS 2.0 structure instead of patching legacy behavior forward.",
+              "Preserved important content relationships and store logic during migration.",
+              "Used the migration as an opportunity to clean up UX and improve maintainability."
+            ],
+            outcome: [
+              "Moved the store onto a more scalable Shopify architecture.",
+              "Reduced the risk of launch regressions by rebuilding critical flows deliberately.",
+              "Left the client with a cleaner foundation for future storefront updates."
+            ],
+            stack: ["Shopify OS 2.0", "Liquid", "Template migration", "UX refinement", "Launch QA"],
+            screenshotCaptions: [
+              "Migration work focused on preserving structure while modernizing the theme base.",
+              "Custom requirements rebuilt for a more maintainable Shopify setup.",
+              "UX and styling aligned during the move instead of postponed for later."
+            ]
+          },
+          {
+            id: "silk-tallow",
+            slug: "silk-tallow",
+            title: "Silk Tallow",
+            summary: "The store needed advanced Mystery Gift and Free Gift logic that felt native to the storefront, updated instantly, and handled cart edge cases without page reloads.",
+            brandSummary: "Silk Tallow is a natural skincare brand centered on tallow-based formulas, simple ingredients, and toxin-free routines inspired by nature.",
+            brandDescription: "Silk Tallow is positioned around natural simplicity and skincare without artificial ingredients. The brand ties its products to nourishment, protection, and a return to slower, cleaner routines, using tallow-based formulas as the core of a more minimal and nature-led skincare philosophy.",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            mobileImage: "/source/mobile/silk-tallow-mobile.webp",
+            liveUrl: "https://silktallow.com/",
+            tags: ["Custom Logic", "Cart UX", "Merchandising"],
+            challenge: "Gift logic often breaks UX when it depends on clunky reloads or fragile scripts. The implementation needed to feel smooth for customers while still respecting cart rules and promotional edge cases.",
+            scope: [
+              "Implement dynamic Mystery Gift and Free Gift storefront logic.",
+              "Integrate the experience into the existing design without making it feel bolted on.",
+              "Handle cart rules, promotional triggers, and edge cases cleanly."
+            ],
+            solution: [
+              "Built storefront behavior that updates gifts without forcing page reloads.",
+              "Integrated promotional logic directly into the customer flow instead of hiding it in disconnected messaging.",
+              "Covered rule handling and cart behavior so the experience stayed predictable during real shopping sessions."
+            ],
+            outcome: [
+              "Created a smoother promotional experience inside the cart and storefront.",
+              "Made advanced gift logic feel like part of the core product experience.",
+              "Improved merchandising flexibility without compromising storefront stability."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Cart logic", "Promotional UX"],
+            screenshotCaptions: [
+              "Advanced gift logic designed to feel native inside the storefront.",
+              "Cart behavior built to update dynamically instead of relying on reload-heavy flows.",
+              "Promotion handling structured for edge cases and real-world usage."
+            ]
+          },
+          {
+            id: "bazar-bizar",
+            slug: "bazar-bizar",
+            title: "Bazar Bizar",
+            summary: "A full custom Shopify theme rebuild based on a Figma redesign, while carrying over the live store's functionality into a cleaner, more modern storefront experience.",
+            brandSummary: "Bazar Bizar is an interior and lifestyle brand rooted in Antwerp and Bali, known for handcrafted homeware, furniture, lighting, and decor shaped by travel, craftsmanship, and fair-trade values.",
+            brandDescription: "Bazar Bizar presents itself as a home and lifestyle brand born from a passion for travel, with flagship roots in Antwerp and Bali. Its collections combine traditional craftsmanship with contemporary interiors, blending handmade character, coastal warmth, and fair-trade principles across furniture, lighting, tableware, textiles, and decorative pieces.",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            mobileImage: "/source/mobile/bazar-bizar-mobile.webp",
+            liveUrl: "https://bazarbizar.be/",
+            tags: ["Custom Theme", "Redesign", "Figma to Shopify"],
+            challenge: "The project was not just about making the store look different. The new theme had to follow the updated Figma direction while preserving the functionality customers and the client team already relied on in the live store.",
+            scope: [
+              "Build a fully custom Shopify theme based on the new Figma redesign.",
+              "Carry over important live-store functionality into the rebuilt storefront.",
+              "Improve structure, maintainability, and consistency while updating the visual direction."
+            ],
+            solution: [
+              "Rebuilt the storefront as a custom Shopify theme instead of layering redesign changes on top of the old implementation.",
+              "Mapped existing functionality from the live store into the new theme so key customer-facing behavior remained intact.",
+              "Used the redesign as a chance to clean up theme structure and deliver a more maintainable foundation."
+            ],
+            outcome: [
+              "Delivered a redesigned Shopify storefront based on Figma without losing important live-store functionality.",
+              "Created a cleaner and more flexible theme base for future updates.",
+              "Improved the store's long-term maintainability while preserving the customer experience."
+            ],
+            stack: ["Shopify", "Liquid", "Custom theme development", "Figma implementation", "Theme architecture"],
+            screenshotCaptions: [
+              "Custom Shopify theme rebuilt around the approved Figma redesign.",
+              "Live-store functionality preserved while the storefront experience was redesigned.",
+              "Cleaner theme structure delivered as part of the rebuild, not postponed until later."
+            ]
+          },
+          {
+            id: "elanora-skin",
+            slug: "elanora-skin",
+            title: "Elanora Skin",
+            summary: "An ongoing Shopify project where I have been supporting the store for the last six months as their Shopify expert, shipping multi-market storefront logic and retention-focused custom functionality.",
+            brandSummary: "élanora is a skincare brand from Breda inspired by Korean skincare traditions and Western simplicity, combining pure ingredients with modern formulas for everyday self-care.",
+            brandDescription: "élanora frames skincare as both effective care and a daily ritual of calm. The brand mixes Korean skincare inspiration with a cleaner Western aesthetic, positioning its products around glow, routine, and accessible self-care rather than a purely clinical beauty experience.",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            mobileImage: "/source/mobile/elanora-skin-mobile.webp",
+            liveUrl: "https://elanoraskin.com/",
+            tags: ["Ongoing support", "Multi-market", "Klaviyo API"],
+            challenge: "The store needed ongoing technical support across multiple markets, with promotional logic that could adapt by market instead of relying on one generic setup. On top of that, the client needed deeper retention functionality, including a custom back-in-stock flow connected through the Klaviyo API.",
+            scope: [
+              "Support the Shopify storefront as an ongoing technical partner over multiple months.",
+              "Implement market-specific announcement, upsell, gift, and free-shipping logic.",
+              "Build custom back-in-stock functionality integrated through the Klaviyo API."
+            ],
+            solution: [
+              "Implemented multi-market storefront behavior so promotional messaging and merchandising logic could change depending on the active market.",
+              "Built custom upsell and free gift flows that work with different free shipping thresholds across markets.",
+              "Added back-in-stock logic through the Klaviyo API to support retention and customer re-engagement beyond standard theme work."
+            ],
+            outcome: [
+              "The store now has more flexible market-specific merchandising and promotional behavior.",
+              "Retention functionality was expanded with a custom back-in-stock flow connected to Klaviyo.",
+              "Ongoing Shopify support means the store can keep evolving without piling risky ad hoc fixes on top of the theme."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Multi-market logic", "Klaviyo API"],
+            screenshotCaptions: [
+              "Ongoing Shopify support focused on scalable market-specific storefront behavior.",
+              "Promotional logic adapted by market instead of relying on one global setup.",
+              "Back-in-stock functionality extended through Klaviyo API integration."
+            ]
+          },
+          {
+            id: "petaljet",
+            slug: "petaljet",
+            title: "Petaljet",
+            summary: "An ongoing Shopify support project where the work started with a deep SEO audit, performance improvements, and continuous storefront updates that help the store keep evolving instead of standing still.",
+            brandSummary: "Petaljet is a wholesale flower supplier for florists and professional designers, shipping farm-direct blooms across the U.S. for weddings, events, and everyday floral programs.",
+            brandDescription: "Petaljet is built for B2B flower buying, serving florists, event designers, and other professional buyers with farm-direct wholesale flowers. The brand emphasizes dependable supply, broad category depth, and a workflow that supports recurring orders, large events, and everyday floral operations with less friction.",
+            image: "/source/desktop/petaljet-desktop.webp",
+            mobileImage: "/source/mobile/petaljet-mobile.webp",
+            liveUrl: "https://petaljet.com/",
+            tags: ["SEO audit", "Performance", "Ongoing support"],
+            challenge: "The store needed more than isolated fixes. It needed an SEO-first technical review, stronger performance on key pages, and ongoing support that could keep the storefront improving over time instead of slowly degrading with scattered updates.",
+            scope: [
+              "Run an SEO audit and identify technical opportunities that affect visibility and search performance.",
+              "Improve storefront performance on important pages and flows.",
+              "Stay involved as an ongoing support partner for updates, fixes, and iterative store improvements."
+            ],
+            solution: [
+              "Started with an SEO audit to identify issues and opportunities that could strengthen search visibility.",
+              "Implemented performance-focused improvements across key storefront areas to make the store lighter and more reliable.",
+              "Continued supporting the store through ongoing updates so improvements could compound instead of being treated like one-off maintenance."
+            ],
+            outcome: [
+              "The project gained a stronger SEO foundation that helped improve search visibility and rankings.",
+              "Performance work made the storefront faster and healthier on an ongoing basis.",
+              "Continuous support keeps the store evolving and prevents it from going stale between major updates."
+            ],
+            stack: ["Shopify", "Technical SEO", "Performance optimization", "Storefront support", "Ongoing iteration"],
+            screenshotCaptions: [
+              "SEO work started with a technical audit rather than guessing at isolated fixes.",
+              "Performance improvements were treated as part of the storefront roadmap, not a one-time patch.",
+              "Ongoing support keeps the store improving through steady technical evolution."
+            ]
+          }
+        ]
+      },
       process: {
-        title: "My Process",
+        title: "How I Work",
         steps: {
           step1: {
-            title: "1. First Chat 🚀",
-            description: "Let's discuss your business goals and website requirements. Planning the perfect solution - from simple websites to complete online stores. 🎯"
+            title: "1. Discovery",
+            description: "We define business goals, current blockers, storefront priorities, and what success should look like for the Shopify work."
           },
           step2: {
-            title: "2. Research 🔍",
-            description: "Analyzing industry best practices to ensure your website stands out and attracts the right customers. 📊"
+            title: "2. Audit & planning",
+            description: "I review the current theme, apps, technical constraints, and customer journeys so the implementation plan is realistic before code starts."
           },
           step3: {
-            title: "3. Design 🎨",
-            description: "Creating modern, attractive designs that look great on phones, tablets, and computers. 💫"
+            title: "3. Build",
+            description: "I implement the storefront, sections, logic, or migration work with a strong focus on maintainability and clean user experience."
           },
           step4: {
-            title: "4. Building 💻",
-            description: "Building your website using the best tools to make it fast, secure, and easy to update. ⚡"
+            title: "4. QA & refinement",
+            description: "Every key page and flow gets reviewed for responsiveness, storefront behavior, and launch-readiness before handoff."
           },
           step5: {
-            title: "5. Check & Test ✅",
-            description: "Thorough testing ensures everything works perfectly, with adjustments made as needed. 🔄"
+            title: "5. Launch support",
+            description: "I help make sure the release is stable, with fixes and final polish where needed before traffic hits the updated store."
           },
           step6: {
-            title: "6. Go Live 🚀",
-            description: "Your website goes live with ongoing support to ensure continued optimal performance. 🌟"
+            title: "6. Ongoing iteration",
+            description: "After launch, I can stay involved for improvements, new sections, technical fixes, CRO work, and store maintenance."
           }
         },
         book_call: "Book a Call"
       },
       works: {
-        title: "Works",
-        loadMore: "Load More",
+        eyebrow: "Project Catalog",
+        title: "More Shopify projects",
+        subtitle: "A broader sample of Shopify work across launch support, custom sections, multilingual builds, subscriptions, filtering, UX upgrades, and day-to-day storefront development.",
+        allWorksTitle: "All Shopify projects",
+        allWorksSubtitle: "A full catalog of Shopify work across custom builds, migrations, storefront improvements, merchandising logic, multilingual setups, and ongoing support.",
+        loadMore: "See more",
         visitWebsite: "Visit Website",
+        viewCase: "View Case Study",
+        backHome: "Back to homepage",
         contactCard: {
           title: "Your Project Here",
           text: "Have a project in mind? Let's work together to create a stunning website that helps your business grow online.",
@@ -60,147 +344,123 @@ const resources = {
         },
         projects: [
           {
-            title: "Honey Sunny Paradise",
-            url: "https://www.honeysunnyparadise.com/",
-            image: "/source/works_1.webp",
-            tech: "US client selling Hawaiian honey needed a quality, simple online store. I fully configured it and integrated FedEx shipping."
-          },
-          {
-            title: "Craft-Minds(PDPs)",
-            url: "https://craft-minds.com/",
-            image: "/source/6718b31b0e47a451312f3357 1.png",
-            tech: "Ongoing collaboration with the client, developing unique product landing pages and enhancing the theme with custom sections."
-          },
-          {
             title: "Pair Stich",
             url: "https://pairstitch.pl/",
-            image: "/source/Pairstich.webp",
+            image: "/source/desktop/pair-stich-desktop.webp",
             tech: "Implemented a custom color selector that dynamically changes based on clothing type and bypasses the 100 variant limit."
-          },
-          {
-            title: "Kramucci",
-            url: "https://kramucci.com/",
-            image: "/source/Kramucci - Premium Italian Women Bags.webp",
-            tech: "Migrated the Polish site version to English with additional improvements."
-          },
-          {
-            title: "Steppyshoes",
-            url: "https://steppyshoes.com/",
-            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
-            tech: "Migrated the English version of the site to French and added custom sections."
           },
           {
             title: "Haftx",
             url: "https://haftx.com/",
-            image: "/source/HaftX.webp",
+            image: "/source/desktop/haftx-desktop.webp",
             tech: "Developed a custom color selector that adapts to clothing type and overcomes the 100 variant limitation."
-          },
-          {
-            title: "Canvaswall",
-            url: "https://canvaswallartstore.com/",
-            image: "/source/TheCanvasWallArt.webp",
-            tech: "Developed and implemented several custom sections according to the design and technical requirements."
-          },
-          {
-            title: "The Vegan Wellness",
-            url: "https://theveganwellnessco.uk/",
-            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
-            tech: "Developed a Shopify store with a custom theme from scratch, implemented a subscription system, and integrated sections with metafields for easy administration."
           },
           {
             title: "Junofires",
             url: "https://junofires.nl/",
-            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            image: "/source/desktop/junofires-desktop.webp",
             tech: "Optimized filters in a Shopify store, added automatic image display functionality when filtering by color, improving UX and navigation."
           },
           {
             title: "Lerros",
             url: "https://www.lerros.com/",
-            image: "/source/Buy fashion for men conveniently online.webp",
+            image: "/source/desktop/lerros-desktop.webp",
             tech: "Updated the theme in a Shopify store, correctly transferred content and metafields, preserved data structure, and configured product display for stable operation."
           },
           {
             title: "Kiki Green",
-            url: "https://kikigreen.com/",
-            image: "/source/kiki-green.png",
+            url: "https://kiki-green.com/",
+            image: "/source/desktop/kiki-green-desktop.webp",
             tech: "Developed a full-cycle e-commerce solution from scratch, including complete online store creation and integration with various plugins such as loyalty programs and product subscriptions."
           },
         {
           title: "Junior's Cheesecake",
           url: "https://juniorscheesecake.com/",
-          image: "/source/Juniors Cheesecake.png",
+          image: "/source/desktop/juniors-cheesecake-desktop.webp",
           tech: "Created new custom sections based on Figma design, developed email templates and handling, and implemented serving page functionality."
         },
         {
           title: "Spring Mountain Vineyard",
           url: "https://club.springmountainvineyard.com/",
-          image: "/source/Spring Mountain Vineyard.png",
+          image: "/source/desktop/spring-mountain-vineyard-desktop.webp",
           tech: "Redesigned the collection page with improved filter design and product cards, implemented dynamic breadcrumb logic that updates without page refresh for better UX."
         },
         {
           title: "Lunesi",
           url: "https://lunesi.co.uk/",
-          image: "/source/lunesi.png",
+          image: "/source/desktop/lunesi-desktop.webp",
           tech: "Developed a dynamic cart drawer upsell section that intelligently displays products based on cart contents, fully configurable through the theme editor. Enhanced header with customizable color schemes and a configurable announcement banner for flexible branding and promotions."
         },
-        {
-          title: "Nimfa",
-          url: "https://nimfa.nl/",
-          image: "/source/nimfa.png",
-          tech: "Built a custom Shopify theme from scratch with pixel-perfect implementation according to Figma design. Developed blog functionality, upsell sections, and full multilingual support (English, Ukrainian, Dutch) for the premium intimate care brand."
-        },
+          {
+            title: "Nimfa",
+            url: "https://nimfa.nl/",
+            image: "/source/desktop/nimfa-desktop.webp",
+            caseStudySlug: "nimfa",
+            tech: "Built a custom Shopify theme from scratch with pixel-perfect implementation according to Figma design. Developed blog functionality, upsell sections, and full multilingual support (English, Ukrainian, Dutch) for the premium intimate care brand."
+          },
           {
             title: "Melinava",
             url: "https://melinava.nl/",
-            image: "/source/melinava.png",
+            image: "/source/desktop/melinava-desktop.webp",
             tech: "Final pre-launch polish and QA before going live. I owned the full “ready for traffic” checklist: key customer journeys, cart and checkout sanity checks, responsive issues, speed, and visual bugs so the site was stable and conversion ready."
           },
           {
             title: "Petaljet",
             url: "https://petaljet.com/",
-            image: "/source/petaljet.png",
+            image: "/source/desktop/petaljet-desktop.webp",
+            caseStudySlug: "petaljet",
             tech: "Ongoing store support within a team. I improve SEO and performance across key pages, ship changes fast, keep releases clean, and handle day to day updates without breaking the storefront."
           },
           {
             title: "Indian Affairs",
             url: "https://indianaffairs.de/",
-            image: "/source/indian-affairs.png",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            caseStudySlug: "indian-affairs",
             tech: "Migrated the store from a legacy theme to Shopify Online Store 2.0 (Prestige). I transferred all content, rebuilt custom functionality, implemented client requirements from the spec, and aligned styling and UX across the site."
           },
           {
             title: "SafeTag Tracking",
             url: "https://safetagtracking.com/",
-            image: "/source/safeatags.png",
+            image: "/source/desktop/safe-tag-tracking-desktop.webp",
             tech: "Custom Shopify theme development from Figma with full customization and multilingual setup. Built flexible sections for easy content management, delivered pixel accurate UI, and set the foundation for scaling pages and markets."
           },
           {
             title: "Virea",
             url: "https://virea.se/",
-            image: "/source/virea.png",
-            tech: "Implemented a refreshed design for the homepage, product pages, and core templates. The store is on continuous support: new features, performance optimization, UX improvements, and regular technical iterations."
+            image: "/source/desktop/virea-desktop.webp",
+            tech: "Implemented a refreshed design for the homepage, product pages, and core templates. I still support the store as their Shopify expert, handling new features, performance optimization, UX improvements, and ongoing technical iterations."
           },
           {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/m-oceans.png",
-            tech: "Migrated from an old theme to a new Shopify 2.0 architecture and carried over custom logic. Added new functionality, improved page structure, and ensured all critical store flows worked reliably after launch."
+            image: "/source/desktop/m-oceans-desktop.webp",
+            tech: "Migrated from an old theme to Shopify 2.0, carried over custom logic, and improved key storefront flows. I still support the project as their Shopify expert, shipping new functionality and keeping the store stable after launch."
+          },
+          {
+            title: "Elanora Skin",
+            url: "https://elanoraskin.com/",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            caseStudySlug: "elanora-skin",
+            tech: "Ongoing Shopify support for the last six months as the store's Shopify expert. Implemented multi-market announcement banners, market-specific upsell and free gift logic, and different free shipping thresholds for different markets."
           },
           {
             title: "Silk Tallow",
             url: "https://silktallow.com/",
-            image: "/source/silk-tallow.png",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            caseStudySlug: "silk-tallow",
             tech: "Built advanced Mystery Gift and Free Gift logic that works without page reloads. Integrated it seamlessly into the storefront design for a smooth experience, including rules, cart behavior, and edge case handling."
           },
           {
             title: "Bella Bloom Box",
             url: "https://bellabloombox.se/",
-            image: "/source/httpsbellabloombox.png",
+            image: "/source/desktop/bella-bloom-box-desktop.webp",
             tech: "Built a full Shopify store based on a Lovable design. Translated the design into theme sections and templates, set up content structure, and made it easy for the client to manage without code."
           },
           {
             title: "Bazar Bizar",
             url: "https://bazarbizar.be/",
-            image: "/source/bazarbizar.png",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            caseStudySlug: "bazar-bizar",
             tech: "Worked on a large, complex Shopify store with many templates and custom logic. Delivered deep customization across sections and layouts, implemented functional improvements, and supported larger changes while keeping the site stable."
           }
         ]
@@ -254,35 +514,37 @@ const resources = {
         reviews: [
           {
             name: "Oleksandr",
-            image: "/source/1.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Kiril is a lifesaver! He fixed all the issues on my Shopify site and even gave me tips to improve it. I'm so happy with the results."
           },
           {
             name: "Anastasia",
-            image: "/source/4.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "I was so lost trying to set up my online store, but Kiril made it a breeze! Now I have a beautiful website that actually gets sales. Thanks, Kiril!"
           },
           {
             name: "Dmytro",
-            image: "/source/3.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Working with Kiril was a fantastic experience. He's a true expert in Shopify and really cares about his clients. I highly recommend him!"
           },
           {
             name: "Artem",
-            image: "/source/2.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Kiril went above and beyond to create a stunning website for my business. He's a true professional and a pleasure to work with."
           },
           {
             name: "Hanna",
-            image: "/source/5.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "My new website is everything I wanted and more! Kiril is incredibly talented and easy to work with. I can't thank him enough."
           }
         ]
       },
       contact: {
-        title: "LET'S WORK TOGETHER",
-        subtitle: "everything starts with a conversation",
+        title: "Contact",
+        subtitle: "Need help with a Shopify project?",
         email: "karatitsynkiril@gmail.com",
+        note: "Book a call or send a short email with your store link and what you need.",
+        audit: "Free store audit and project discussion",
         book_call: "Book a Call",
         linkedin: "LinkedIn",
         github: "GitHub",
@@ -292,7 +554,7 @@ const resources = {
       blog: {
         title: "Blog",
         subtitle: "Thoughts on creating high-performing online experiences.",
-        readMore: "Read more",
+        readMore: "Читати далі",
         backToList: "Back to all articles",
         notFound: "Article not found.",
         featuredTitle: "Featured insights",
@@ -340,94 +602,388 @@ const resources = {
         title: "FAQ",
         questions: [
           {
-            question: "What makes your websites special? 💻",
-            answer: "I create websites that are fast, look great, and are easy for your customers to use. They work perfectly on phones, tablets, and computers. 🚀"
+            question: "What Shopify work do you usually take on?",
+            answer: "Most projects fall into one of four buckets: custom theme work, Online Store 2.0 migrations, feature development for the storefront, and ongoing support after launch."
           },
           {
-            question: "Why choose Shopify for my online store? 🛍️",
-            answer: "Shopify is the safest and easiest way to run an online store. It has everything you need to start selling online quickly. 🔒"
+            question: "Can you work inside an existing Shopify store?",
+            answer: "Yes. I regularly work inside live Shopify stores to improve sections, product pages, cart behavior, filtering, integrations, speed, and launch readiness."
           },
           {
-            question: "Why work with me? 🌟",
-            answer: "I create websites that not only look beautiful but also help your business grow. I'm here to support you every step of the way. ⚡"
+            question: "Do you handle migrations to Shopify Online Store 2.0?",
+            answer: "Yes. I can help move a store from a legacy setup to OS 2.0 while protecting content structure, rebuilding custom logic, and reducing launch risk."
           },
           {
-            question: "How much? 💰",
-            answer: "Each project is unique - let's discuss your specific needs and goals to find the right solution for your budget. 📊"
+            question: "Can you help after launch too?",
+            answer: "Yes. Many clients keep me involved after launch for fixes, experiments, SEO and speed improvements, new sections, and ongoing storefront development."
           },
           {
-            question: "Support after launch? 🔄",
-            answer: "Yes! I provide ongoing support to ensure your website stays up-to-date and performs at its best. 🛡️"
+            question: "How do we start?",
+            answer: "Send the store URL, the problem you want solved, and any deadlines or constraints. From there I can suggest the cleanest next step, whether that is an audit, a small sprint, or a larger implementation."
           },
           {
-            question: "Who do you prefer, a Dog or a Cat? 🐱",
-            answer: "Cats are my favorite! They're independent, graceful, and make perfect coding companions. 😺"
+            question: "Do you work with designers or existing specs?",
+            answer: "Yes. I can build from Figma, Loom videos, written specs, or an existing storefront reference, and I also help tighten the implementation plan when requirements are still rough."
           }
         ],
         book_call: "Book a Call"
       },
       header: {
-        about: "About Me",
+        services: "Services",
+        cases: "Case Studies",
         process: "Process",
         faq: "FAQ",
-        works: "Works",
-        blog: "Blog",
         contact: "Contact Me",
+        bookCall: "Book a Call",
+        about: "About Me",
+        works: "Projects",
+        blog: "Blog",
         resume: "Resume"
+      },
+      footer: {
+        blurb: "Shopify development for brands that need custom work, cleaner UX, and dependable support without unnecessary complexity.",
+        follow: "Elsewhere",
+        telegram: "Telegram",
+        instagram: "Instagram",
+        rights: "All rights reserved."
       }
     }
   },
   uk: {
     translation: {
       hero: {
-        web: "Веб",
-        title: "Я Кіріл",
-        subtitle: "Я створюю веб-сайти, які роблять ваш бізнес помітним в інтернеті.",
+        eyebrow: "Shopify Розробник",
+        title: "Я створюю Shopify-магазини, які",
+        titleAccent: "конвертують, масштабуються і залишаються зручними в управлінні.",
+        subtitle: "Кастомні теми, міграції на Online Store 2.0, інтеграції, CRO-орієнтована робота зі storefront і довгострокова технічна підтримка для брендів, яким замало шаблонного рішення.",
+        description: "Якщо магазину потрібен чистіший UX, швидші сторінки, сильніша мерчандайзинг-логіка або кастомна функціональність, я допоможу реалізувати це без ризику для storefront.",
         book_call: "Забронювати дзвінок",
         send_message: "Написати мені",
+        proofItems: [
+          "5-зіркові відгуки на Upwork від актуальних Shopify-клієнтів.",
+          "Практичний досвід у кастомних збірках, міграціях, CRO і support-retainer задачах.",
+          "Фокус на Shopify-first реалізації, чистому UX і стабільних релізах."
+        ],
+        servicePills: [
+          "Запуск і міграції магазинів",
+          "Кастомізація тем",
+          "Інтеграції та API",
+          "Швидкість і SEO"
+        ],
         or: "або",
         words: ["Розробник", "Чарівник", "Експерт", "Майстер", "Спеціаліст", "Гуру", "Віртуоз", "Маестро"]
       },
       about: {
-        title: "Мене звати Кіріл Каратіцин",
-        text: "Я створюю красиві веб-сайти та онлайн-магазини, які допомагають бізнесу продавати більше в інтернеті. Спеціалізуюся на розробці сайтів, які легко використовувати та виглядають чудово на будь-якому пристрої.",
-        text_2: "Головний акцент робиться на створенні веб-сайтів, які швидко працюють, легко навігуються та допомагають перетворити відвідувачів в клієнтів. Чи вам потрібен новий веб-сайт або ви хочете покращити свій існуючий, давайте зробимо це.",
+        eyebrow: "Чому зі мною працюють Shopify-команди",
+        title: "Shopify-партнер, який думає не лише про код",
+        text: "Я працюю з Shopify-брендами, яким потрібні не просто точкові правки. Моя задача — перетворити вимоги бізнесу на чисті, конверсійно-орієнтовані рішення, які швидко доставляються й залишаються зручними для команди після запуску.",
+        text_2: "Це включає кастомну Liquid-розробку, міграції на Online Store 2.0, інтеграції, покращення мерчандайзингу, мультимовні storefront-рішення та постійну підтримку для магазинів, які розвиваються після релізу.",
+        highlights: [
+          "Кастомна розробка тем із гнучкими секціями та чистою storefront-логікою.",
+          "CRO-мислення в реалізації: discovery товарів, поведінка кошика і швидкість."
+        ],
         lets_work: "Давайте працювати разом"
       },
+      services: {
+        eyebrow: "Послуги",
+        title: "Shopify-послуги, прив’язані до бізнес-результату",
+        subtitle: "Кожна співпраця побудована так, щоб магазин було легше масштабувати, легше підтримувати і простіше конвертувати трафік у продажі.",
+        items: [
+          {
+            title: "Запуск і міграції магазинів",
+            description: "Запуск нового Shopify-магазину або перехід із legacy-теми на чистішу архітектуру Online Store 2.0 без втрати критичного контенту чи клієнтських флоу."
+          },
+          {
+            title: "Кастомізація тем",
+            description: "Розробка і доопрацювання секцій, шаблонів і storefront-досвіду так, щоб магазин працював під бренд і задачі мерчандайзингу."
+          },
+          {
+            title: "Інтеграції та API",
+            description: "Підключення додатків, підписок, оплат, CRM і зовнішніх сервісів так, щоб усе надійно працювало в storefront та адмінці."
+          },
+          {
+            title: "Швидкість і SEO",
+            description: "Покращення швидкості завантаження, зниження frontend-тертя і посилення технічної бази, яка допомагає і SEO, і конверсії."
+          },
+          {
+            title: "Кастомна Shopify-функціональність",
+            description: "Реалізація складної storefront-логіки: upsell, gift-механіки, bundle-флоу, динамічний кошик та нетипові товарні сценарії."
+          },
+          {
+            title: "Підтримка та аудити",
+            description: "Надійний технічний партнер для аудиту магазину, підготовки до запуску, виправлення багів, maintenance і постійних ітерацій."
+          }
+        ]
+      },
+      caseStudies: {
+        eyebrow: "Кейси",
+        title: "Обрані Shopify-проєкти",
+        subtitle: "Три проєкти, які показують мій підхід до кастомних тем, міграцій і складної storefront-функціональності без шаблонних рішень.",
+        viewCase: "Дивитися кейс",
+        visitStore: "Перейти на сайт",
+        backToCases: "Назад до всіх проєктів",
+        notFound: "Кейс не знайдено.",
+        mediaTitle: "Медіа",
+        desktopLabel: "Desktop",
+        mobileLabel: "Mobile",
+        mobilePlaceholder: "Тимчасовий placeholder для мобільної версії. Окремий mobile preview буде додано пізніше.",
+        aboutBrandTitle: "Про бренд",
+        readMore: "Read more",
+        challengeTitle: "Задача",
+        scopeTitle: "Обсяг робіт",
+        solutionTitle: "Рішення",
+        stackTitle: "Стек і компетенції",
+        outcomeTitle: "Результат",
+        screenshotTitle: "Ключові акценти",
+        moreProjectsTitle: "Більше Shopify-проєктів",
+        moreProjectsSubtitle: "Ширший зріз Shopify-робіт: міграції, CRO, підтримка, кастомні секції та покращення storefront.",
+        items: [
+          {
+            id: "nimfa",
+            slug: "nimfa",
+            title: "Nimfa",
+            summary: "Преміум секс-шопу був потрібен кастомний Shopify-магазин з Figma, мультимовністю, масштабованими секціями та storefront-рівнем якості, готовим до преміального запуску.",
+            brandSummary: "Nimfa — це преміум бренд intimate wellness і секс-шоп, побудований навколо делікатного, стильного і безстигматного self-care для жінок.",
+            brandDescription: "Nimfa подає інтимність як природну, елегантну і вільну від осуду частину життя. Бренд оформлює товари для задоволення та intimate wellness у м’якшому преміальному контексті, з фокусом на self-acceptance, приватність і досвід покупки, який ближчий до сучасного self-care, ніж до класичного adult store.",
+            image: "/source/desktop/nimfa-desktop.webp",
+            mobileImage: "/source/mobile/nimfa-mobile.webp",
+            liveUrl: "https://nimfa.nl/",
+            tags: ["Кастомна тема", "Мультимовність", "Figma to Shopify"],
+            challenge: "Магазин мав виглядати преміально з першого дня і водночас залишатися зручним для контентної команди. Потрібно було перенести детальний дизайн у Shopify без втрати гнучкості, мультимовної структури й майбутньої керованості.",
+            scope: [
+              "Побудувати кастомну Shopify-тему з нуля на основі Figma.",
+              "Створити гнучкі секції для landing, product та editorial контенту.",
+              "Підтримати мультимовний storefront і зручні оновлення з адмінки."
+            ],
+            solution: [
+              "Реалізував pixel-accurate storefront з перевикористовуваними theme sections і шаблонами.",
+              "Вбудував блог і upsell-функціональність прямо в тему, щоб контент і мерчандайзинг розвивалися разом.",
+              "Побудував структуру так, щоб клієнт міг керувати змінами контенту без залежності від коду."
+            ],
+            outcome: [
+              "Отримано преміальний Shopify-storefront, що відповідає затвердженому дизайну.",
+              "Мультимовне масштабування закладене в тему з самого старту.",
+              "Магазин готовий до подальших мерчандайзингових і контентних оновлень без перебудови."
+            ],
+            stack: ["Shopify", "Liquid", "Theme sections", "Мультимовний setup", "Figma implementation"],
+            screenshotCaptions: [
+              "Кастомний storefront-стиль, тісно прив’язаний до затвердженого Figma-напряму.",
+              "Архітектура теми розрахована на повторні контентні оновлення без правок коду.",
+              "Мультимовний фундамент для преміального Shopify-бренду."
+            ]
+          },
+          {
+            id: "indian-affairs",
+            slug: "indian-affairs",
+            title: "Indian Affairs",
+            summary: "Legacy-магазин потрібно було перевести на Shopify Online Store 2.0, зберігши структуру, відбудувавши кастомну функціональність і одночасно почистивши UX по всьому сайту.",
+            brandSummary: "Indian Affairs — це fashion-бренд для дітей і дорослих, відомий timeless-речами, натуральними матеріалами і handcrafted деталями, пов’язаними з індійськими текстильними традиціями.",
+            brandDescription: "Indian Affairs пропонує одяг та аксесуари для дітей і дорослих з акцентом на timeless design, м’які матеріали та ремісничий характер. У багатьох речах відчуваються техніки на кшталт hand block printing, а сам бренд ближчий до повільнішої, продуманішої моди, ніж до швидкого трендового ритейлу.",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            mobileImage: "/source/mobile/indian-affairs-mobile.webp",
+            liveUrl: "https://indianaffairs.de/",
+            tags: ["Міграція", "Online Store 2.0", "Перебудова теми"],
+            challenge: "Цю міграцію не можна було розглядати лише як візуальний редизайн. Контент, кастомна логіка та щоденні операції магазину мали пережити перехід на нову архітектуру без нестабільності.",
+            scope: [
+              "Мігрувати storefront з legacy-setup на Shopify Online Store 2.0.",
+              "Перенести контент і відбудувати кастомну поведінку в новій theme-архітектурі.",
+              "Вирівняти стилі, UX і ключові customer journeys по всьому сайту."
+            ],
+            solution: [
+              "Перезібрав ключову функціональність всередині OS 2.0 замість перенесення legacy-патчів.",
+              "Зберіг важливі контентні зв’язки й store-логіку в процесі міграції.",
+              "Використав міграцію як шанс одночасно почистити UX і покращити підтримуваність теми."
+            ],
+            outcome: [
+              "Магазин перенесено на масштабованішу Shopify-архітектуру.",
+              "Ризик launch-regression зменшено завдяки свідомій перебудові критичних флоу.",
+              "Клієнт отримав чистішу базу для наступних storefront-оновлень."
+            ],
+            stack: ["Shopify OS 2.0", "Liquid", "Theme migration", "UX refinement", "Launch QA"],
+            screenshotCaptions: [
+              "Міграція з фокусом на збереження структури та модернізацію theme-base.",
+              "Кастомні вимоги перебудовані під підтримуваний Shopify-setup.",
+              "UX і стилі вирівняні під час переходу, а не винесені на потім."
+            ]
+          },
+          {
+            id: "silk-tallow",
+            slug: "silk-tallow",
+            title: "Silk Tallow",
+            summary: "Магазину була потрібна складна Mystery Gift і Free Gift логіка, яка виглядає природно в storefront, оновлюється миттєво і коректно обробляє edge cases без перезавантаження сторінки.",
+            brandSummary: "Silk Tallow — це бренд натурального догляду за шкірою, побудований навколо tallow-based формул, простих інгредієнтів і toxin-free рутини, натхненної природою.",
+            brandDescription: "Silk Tallow будує позиціонування навколо природної простоти та skincare без штучних інгредієнтів. Бренд пов’язує свої продукти з живленням, захистом і поверненням до чистішого, повільнішого догляду, де tallow-based формули стають основою більш мінімалістичної і nature-led філософії.",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            mobileImage: "/source/mobile/silk-tallow-mobile.webp",
+            liveUrl: "https://silktallow.com/",
+            tags: ["Кастомна логіка", "Cart UX", "Merchandising"],
+            challenge: "Gift-логіка часто ламає UX, коли тримається на незграбних reload-сценаріях або крихких скриптах. Тут усе мало працювати плавно для покупця і водночас коректно дотримуватись правил кошика та промо-механік.",
+            scope: [
+              "Реалізувати динамічну Mystery Gift і Free Gift логіку у storefront.",
+              "Вписати досвід у наявний дизайн так, щоб це не виглядало прикрученим зверху.",
+              "Акуратно обробити cart rules, promo triggers і edge cases."
+            ],
+            solution: [
+              "Побудував storefront-поведінку, яка оновлює gift-сценарії без page reloads.",
+              "Інтегрував промо-логіку прямо в customer flow замість ізольованих повідомлень.",
+              "Продумав правила і cart-поведінку так, щоб досвід залишався передбачуваним у реальних покупках."
+            ],
+            outcome: [
+              "Промо-досвід у кошику та storefront став плавнішим і зрозумілішим.",
+              "Складна gift-логіка сприймається як частина core product experience.",
+              "Мерчандайзинг став гнучкішим без компромісу по стабільності storefront."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Cart logic", "Promotional UX"],
+            screenshotCaptions: [
+              "Gift-логіка, яка відчувається нативною частиною storefront.",
+              "Cart-поведінка оновлюється динамічно, без reload-heavy сценаріїв.",
+              "Промо-механіка спроєктована з урахуванням edge cases і реального використання."
+            ]
+          },
+          {
+            id: "bazar-bizar",
+            slug: "bazar-bizar",
+            title: "Bazar Bizar",
+            summary: "Повна кастомна Shopify-тема на основі Figma-редизайну з перенесенням усього функціоналу з live-магазину в чистіший і сучасніший storefront.",
+            brandSummary: "Bazar Bizar — це interior і lifestyle бренд з корінням в Антверпені та на Балі, відомий handcrafted homeware, furniture, lighting і decor, сформованими подорожами, ремеслом і fair-trade цінностями.",
+            brandDescription: "Bazar Bizar позиціонує себе як home і lifestyle бренд, народжений з любові до подорожей, з флагманською присутністю в Антверпені та на Балі. Їхні колекції поєднують традиційне ремесло з сучасними інтер’єрами, змішуючи handmade характер, coastal warmth і fair-trade принципи у меблях, освітленні, tableware, текстилі та декорі.",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            mobileImage: "/source/mobile/bazar-bizar-mobile.webp",
+            liveUrl: "https://bazarbizar.be/",
+            tags: ["Кастомна тема", "Редизайн", "Figma to Shopify"],
+            challenge: "Завдання було не лише в новому візуалі. Нова тема мала точно відобразити оновлений Figma-дизайн і водночас зберегти функціональність, на яку вже покладалися клієнт і покупці в live-магазині.",
+            scope: [
+              "Побудувати повністю кастомну Shopify-тему на основі нового Figma-редизайну.",
+              "Перенести важливий функціонал з live-магазину в новий storefront.",
+              "Покращити структуру, підтримуваність і цілісність теми разом з оновленням дизайну."
+            ],
+            solution: [
+              "Перезібрав storefront як повністю кастомну Shopify-тему замість нашарування редизайну поверх старої реалізації.",
+              "Переніс ключовий live-функціонал у нову тему, щоб зберегти звичну customer-facing поведінку.",
+              "Використав редизайн як можливість одночасно почистити архітектуру теми і закласти кращу базу для підтримки."
+            ],
+            outcome: [
+              "Отримано редизайнений Shopify-storefront на основі Figma без втрати важливого live-функціоналу.",
+              "Створено чистішу і гнучкішу theme-base для подальших оновлень.",
+              "Підтримуваність магазину покращена без компромісу для customer experience."
+            ],
+            stack: ["Shopify", "Liquid", "Кастомна тема", "Figma implementation", "Архітектура теми"],
+            screenshotCaptions: [
+              "Кастомна Shopify-тема, повністю перебудована навколо затвердженого Figma-редизайну.",
+              "Функціональність live-магазину збережена, поки storefront отримував нову візуальну систему.",
+              "Чистіша структура теми стала частиною перебудови, а не відкладеним етапом."
+            ]
+          },
+          {
+            id: "elanora-skin",
+            slug: "elanora-skin",
+            title: "Elanora Skin",
+            summary: "Постійний Shopify-проєкт, який я вже пів року веду як Shopify-експерт магазину, розвиваючи мультимаркет-логіку storefront і retention-функціональність.",
+            brandSummary: "élanora — це skincare-бренд з Бреди, натхненний корейськими skincare-традиціями та західною простотою, який поєднує чисті інгредієнти з сучасними формулами для щоденного self-care.",
+            brandDescription: "élanora подає догляд за шкірою як поєднання ефективності та щоденного ритуалу спокою. Бренд змішує натхнення корейським skincare з більш чистою західною естетикою, позиціонуючи продукти навколо glow, routine і доступного self-care, а не виключно клінічного beauty-підходу.",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            mobileImage: "/source/mobile/elanora-skin-mobile.webp",
+            liveUrl: "https://elanoraskin.com/",
+            tags: ["Постійна підтримка", "Мультимаркет", "Klaviyo API"],
+            challenge: "Магазину була потрібна постійна технічна підтримка для кількох ринків, де промо-логіка мала відрізнятися залежно від маркету, а не працювати одним шаблоном для всіх. Додатково клієнту потрібна була retention-функціональність глибше за стандартну тему, зокрема кастомний back-in-stock flow через Klaviyo API.",
+            scope: [
+              "Вести Shopify-storefront як постійний технічний партнер протягом багатьох місяців.",
+              "Реалізувати announcement, upsell, gift і free-shipping логіку з прив'язкою до конкретних маркетів.",
+              "Побудувати кастомну back-in-stock функціональність через інтеграцію з Klaviyo API."
+            ],
+            solution: [
+              "Реалізував мультимаркет-поведінку storefront, де промо-повідомлення і merchandising-логіка змінюються залежно від активного маркету.",
+              "Побудував кастомні upsell і free gift сценарії з різними free shipping thresholds для різних ринків.",
+              "Додав back-in-stock логіку через Klaviyo API, щоб посилити retention і повторне залучення клієнтів поза межами стандартної theme-логіки."
+            ],
+            outcome: [
+              "Storefront отримав гнучкішу мультимаркет-промо і merchandising-поведінку.",
+              "Retention-функціональність розширена кастомним back-in-stock flow, підключеним до Klaviyo.",
+              "Постійна Shopify-підтримка дозволяє магазину розвиватися без накопичення ризикових точкових фіксів у темі."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Мультимаркет логіка", "Klaviyo API"],
+            screenshotCaptions: [
+              "Постійна Shopify-підтримка з фокусом на масштабовану мультимаркет-поведінку storefront.",
+              "Промо-логіка адаптована під конкретні маркети, а не зведена до одного глобального сценарію.",
+              "Back-in-stock функціональність розширена через інтеграцію з Klaviyo API."
+            ]
+          },
+          {
+            id: "petaljet",
+            slug: "petaljet",
+            title: "Petaljet",
+            summary: "Постійний Shopify-проєкт, де робота почалася з глибокого SEO-аудиту, покращення performance і далі перейшла в безперервну підтримку та розвиток storefront.",
+            brandSummary: "Petaljet — це wholesale flower supplier для флористів і професійних дизайнерів, який доставляє farm-direct квіти по США для весіль, подій і щоденних floral-програм.",
+            brandDescription: "Petaljet побудований навколо B2B-закупівлі квітів для флористів, event-дизайнерів та інших професійних покупців. Бренд робить акцент на надійному постачанні, широкому асортименті й workflow, який підтримує регулярні замовлення, великі події та щоденні floral-операції з меншим тертям.",
+            image: "/source/desktop/petaljet-desktop.webp",
+            mobileImage: "/source/mobile/petaljet-mobile.webp",
+            liveUrl: "https://petaljet.com/",
+            tags: ["SEO аудит", "Performance", "Постійна підтримка"],
+            challenge: "Магазину були потрібні не точкові фікси, а сильна технічна база: SEO-аудит, покращення швидкості на ключових сторінках і постійна підтримка, яка дозволяє storefront еволюціонувати, а не деградувати через випадкові оновлення.",
+            scope: [
+              "Провести SEO-аудит і знайти технічні можливості, що впливають на видимість у пошуку.",
+              "Покращити performance storefront на ключових сторінках і флоу.",
+              "Підтримувати магазин далі через постійні оновлення, фікси та ітеративні покращення."
+            ],
+            solution: [
+              "Почав із SEO-аудиту, щоб знайти проблеми й точки росту для пошукової видимості.",
+              "Впровадив performance-покращення на важливих storefront-зонах, щоб магазин працював швидше і стабільніше.",
+              "Продовжив вести магазин у режимі ongoing support, щоб покращення накопичувалися, а не зводилися до разового maintenance."
+            ],
+            outcome: [
+              "Проєкт отримав сильнішу SEO-базу, що допомогло покращити видимість і позиції в пошуку.",
+              "Performance-робота зробила storefront швидшим і технічно здоровішим у довшій перспективі.",
+              "Постійна підтримка дозволяє магазину еволюціонувати і не втрачати якість між великими оновленнями."
+            ],
+            stack: ["Shopify", "Технічне SEO", "Performance optimization", "Storefront support", "Постійні ітерації"],
+            screenshotCaptions: [
+              "SEO-робота почалася з технічного аудиту, а не з випадкових точкових правок.",
+              "Performance-покращення стали частиною roadmap storefront, а не одноразовим патчем.",
+              "Постійна підтримка тримає магазин живим через послідовну технічну еволюцію."
+            ]
+          }
+        ]
+      },
       process: {
-        title: "Мій Процес",
+        title: "Як я працюю",
         steps: {
           step1: {
-            title: "1. Перша Розмова 🚀",
-            description: "Обговоримо цілі вашого бізнесу та вимоги до веб-сайту. Планування ідеального рішення - від простих веб-сайтів до повноцінних інтернет-магазинів. 🎯"
+            title: "1. Discovery",
+            description: "Фіксуємо бізнес-цілі, поточні блокери, пріоритети storefront і розуміння того, як виглядатиме успіх для Shopify-задачі."
           },
           step2: {
-            title: "2. Дослідження 🔍",
-            description: "Аналіз найкращих практик галузі, щоб ваш веб-сайт виділявся та привертав потрібних клієнтів. 📊"
+            title: "2. Аудит і планування",
+            description: "Я переглядаю тему, додатки, технічні обмеження і customer journeys, щоб план реалізації був реалістичним ще до старту коду."
           },
           step3: {
-            title: "3. Дизайн 🎨",
-            description: "Створення сучасних, привабливих дизайнів, які чудово виглядають на телефонах, планшетах та комп'ютерах. 💫"
+            title: "3. Реалізація",
+            description: "Впроваджую storefront, секції, логіку або міграцію з акцентом на підтримуваність і чистий користувацький досвід."
           },
           step4: {
-            title: "4. Розробка 💻",
-            description: "Створення вашого веб-сайту з використанням найкращих інструментів, щоб зробити його швидким, безпечним та легким в оновленні. ⚡"
+            title: "4. QA і полірування",
+            description: "Кожна ключова сторінка і флоу перевіряються на адаптивність, поведінку storefront і готовність до запуску."
           },
           step5: {
-            title: "5. Перевірка і Тестування ✅",
-            description: "Ретельне тестування забезпечує ідеальну роботу всього, з внесенням необхідних коригувань. 🔄"
+            title: "5. Підтримка запуску",
+            description: "Допомагаю довести реліз до стабільного стану: фінальні правки, фікси і передзапускове полірування перед приходом трафіку."
           },
           step6: {
-            title: "6. Запуск 🚀",
-            description: "Ваш веб-сайт запускається з постійною підтримкою для забезпечення оптимальної роботи. 🌟"
+            title: "6. Подальші ітерації",
+            description: "Після запуску можу залишатися в проєкті для покращень, нових секцій, технічних задач, CRO-експериментів і maintenance."
           }
         },
         book_call: "Забронювати дзвінок"
       },
       works: {
-        title: "Роботи",
-        loadMore: "Завантажити ще",
+        eyebrow: "Каталог проєктів",
+        title: "Більше Shopify-проєктів",
+        subtitle: "Ширший зріз Shopify-робіт: передзапускова підтримка, кастомні секції, мультимовні збірки, підписки, фільтрація, UX-покращення і щоденна storefront-розробка.",
+        allWorksTitle: "Усі Shopify-проєкти",
+        allWorksSubtitle: "Повний каталог Shopify-робіт: кастомні збірки, міграції, storefront-покращення, мерчандайзинг-логіка, мультимовні сетапи і постійна підтримка.",
+        loadMore: "Дивитися більше",
         visitWebsite: "Відвідати сайт",
+        viewCase: "Дивитися кейс",
+        backHome: "Назад на головну",
         contactCard: {
           title: "Ваш Проект Тут",
           text: "Маєте проект на думці? Давайте працювати разом, щоб створити приголомшливий веб-сайт, який допоможе вашому бізнесу зростати в інтернеті.",
@@ -435,147 +991,123 @@ const resources = {
         },
         projects: [
           {
-            title: "Honey Sunny Paradise",
-            url: "https://www.honeysunnyparadise.com/",
-            image: "/source/works_1.webp",
-            tech: "Клієнт із США, що продає гавайський мед, потребував якісний, простий інтернет-магазин. Я повністю налаштував його та інтегрував доставку FedEx."
-          },
-          {
-            title: "Craft-Minds(PDPs)",
-            url: "https://craft-minds.com/",
-            image: "/source/6718b31b0e47a451312f3357 1.png",
-            tech: "Постійна співпраця з клієнтом, розробка унікальних посадочних сторінок продуктів та покращення теми власними секціями."
-          },
-          {
             title: "Pair Stich",
             url: "https://pairstitch.pl/",
-            image: "/source/Pairstich.webp",
+            image: "/source/desktop/pair-stich-desktop.webp",
             tech: "Реалізовано кастомний селектор кольорів, який динамічно змінюється за типом одягу та обходить ліміт у 100 варіантів."
-          },
-          {
-            title: "Kramucci",
-            url: "https://kramucci.com/",
-            image: "/source/Kramucci - Premium Italian Women Bags.webp",
-            tech: "Перенесено польську версію сайту на англійську з додатковими покращеннями."
-          },
-          {
-            title: "Steppyshoes",
-            url: "https://steppyshoes.com/",
-            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
-            tech: "Перенесено англійську версію сайту на французьку та додано кастомні секції."
           },
           {
             title: "Haftx",
             url: "https://haftx.com/",
-            image: "/source/HaftX.webp",
+            image: "/source/desktop/haftx-desktop.webp",
             tech: "Розроблено кастомний селектор кольорів, який адаптується до типу одягу та обходить обмеження у 100 варіантів."
-          },
-          {
-            title: "Canvaswall",
-            url: "https://canvaswallartstore.com/",
-            image: "/source/TheCanvasWallArt.webp",
-            tech: "Розроблено та впроваджено кілька кастомних секцій згідно з дизайном і технічними вимогами."
-          },
-          {
-            title: "The Vegan Wellness",
-            url: "https://theveganwellnessco.uk/",
-            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
-            tech: "Розробив Shopify-магазин із кастомною темою з нуля, реалізував систему підписки та інтегрував секції з метаполями для зручного адміністрування."
           },
           {
             title: "Junofires",
             url: "https://junofires.nl/",
-            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            image: "/source/desktop/junofires-desktop.webp",
             tech: "Оптимізував фільтри в Shopify-магазині, додав функцію автоматичного відображення зображення при фільтрації за кольором, покращивши UX і навігацію."
           },
           {
             title: "Lerros",
             url: "https://www.lerros.com/",
-            image: "/source/Buy fashion for men conveniently online.webp",
+            image: "/source/desktop/lerros-desktop.webp",
             tech: "Оновив тему в Shopify-магазині, коректно переніс контент і метаполя, зберіг структуру даних і налаштував відображення товарів для стабільної роботи."
           },
           {
             title: "Kiki Green",
-            url: "https://kikigreen.com/",
-            image: "/source/kiki-green.png",
+            url: "https://kiki-green.com/",
+            image: "/source/desktop/kiki-green-desktop.webp",
             tech: "Розробив повний цикл e-commerce рішення з нуля, включаючи створення повноцінного інтернет-магазину та інтеграцію з різними плагінами, такими як програми лояльності та підписка на продукти."
           },
           {
             title: "Junior's Cheesecake",
             url: "https://juniorscheesecake.com/",
-            image: "/source/Juniors Cheesecake.png",
+            image: "/source/desktop/juniors-cheesecake-desktop.webp",
             tech: "Створив нові кастомні секції на основі дизайну Figma, розробив email шаблони та їх обробку, а також реалізував функціональність сторінки подачі."
           },
           {
             title: "Spring Mountain Vineyard",
             url: "https://club.springmountainvineyard.com/",
-            image: "/source/Spring Mountain Vineyard.png",
+            image: "/source/desktop/spring-mountain-vineyard-desktop.webp",
             tech: "Редизайнив сторінку колекції з покращеним дизайном фільтрів та карток продуктів, реалізував динамічну логіку хлібних крихт, яка оновлюється без перезавантаження сторінки для кращого UX."
           },
           {
             title: "Lunesi",
             url: "https://lunesi.co.uk/",
-            image: "/source/lunesi.png",
+            image: "/source/desktop/lunesi-desktop.webp",
             tech: "Розробив динамічну секцію апселла в кошику, яка інтелектуально відображає продукти на основі вмісту кошика, повністю налаштовувану через редактор теми. Покращив хедер з налаштовуваними кольоровими схемами та конфігурованим банером оголошень для гнучкого брендингу та промо-акцій."
           },
           {
             title: "Nimfa",
             url: "https://nimfa.nl/",
-            image: "/source/nimfa.png",
-            tech: "Створив кастомну тему Shopify з нуля з піксель-перфектною реалізацією згідно з дизайном Figma. Розробив функціональність блогу, секції апселлів та повну багатомовну підтримку (англійська, українська, голландська) для преміум бренду інтимного догляду."
+            image: "/source/desktop/nimfa-desktop.webp",
+            caseStudySlug: "nimfa",
+            tech: "Створив кастомну тему Shopify з нуля з піксель-перфектною реалізацією згідно з дизайном Figma. Розробив функціональність блогу, секції апселлів та повну багатомовну підтримку (англійська, українська, голландська) для преміум секс-шопу."
           },
           {
             title: "Melinava",
             url: "https://melinava.nl/",
-            image: "/source/melinava.png",
+            image: "/source/desktop/melinava-desktop.webp",
             tech: "Фінальна підготовка перед запуском: QA і полірування всіх деталей. Вів повний чекліст “готово до трафіку”: ключові сценарії користувача, перевірки кошика та checkout, адаптив, швидкість і візуальні баги — щоб сайт був стабільний і готовий до конверсій."
           },
           {
             title: "Petaljet",
             url: "https://petaljet.com/",
-            image: "/source/petaljet.png",
+            image: "/source/desktop/petaljet-desktop.webp",
+            caseStudySlug: "petaljet",
             tech: "Постійна підтримка магазину в команді. Підсилюю SEO і продуктивність на ключових сторінках, швидко доставляю зміни, тримаю релізи чистими та виконую щоденні оновлення без ризику “поламати” storefront."
           },
           {
             title: "Indian Affairs",
             url: "https://indianaffairs.de/",
-            image: "/source/indian-affairs.png",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            caseStudySlug: "indian-affairs",
             tech: "Міграція з legacy-теми на Shopify Online Store 2.0 (Prestige). Переніс увесь контент, відбудував кастомну функціональність, реалізував вимоги зі спеки та вирівняв стилі й UX по всьому сайту."
           },
           {
             title: "SafeTag Tracking",
             url: "https://safetagtracking.com/",
-            image: "/source/safeatags.png",
+            image: "/source/desktop/safe-tag-tracking-desktop.webp",
             tech: "Розробка кастомної Shopify-теми з Figma з повною кастомізацією та мультимовністю. Побудував гнучкі секції для зручного керування контентом, зробив pixel-accurate UI і заклав фундамент для масштабування сторінок та маркетів."
           },
           {
             title: "Virea",
             url: "https://virea.se/",
-            image: "/source/virea.png",
-            tech: "Впровадив оновлений дизайн для головної, PDP та базових шаблонів. Магазин на постійній підтримці: нові фічі, оптимізація швидкості, UX-покращення та регулярні технічні ітерації."
+            image: "/source/desktop/virea-desktop.webp",
+            tech: "Впровадив оновлений дизайн для головної, PDP та базових шаблонів. Я досі підтримую магазин як їхній Shopify-експерт: нові фічі, оптимізація швидкості, UX-покращення та постійні технічні ітерації."
           },
           {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/m-oceans.png",
-            tech: "Міграція зі старої теми на Shopify 2.0 архітектуру з перенесенням кастомної логіки. Додав нову функціональність, покращив структуру сторінок і забезпечив надійну роботу критичних флоу після запуску."
+            image: "/source/desktop/m-oceans-desktop.webp",
+            tech: "Міграція зі старої теми на Shopify 2.0 з перенесенням кастомної логіки та покращенням ключових storefront-флоу. Я досі веду проєкт як їхній Shopify-експерт, додаю нову функціональність і підтримую стабільність магазину після запуску."
+          },
+          {
+            title: "Elanora Skin",
+            url: "https://elanoraskin.com/",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            caseStudySlug: "elanora-skin",
+            tech: "Постійна Shopify-підтримка вже пів року як Shopify-експерт магазину. Реалізував мультимаркет announcement banner, апселл і free gift логіку для різних маркетів, а також різні thresholds для безкоштовної доставки залежно від ринку."
           },
           {
             title: "Silk Tallow",
             url: "https://silktallow.com/",
-            image: "/source/silk-tallow.png",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            caseStudySlug: "silk-tallow",
             tech: "Реалізував складну логіку Mystery Gift і Free Gift без перезавантаження сторінки. Акуратно інтегрував у дизайн storefront: правила, поведінка кошика та обробка edge cases."
           },
           {
             title: "Bella Bloom Box",
             url: "https://bellabloombox.se/",
-            image: "/source/httpsbellabloombox.png",
+            image: "/source/desktop/bella-bloom-box-desktop.webp",
             tech: "Зібрав повний Shopify-магазин на базі дизайну Lovable. Переклав дизайн у секції та шаблони теми, налаштував структуру контенту й зробив керування максимально простим для клієнта без коду."
           },
           {
             title: "Bazar Bizar",
             url: "https://bazarbizar.be/",
-            image: "/source/bazarbizar.png",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            caseStudySlug: "bazar-bizar",
             tech: "Працював з великим складним Shopify-магазином із багатьма шаблонами та кастомною логікою. Робив глибоку кастомізацію секцій і лейаутів, впроваджував функціональні покращення та підтримував великі зміни, зберігаючи стабільність."
           }
         ]
@@ -629,35 +1161,37 @@ const resources = {
         reviews: [
           {
             name: "Олександр",
-            image: "/source/1.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Кирило - справжній рятівник! Він виправив усі проблеми на моєму сайті Shopify і навіть дав поради щодо його покращення. Я дуже задоволений результатами."
           },
           {
             name: "Анастасія",
-            image: "/source/4.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Я була така розгублена, намагаючись налаштувати свій онлайн-магазин, але Кирило зробив це легко! Тепер у мене є красивий веб-сайт, який дійсно приносить продажі. Дякую, Кирило!"
           },
           {
             name: "Дмитро",
-            image: "/source/3.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Робота з Кирилом була фантастичним досвідом. Він справжній експерт у Shopify і дійсно дбає про своїх клієнтів. Я дуже рекомендую його!"
           },
           {
             name: "Артем",
-            image: "/source/2.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Кирило зробив все можливе, щоб створити приголомшливий веб-сайт для мого бізнесу. Він справжній професіонал і з ним приємно працювати."
           },
           {
             name: "Ганна",
-            image: "/source/5.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Мій новий веб-сайт - це все, що я хотіла, і навіть більше! Кирило неймовірно талановитий і з ним легко працювати. Я не можу достатньо подякувати йому."
           }
         ]
       },
       contact: {
-        title: "ДАВАЙТЕ ПРАЦЮВАТИ РАЗОМ",
-        subtitle: "все починається з розмови",
+        title: "Контакт",
+        subtitle: "Потрібна допомога з Shopify-проєктом?",
         email: "karatitsynkiril@gmail.com",
+        note: "Забронюйте дзвінок або надішліть короткий email з посиланням на магазин і описом задачі.",
+        audit: "Безкоштовний аудит магазину і обговорення проєкту",
         book_call: "Забронювати дзвінок",
         linkedin: "LinkedIn",
         github: "GitHub",
@@ -715,94 +1249,388 @@ const resources = {
         title: "FAQ",
         questions: [
           {
-            question: "Що робить ваші веб-сайти особливими? 💻",
-            answer: "Я створюю веб-сайти, які швидко працюють, гарно виглядають та зручні для ваших клієнтів. Вони ідеально працюють на телефонах, планшетах та комп'ютерах. 🚀"
+            question: "Які Shopify-задачі ви зазвичай берете?",
+            answer: "Найчастіше це одна з чотирьох категорій: кастомна theme-розробка, міграції на Online Store 2.0, feature development для storefront і підтримка після запуску."
           },
           {
-            question: "Чому обирати Shopify для мого інтернет-магазину? 🛍️",
-            answer: "Shopify - це найбезпечніший і найпростіший спосіб вести інтернет-магазин. Він має все необхідне для швидкого початку продажів онлайн. 🔒"
+            question: "Чи можете ви працювати в уже існуючому Shopify-магазині?",
+            answer: "Так. Я регулярно працюю всередині live Shopify-storefronts: покращую секції, product pages, cart behavior, фільтрацію, інтеграції, швидкість і готовність до запуску."
           },
           {
-            question: "Чому працювати зі мною? 🌟",
-            answer: "Я створюю веб-сайти, які не лише гарно виглядають, але й допомагають вашому бізнесу рости. Я тут, щоб підтримувати вас на кожному етапі. ⚡"
+            question: "Чи займаєтесь ви міграціями на Shopify Online Store 2.0?",
+            answer: "Так. Я допомагаю переносити магазини з legacy-setup на OS 2.0, зберігаючи структуру контенту, відбудовуючи кастомну логіку і знижуючи launch-ризики."
           },
           {
-            question: "Скільки це коштує? 💰",
-            answer: "Кожен проект унікальний - давайте обговоримо ваші конкретні потреби та цілі, щоб знайти правильне рішення для вашого бюджету. 📊"
+            question: "Чи можете ви допомагати й після запуску?",
+            answer: "Так. Багато клієнтів залишають мене в проєкті після релізу для фіксів, експериментів, SEO і speed-покращень, нових секцій та постійної storefront-розробки."
           },
           {
-            question: "Підтримка після запуску? 🔄",
-            answer: "Так! Я надаю постійну підтримку, щоб ваш веб-сайт залишався актуальним і працював на найвищому рівні. 🛡️"
+            question: "З чого краще почати?",
+            answer: "Надішліть URL магазину, короткий опис задачі та дедлайни або обмеження. Далі я підкажу найчистіший наступний крок: аудит, невеликий спринт чи ширшу реалізацію."
           },
           {
-            question: "Хто тобі більше подобається, собака чи кіт? 🐱",
-            answer: "Коти - мої улюбленці! Вони незалежні, граціозні та стають ідеальними компаньйонами для програмування. 😺"
+            question: "Чи працюєте ви з дизайнерами або готовими ТЗ?",
+            answer: "Так. Я можу реалізовувати задачі з Figma, Loom-відео, письмового ТЗ або на основі існуючого storefront-референсу, а також допомогти уточнити план, якщо вимоги ще сирі."
           }
         ],
         book_call: "Забронювати дзвінок"
       },
       header: {
-        about: "Про мене",
+        services: "Послуги",
+        cases: "Кейси",
         process: "Процес",
         faq: "FAQ",
-        works: "Роботи",
-        blog: "Блог",
         contact: "Контакти",
+        bookCall: "Дзвінок",
+        about: "Про мене",
+        works: "Проєкти",
+        blog: "Блог",
         resume: "Резюме"
+      },
+      footer: {
+        blurb: "Shopify-розробка для брендів, яким потрібні кастомні рішення, чистіший UX і надійна підтримка без зайвої складності.",
+        follow: "Ще я тут",
+        telegram: "Telegram",
+        instagram: "Instagram",
+        rights: "Усі права захищені."
       }
     }
   },
   de: {
     translation: {
       hero: {
-        web: "Web",
-        title: "Ich bin Kiril",
-        subtitle: "Ich erstelle Websites, die Ihr Unternehmen online zum Strahlen bringen.",
+        eyebrow: "Shopify Entwickler",
+        title: "Ich entwickle Shopify Stores, die",
+        titleAccent: "konvertieren, skalieren und trotzdem leicht zu pflegen bleiben.",
+        subtitle: "Custom Themes, Online-Store-2.0-Migrationen, Integrationen, CRO-orientierte Storefront-Arbeit und langfristiger Support für Marken, die mehr als ein Standard-Setup brauchen.",
+        description: "Wenn Ihr Store saubereren UX, schnellere Seiten, stärkeres Merchandising oder individuelle Funktionalität braucht, setze ich das um, ohne den Storefront zu destabilisieren.",
         book_call: "Termin vereinbaren",
         send_message: "Nachricht senden",
+        proofItems: [
+          "5-Sterne-Upwork-Bewertungen von aktuellen Shopify-Kunden.",
+          "Praxis in Custom Builds, Migrationen, CRO und laufendem Store-Support.",
+          "Shopify-first Umsetzung mit sauberem UX und stabilen Releases."
+        ],
+        servicePills: [
+          "Store Builds & Migrationen",
+          "Theme Customization",
+          "Integrationen & APIs",
+          "Performance & SEO"
+        ],
         or: "oder",
         words: ["Entwickler", "Magier", "Experte", "Meister", "Spezialist", "Guru", "Virtuose", "Maestro"]
       },
       about: {
-        title: "Mein Name ist Kiril Karatitsyn",
-        text: "Ich erstelle schöne Websites und Online-Shops, die Unternehmen helfen, mehr online zu verkaufen. Spezialisiert auf die Entwicklung von Websites, die einfach zu bedienen sind und auf jedem Gerät großartig aussehen.",
-        text_2: "Der Fokus liegt darauf, Websites zu erstellen, die schnell sind, einfach zu navigieren und Besucher in Kunden verwandeln. Ob Sie eine neue Website benötigen oder Ihre bestehende verbessern möchten, lassen Sie uns das umsetzen.",
+        eyebrow: "Warum Shopify Teams mit mir arbeiten",
+        title: "Ein Shopify Partner, der über reine Umsetzung hinausdenkt",
+        text: "Ich arbeite mit Shopify Marken, die mehr als schnelle Einzelfixes brauchen. Ziel ist es, Anforderungen in saubere, conversion-orientierte Lösungen zu übersetzen, die schnell ausgeliefert werden und nach dem Launch gut wartbar bleiben.",
+        text_2: "Dazu gehören individuelle Liquid-Entwicklung, Online-Store-2.0-Migrationen, Integrationen, Merchandising-Verbesserungen, mehrsprachige Storefronts und laufender Support für Shops, die nach dem Release weiter wachsen.",
+        highlights: [
+          "Custom Theme Entwicklung mit flexiblen Sections und sauberer Storefront-Logik.",
+          "CRO-orientierte Umsetzung mit Fokus auf Produktfindung, Cart-Verhalten und Geschwindigkeit."
+        ],
         lets_work: "Lassen Sie uns zusammenarbeiten"
       },
+      services: {
+        eyebrow: "Leistungen",
+        title: "Shopify Leistungen mit klarem Business-Fokus",
+        subtitle: "Jedes Projekt ist darauf ausgerichtet, den Shop leichter skalierbar, leichter wartbar und stärker in der Conversion zu machen.",
+        items: [
+          {
+            title: "Store Builds & Migrationen",
+            description: "Neuen Shopify Store aufsetzen oder von einem Legacy Theme auf ein sauberes Online-Store-2.0-Setup wechseln, ohne kritische Inhalte oder Kundenflüsse zu verlieren."
+          },
+          {
+            title: "Theme Customization",
+            description: "Sections, Templates und Produkt-Erlebnisse so entwickeln oder verfeinern, dass der Store zur Marke passt und Merchandising-Ziele unterstützt."
+          },
+          {
+            title: "Integrationen & APIs",
+            description: "Apps, Abos, Payments, CRMs und externe Systeme so anbinden, dass sie im Storefront und Admin zuverlässig funktionieren."
+          },
+          {
+            title: "Performance & SEO",
+            description: "Ladezeiten verbessern, Frontend-Reibung reduzieren und die technische Basis stärken, die sowohl Rankings als auch Conversion unterstützt."
+          },
+          {
+            title: "Custom Shopify Funktionalität",
+            description: "Komplexe Storefront-Features wie Upsells, Gifts, Bundle-Flows, dynamische Cart-Logik oder spezielle Produktinteraktionen umsetzen."
+          },
+          {
+            title: "Laufender Support & Audits",
+            description: "Ein verlässlicher technischer Partner für Store Audits, Launch-Vorbereitung, Bugfixing, Maintenance und kontinuierliche Weiterentwicklung."
+          }
+        ]
+      },
+      caseStudies: {
+        eyebrow: "Case Studies",
+        title: "Ausgewählte Shopify Projekte",
+        subtitle: "Drei Projekte, die zeigen, wie ich an Custom Themes, Migrationen und anspruchsvolle Storefront-Funktionalität herangehe, ohne auf generische Lösungen zu setzen.",
+        viewCase: "Case Study ansehen",
+        visitStore: "Store besuchen",
+        backToCases: "Zurück zu allen Projekten",
+        notFound: "Case Study nicht gefunden.",
+        mediaTitle: "Media",
+        desktopLabel: "Desktop",
+        mobileLabel: "Mobile",
+        mobilePlaceholder: "Temporärer Placeholder für die mobile Version. Eine eigene Mobile Preview wird später hier ergänzt.",
+        aboutBrandTitle: "Über die Marke",
+        readMore: "Mehr lesen",
+        challengeTitle: "Ausgangslage",
+        scopeTitle: "Leistungsumfang",
+        solutionTitle: "Lösung",
+        stackTitle: "Stack & Fähigkeiten",
+        outcomeTitle: "Ergebnis",
+        screenshotTitle: "Projekt-Highlights",
+        moreProjectsTitle: "Weitere Shopify Projekte",
+        moreProjectsSubtitle: "Ein breiterer Ausschnitt meiner Shopify Arbeit: Migrationen, CRO, Support, Custom Sections und Storefront-Verbesserungen.",
+        items: [
+          {
+            id: "nimfa",
+            slug: "nimfa",
+            title: "Nimfa",
+            summary: "Ein Premium-Sexshop brauchte einen Custom Shopify Store aus Figma, mehrsprachig, mit skalierbaren Sections und einer Premium-Präsentation ab dem ersten Launch.",
+            brandSummary: "Nimfa ist eine Premium-Marke für Intimate Wellness und ein Sexshop, aufgebaut rund um diskrete, stilvolle und schamfreie Self-Care für Frauen.",
+            brandDescription: "Nimfa positioniert Intimität als etwas Natürliches, Elegantes und Urteilsfreies. Die Marke präsentiert Produkte für Pleasure und Intimate Wellness in einem weicheren Premium-Kontext, mit Fokus auf Selbstakzeptanz, Privatsphäre und einem Einkaufserlebnis, das näher an modernem Self-Care liegt als an einem klassischen Adult Store.",
+            image: "/source/desktop/nimfa-desktop.webp",
+            mobileImage: "/source/mobile/nimfa-mobile.webp",
+            liveUrl: "https://nimfa.nl/",
+            tags: ["Custom Theme", "Mehrsprachig", "Figma to Shopify"],
+            challenge: "Der Store musste vom ersten Tag an hochwertig wirken und gleichzeitig für das Content-Team leicht pflegbar bleiben. Design, Mehrsprachigkeit und zukünftige Content-Flexibilität mussten zusammen funktionieren.",
+            scope: [
+              "Ein Custom Shopify Theme auf Basis von Figma von Grund auf entwickeln.",
+              "Flexible Sections für Landing-, Produkt- und Editorial-Content aufbauen.",
+              "Mehrsprachigen Storefront und adminfreundliche Content-Pflege unterstützen."
+            ],
+            solution: [
+              "Pixelgenauen Storefront mit wiederverwendbaren Sections und Templates umgesetzt.",
+              "Blog- und Upsell-Funktionalität direkt ins Theme integriert, damit Content und Merchandising gemeinsam wachsen können.",
+              "Die Struktur so aufgebaut, dass das Team Inhalte ohne ständige Code-Abhängigkeit verwalten kann."
+            ],
+            outcome: [
+              "Ein Premium-Shopify-Storefront geliefert, der der freigegebenen Designrichtung entspricht.",
+              "Mehrsprachiges Wachstum von Anfang an in die Theme-Struktur eingebaut.",
+              "Eine Basis geschaffen, auf der Merchandising- und Content-Updates ohne Rebuild weiterlaufen können."
+            ],
+            stack: ["Shopify", "Liquid", "Theme Sections", "Mehrsprachiges Setup", "Figma Umsetzung"],
+            screenshotCaptions: [
+              "Custom Styling eng an die freigegebene Figma-Richtung angelehnt.",
+              "Theme-Architektur für wiederkehrende Content-Änderungen ohne Codeeingriffe.",
+              "Mehrsprachige Grundlage für eine Premium-Shopify-Marke."
+            ]
+          },
+          {
+            id: "indian-affairs",
+            slug: "indian-affairs",
+            title: "Indian Affairs",
+            summary: "Ein Legacy Store musste auf Shopify Online Store 2.0 migriert werden, inklusive Erhalt der Struktur, Neuaufbau individueller Funktionalität und UX-Bereinigung über die gesamte Site.",
+            brandSummary: "Indian Affairs ist eine Modemarke für Kinder und Erwachsene, bekannt für zeitlose Stücke, natürliche Materialien und handwerkliche Details mit Bezug zu indischen Textiltraditionen.",
+            brandDescription: "Indian Affairs bietet Kleidung und Accessoires für Kinder und Erwachsene mit Fokus auf zeitloses Design, weiche Materialien und handwerklichen Charakter. Viele Produkte greifen Techniken wie Handblockdruck auf, wodurch die Marke näher an einer langsameren, bewussteren Modehaltung liegt als an schnelllebigem Trend-Retail.",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            mobileImage: "/source/mobile/indian-affairs-mobile.webp",
+            liveUrl: "https://indianaffairs.de/",
+            tags: ["Migration", "Online Store 2.0", "Theme Rebuild"],
+            challenge: "Die Migration war mehr als ein visuelles Refresh. Inhalte, Custom Logik und operative Abläufe mussten den Wechsel auf eine neue Architektur ohne Instabilität überstehen.",
+            scope: [
+              "Den Storefront von einem Legacy Setup auf Shopify Online Store 2.0 migrieren.",
+              "Inhalte übertragen und individuelle Funktionalität in der neuen Theme-Architektur neu aufbauen.",
+              "Styling, UX und zentrale Customer Journeys über die Site hinweg angleichen."
+            ],
+            solution: [
+              "Wichtige Funktionalität innerhalb der OS-2.0-Struktur neu aufgebaut statt Legacy-Verhalten nur weiterzuschleppen.",
+              "Relevante Content-Beziehungen und Store-Logik während der Migration abgesichert.",
+              "Die Migration genutzt, um gleichzeitig UX und Wartbarkeit zu verbessern."
+            ],
+            outcome: [
+              "Den Store auf eine skalierbarere Shopify Architektur umgestellt.",
+              "Launch-Risiken reduziert, indem kritische Flows bewusst neu aufgebaut wurden.",
+              "Dem Kunden eine sauberere Basis für zukünftige Storefront-Änderungen hinterlassen."
+            ],
+            stack: ["Shopify OS 2.0", "Liquid", "Theme Migration", "UX Refinement", "Launch QA"],
+            screenshotCaptions: [
+              "Migration mit Fokus auf Struktur-Erhalt und Modernisierung der Theme-Basis.",
+              "Custom Anforderungen in ein wartbares Shopify Setup überführt.",
+              "UX und Styling direkt im Rahmen der Migration vereinheitlicht."
+            ]
+          },
+          {
+            id: "silk-tallow",
+            slug: "silk-tallow",
+            title: "Silk Tallow",
+            summary: "Der Store brauchte anspruchsvolle Mystery-Gift- und Free-Gift-Logik, die sich nativ anfühlt, sofort reagiert und Cart-Edge-Cases ohne Page Reloads abfängt.",
+            brandSummary: "Silk Tallow ist eine natürliche Skincare-Marke rund um tallow-basierte Formeln, einfache Inhaltsstoffe und toxinfreie Routinen mit Naturbezug.",
+            brandDescription: "Silk Tallow baut seine Positionierung um natürliche Einfachheit und Hautpflege ohne künstliche Inhaltsstoffe auf. Die Marke verbindet ihre Produkte mit Pflege, Schutz und einer Rückkehr zu ruhigeren, saubereren Routinen, in denen tallow-basierte Formeln den Kern einer minimalistischen, naturgeleiteten Skincare-Philosophie bilden.",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            mobileImage: "/source/mobile/silk-tallow-mobile.webp",
+            liveUrl: "https://silktallow.com/",
+            tags: ["Custom Logic", "Cart UX", "Merchandising"],
+            challenge: "Gift-Logik beschädigt oft den UX, wenn sie auf clunky Reloads oder fragilen Scripts basiert. Hier musste das Erlebnis für Kunden flüssig bleiben und trotzdem sauber auf Cart-Regeln und Promo-Edge-Cases reagieren.",
+            scope: [
+              "Dynamische Mystery-Gift- und Free-Gift-Storefront-Logik entwickeln.",
+              "Die Experience so integrieren, dass sie sich nicht nach einem Add-on anfühlt.",
+              "Cart-Regeln, Promo-Trigger und Edge-Cases sauber abbilden."
+            ],
+            solution: [
+              "Storefront-Verhalten gebaut, das Gift-Logik ohne Page Reloads aktualisiert.",
+              "Promotions direkt in den Customer Flow integriert statt in isolierten Hinweisen zu verstecken.",
+              "Regeln und Cart-Verhalten so umgesetzt, dass das Erlebnis in echten Sessions stabil bleibt."
+            ],
+            outcome: [
+              "Ein flüssigeres Promotion-Erlebnis im Cart und Storefront geschaffen.",
+              "Komplexe Gift-Logik so umgesetzt, dass sie Teil des eigentlichen Produkterlebnisses wirkt.",
+              "Merchandising-Flexibilität erhöht, ohne die Storefront-Stabilität zu gefährden."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Cart Logic", "Promotion UX"],
+            screenshotCaptions: [
+              "Gift-Logik so aufgebaut, dass sie sich wie ein nativer Teil des Storefronts anfühlt.",
+              "Cart-Verhalten reagiert dynamisch statt auf reload-lastige Abläufe zu setzen.",
+              "Promotion-Handhabung mit Blick auf Edge Cases und reale Nutzung."
+            ]
+          },
+          {
+            id: "bazar-bizar",
+            slug: "bazar-bizar",
+            title: "Bazar Bizar",
+            summary: "Ein vollständig individuell entwickeltes Shopify Theme auf Basis eines Figma-Redesigns, bei dem die komplette Funktionalität des Live-Stores in einen saubereren, moderneren Storefront übertragen wurde.",
+            brandSummary: "Bazar Bizar ist eine Interior- und Lifestyle-Marke mit Wurzeln in Antwerpen und Bali, bekannt für handgefertigte Homeware, Möbel, Licht und Dekor geprägt von Reisen, Handwerk und Fair-Trade-Werten.",
+            brandDescription: "Bazar Bizar versteht sich als Home- und Lifestyle-Marke, die aus einer Leidenschaft für Reisen entstanden ist und ihre Flagship-Wurzeln in Antwerpen und Bali hat. Die Kollektionen verbinden traditionelle Handwerkskunst mit zeitgenössischen Interiors und mischen handgemachten Charakter, coastal warmth und Fair-Trade-Prinzipien über Möbel, Beleuchtung, Tableware, Textilien und dekorative Stücke hinweg.",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            mobileImage: "/source/mobile/bazar-bizar-mobile.webp",
+            liveUrl: "https://bazarbizar.be/",
+            tags: ["Custom Theme", "Redesign", "Figma to Shopify"],
+            challenge: "Es ging nicht nur um ein neues Erscheinungsbild. Das neue Theme musste die aktualisierte Figma-Richtung sauber umsetzen und gleichzeitig die Funktionalität erhalten, auf die sich Kunden und das Team im Live-Store bereits verließen.",
+            scope: [
+              "Ein vollständig individuelles Shopify Theme auf Basis des neuen Figma-Redesigns entwickeln.",
+              "Wichtige Live-Store-Funktionalität in den neu aufgebauten Storefront übernehmen.",
+              "Struktur, Wartbarkeit und Konsistenz gemeinsam mit der visuellen Erneuerung verbessern."
+            ],
+            solution: [
+              "Den Storefront als echtes Custom Shopify Theme neu aufgebaut, statt den Redesign-Layer nur auf die alte Umsetzung zu legen.",
+              "Bestehende Live-Funktionalität gezielt in die neue Theme-Basis übertragen, damit wichtige Customer-Flows erhalten bleiben.",
+              "Das Redesign genutzt, um gleichzeitig die Theme-Architektur aufzuräumen und eine wartbarere Grundlage zu schaffen."
+            ],
+            outcome: [
+              "Einen neu designten Shopify-Storefront auf Basis von Figma geliefert, ohne wichtige Live-Funktionalität zu verlieren.",
+              "Eine sauberere und flexiblere Theme-Basis für künftige Änderungen geschaffen.",
+              "Die langfristige Wartbarkeit verbessert, ohne das Kundenerlebnis zu verschlechtern."
+            ],
+            stack: ["Shopify", "Liquid", "Custom Theme Development", "Figma Umsetzung", "Theme Architektur"],
+            screenshotCaptions: [
+              "Custom Shopify Theme komplett um die freigegebene Figma-Richtung herum neu aufgebaut.",
+              "Live-Store-Funktionalität erhalten, während der Storefront visuell neu gestaltet wurde.",
+              "Sauberere Theme-Struktur als Teil des Rebuilds geliefert, nicht als späteres To-do."
+            ]
+          },
+          {
+            id: "elanora-skin",
+            slug: "elanora-skin",
+            title: "Elanora Skin",
+            summary: "Ein laufendes Shopify-Projekt, das ich seit einem halben Jahr als Shopify-Experte begleite, mit Fokus auf Multi-Market-Storefront-Logik und retention-orientierte Custom-Funktionalität.",
+            brandSummary: "élanora ist eine Skincare-Marke aus Breda, inspiriert von koreanischen Hautpflegetraditionen und westlicher Schlichtheit, die reine Inhaltsstoffe mit modernen Formeln für täglichen Self-Care verbindet.",
+            brandDescription: "élanora inszeniert Hautpflege als Verbindung aus wirksamer Pflege und einem täglichen Ritual der Ruhe. Die Marke kombiniert koreanische Skincare-Inspiration mit einer klareren westlichen Ästhetik und positioniert ihre Produkte rund um Glow, Routinen und zugänglichen Self-Care statt rein klinischer Beauty-Kommunikation.",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            mobileImage: "/source/mobile/elanora-skin-mobile.webp",
+            liveUrl: "https://elanoraskin.com/",
+            tags: ["Laufender Support", "Multi-Market", "Klaviyo API"],
+            challenge: "Der Store brauchte laufenden technischen Support über mehrere Märkte hinweg, bei dem Promo-Logik je Markt unterschiedlich reagieren musste statt in einem globalen Setup zu enden. Zusätzlich wurde eine tiefere Retention-Funktionalität benötigt, darunter ein individueller Back-in-Stock-Flow über die Klaviyo API.",
+            scope: [
+              "Den Shopify-Storefront über viele Monate als technischer Partner betreuen.",
+              "Announcement-, Upsell-, Gift- und Free-Shipping-Logik je Markt umsetzen.",
+              "Eine individuelle Back-in-Stock-Funktionalität über die Klaviyo API integrieren."
+            ],
+            solution: [
+              "Multi-Market-Storefront-Verhalten umgesetzt, damit Promo-Messaging und Merchandising-Logik je nach aktivem Markt unterschiedlich reagieren können.",
+              "Custom Upsell- und Free-Gift-Flows mit unterschiedlichen Free-Shipping-Schwellen je Markt gebaut.",
+              "Back-in-Stock-Logik über die Klaviyo API ergänzt, um Retention und Re-Engagement über die Standard-Theme-Logik hinaus zu stärken."
+            ],
+            outcome: [
+              "Der Store verfügt jetzt über flexiblere marktspezifische Merchandising- und Promo-Logik.",
+              "Die Retention-Funktionalität wurde mit einem individuellen Back-in-Stock-Flow über Klaviyo erweitert.",
+              "Durch laufenden Shopify-Support kann sich der Store weiterentwickeln, ohne riskante Ad-hoc-Fixes in der Theme-Basis anzusammeln."
+            ],
+            stack: ["Shopify", "Liquid", "JavaScript", "Multi-Market-Logik", "Klaviyo API"],
+            screenshotCaptions: [
+              "Laufender Shopify-Support mit Fokus auf skalierbares marktspezifisches Storefront-Verhalten.",
+              "Promo-Logik je Markt statt eines einzigen globalen Setups.",
+              "Back-in-Stock-Funktionalität durch Klaviyo-API-Integration erweitert."
+            ]
+          },
+          {
+            id: "petaljet",
+            slug: "petaljet",
+            title: "Petaljet",
+            summary: "Ein laufendes Shopify-Projekt, bei dem die Arbeit mit einem gründlichen SEO-Audit und Performance-Verbesserungen begann und in kontinuierlichen Support für einen lebendigen, weiterentwickelten Storefront überging.",
+            brandSummary: "Petaljet ist ein Großhandelsanbieter für Blumen für Floristen und professionelle Designer und liefert farm-direct Blüten in den gesamten USA für Hochzeiten, Events und laufende Floral-Programme.",
+            brandDescription: "Petaljet ist auf den B2B-Einkauf von Blumen ausgerichtet und bedient Floristen, Event-Designer und andere professionelle Käufer. Die Marke betont verlässliche Versorgung, Sortimentstiefe und einen Workflow, der wiederkehrende Bestellungen, große Events und tägliche Floral-Operations mit weniger Reibung unterstützt.",
+            image: "/source/desktop/petaljet-desktop.webp",
+            mobileImage: "/source/mobile/petaljet-mobile.webp",
+            liveUrl: "https://petaljet.com/",
+            tags: ["SEO Audit", "Performance", "Laufender Support"],
+            challenge: "Der Store brauchte mehr als einzelne Fixes. Er brauchte eine stärkere technische Basis mit SEO-Audit, besserer Performance auf wichtigen Seiten und laufendem Support, damit sich der Storefront weiterentwickeln kann, statt durch verstreute Updates langsam an Qualität zu verlieren.",
+            scope: [
+              "Ein SEO-Audit durchführen und technische Chancen mit Einfluss auf Sichtbarkeit und Suchperformance identifizieren.",
+              "Die Performance des Storefronts auf wichtigen Seiten und Flows verbessern.",
+              "Als laufender Support-Partner für Updates, Fixes und iterative Verbesserungen eingebunden bleiben."
+            ],
+            solution: [
+              "Mit einem SEO-Audit gestartet, um Probleme und Potenziale für bessere Suchsichtbarkeit aufzudecken.",
+              "Performance-orientierte Verbesserungen in wichtigen Storefront-Bereichen umgesetzt, damit der Store leichter und zuverlässiger läuft.",
+              "Den Store anschließend kontinuierlich betreut, damit Verbesserungen kumulieren statt nur als einmalige Wartung zu enden."
+            ],
+            outcome: [
+              "Das Projekt erhielt eine stärkere SEO-Basis, die Suchsichtbarkeit und Rankings verbessert hat.",
+              "Performance-Arbeit machte den Storefront schneller und langfristig gesünder.",
+              "Laufender Support hält den Store lebendig und ermöglicht kontinuierliche Weiterentwicklung zwischen größeren Updates."
+            ],
+            stack: ["Shopify", "Technisches SEO", "Performance-Optimierung", "Storefront-Support", "Laufende Iteration"],
+            screenshotCaptions: [
+              "SEO-Arbeit begann mit einem technischen Audit statt mit zufälligen Einzel-Fixes.",
+              "Performance-Verbesserungen wurden als Teil der Storefront-Roadmap behandelt, nicht als einmaliger Patch.",
+              "Laufender Support hält den Store durch kontinuierliche technische Evolution lebendig."
+            ]
+          }
+        ]
+      },
       process: {
-        title: "Mein Prozess",
+        title: "So arbeite ich",
         steps: {
           step1: {
-            title: "1. Erstes Gespräch 🚀",
-            description: "Lassen Sie uns Ihre Geschäftsziele und Website-Anforderungen besprechen. Planung der perfekten Lösung - von einfachen Websites bis hin zu vollständigen Online-Shops. 🎯"
+            title: "1. Discovery",
+            description: "Wir definieren Business-Ziele, aktuelle Blocker, Prioritäten im Storefront und wie Erfolg für die Shopify-Arbeit konkret aussieht."
           },
           step2: {
-            title: "2. Recherche 🔍",
-            description: "Analyse der Branchenbest Practices, um sicherzustellen, dass Ihre Website hervorsticht und die richtigen Kunden anzieht. 📊"
+            title: "2. Audit & Planung",
+            description: "Ich prüfe Theme, Apps, technische Grenzen und Customer Journeys, damit der Umsetzungsplan realistisch ist, bevor Code geschrieben wird."
           },
           step3: {
-            title: "3. Design 🎨",
-            description: "Erstellung moderner, ansprechender Designs, die auf Telefonen, Tablets und Computern großartig aussehen. 💫"
+            title: "3. Umsetzung",
+            description: "Ich baue den Storefront, die Sections, die Logik oder die Migration mit Fokus auf Wartbarkeit und sauberes Nutzererlebnis."
           },
           step4: {
-            title: "4. Entwicklung 💻",
-            description: "Erstellung Ihrer Website mit den besten Tools, um sie schnell, sicher und einfach zu aktualisieren. ⚡"
+            title: "4. QA & Verfeinerung",
+            description: "Jede wichtige Seite und jeder Kern-Flow wird auf Responsiveness, Verhalten und Launch-Readiness geprüft."
           },
           step5: {
-            title: "5. Prüfung & Test ✅",
-            description: "Gründliches Testen stellt sicher, dass alles perfekt funktioniert, mit Anpassungen nach Bedarf. 🔄"
+            title: "5. Launch Support",
+            description: "Ich helfe dabei, den Release stabil zu bekommen, mit letzten Fixes und Feinschliff bevor echter Traffic auf den Shop kommt."
           },
           step6: {
-            title: "6. Live gehen 🚀",
-            description: "Ihre Website geht live mit kontinuierlicher Unterstützung, um eine optimale Leistung zu gewährleisten. 🌟"
+            title: "6. Laufende Iteration",
+            description: "Nach dem Launch kann ich für Verbesserungen, neue Sections, technische Aufgaben, CRO-Arbeit und Maintenance im Projekt bleiben."
           }
         },
         book_call: "Termin vereinbaren"
       },
       works: {
-        title: "Projekte",
-        loadMore: "Mehr laden",
+        eyebrow: "Projektkatalog",
+        title: "Weitere Shopify Projekte",
+        subtitle: "Ein breiterer Ausschnitt meiner Shopify Arbeit: Launch-Support, Custom Sections, mehrsprachige Builds, Subscriptions, Filtering, UX-Upgrades und tägliche Storefront-Entwicklung.",
+        allWorksTitle: "Alle Shopify Projekte",
+        allWorksSubtitle: "Ein vollständiger Katalog meiner Shopify Arbeit: Custom Builds, Migrationen, Storefront-Verbesserungen, Merchandising-Logik, mehrsprachige Setups und laufender Support.",
+        loadMore: "Mehr ansehen",
         visitWebsite: "Website besuchen",
+        viewCase: "Case Study ansehen",
+        backHome: "Zurück zur Startseite",
         contactCard: {
           title: "Ihr Projekt hier",
           text: "Haben Sie ein Projekt im Kopf? Lassen Sie uns zusammenarbeiten, um eine atemberaubende Website zu erstellen, die Ihrem Unternehmen hilft, online zu wachsen.",
@@ -810,147 +1638,123 @@ const resources = {
         },
         projects: [
           {
-            title: "Honey Sunny Paradise",
-            url: "https://www.honeysunnyparadise.com/",
-            image: "/source/works_1.webp",
-            tech: "US-Kunde, der hawaiianischen Honig verkauft, benötigte einen qualitativ hochwertigen, einfachen Online-Shop. Ich habe ihn vollständig konfiguriert und FedEx-Versand integriert."
-          },
-          {
-            title: "Craft-Minds(PDPs)",
-            url: "https://craft-minds.com/",
-            image: "/source/6718b31b0e47a451312f3357 1.png",
-            tech: "Laufende Zusammenarbeit mit dem Kunden, Entwicklung einzigartiger Produkt-Landingpages und Verbesserung des Themes mit benutzerdefinierten Abschnitten."
-          },
-          {
             title: "Pair Stich",
             url: "https://pairstitch.pl/",
-            image: "/source/Pairstich.webp",
+            image: "/source/desktop/pair-stich-desktop.webp",
             tech: "Implementierung eines benutzerdefinierten Farbwählers, der sich dynamisch basierend auf Kleidungstyp ändert und die 100-Varianten-Grenze umgeht."
-          },
-          {
-            title: "Kramucci",
-            url: "https://kramucci.com/",
-            image: "/source/Kramucci - Premium Italian Women Bags.webp",
-            tech: "Migration der polnischen Site-Version ins Englische mit zusätzlichen Verbesserungen."
-          },
-          {
-            title: "Steppyshoes",
-            url: "https://steppyshoes.com/",
-            image: "/source/Steppy _ Pour les petits pieds en pleine croissance.webp",
-            tech: "Migration der englischen Version der Site ins Französische und Hinzufügung benutzerdefinierter Abschnitte."
           },
           {
             title: "Haftx",
             url: "https://haftx.com/",
-            image: "/source/HaftX.webp",
+            image: "/source/desktop/haftx-desktop.webp",
             tech: "Entwicklung eines benutzerdefinierten Farbwählers, der sich an den Kleidungstyp anpasst und die 100-Varianten-Beschränkung überwindet."
-          },
-          {
-            title: "Canvaswall",
-            url: "https://canvaswallartstore.com/",
-            image: "/source/TheCanvasWallArt.webp",
-            tech: "Entwicklung und Implementierung mehrerer benutzerdefinierter Abschnitte gemäß Design- und technischen Anforderungen."
-          },
-          {
-            title: "The Vegan Wellness",
-            url: "https://theveganwellnessco.uk/",
-            image: "/source/The Vegan Wellness Co. affordable plant-based nutrition.webp",
-            tech: "Entwicklung eines Shopify-Shops mit benutzerdefiniertem Theme von Grund auf, Implementierung eines Abonnement-Systems und Integration von Abschnitten mit Metafeldern für einfache Verwaltung."
           },
           {
             title: "Junofires",
             url: "https://junofires.nl/",
-            image: "/source/Bestel de mooiste rustieke ledkaarsen met timer bij JUNOfires.webp",
+            image: "/source/desktop/junofires-desktop.webp",
             tech: "Optimierung der Filter in einem Shopify-Shop, Hinzufügung automatischer Bildanzeigefunktionalität beim Filtern nach Farbe, Verbesserung von UX und Navigation."
           },
           {
             title: "Lerros",
             url: "https://www.lerros.com/",
-            image: "/source/Buy fashion for men conveniently online.webp",
+            image: "/source/desktop/lerros-desktop.webp",
             tech: "Aktualisierung des Themes in einem Shopify-Shop, korrekte Übertragung von Inhalten und Metafeldern, Erhaltung der Datenstruktur und Konfiguration der Produktanzeige für stabilen Betrieb."
           },
           {
             title: "Kiki Green",
-            url: "https://kikigreen.com/",
-            image: "/source/kiki-green.png",
+            url: "https://kiki-green.com/",
+            image: "/source/desktop/kiki-green-desktop.webp",
             tech: "Entwicklung einer vollständigen E-Commerce-Lösung von Grund auf, einschließlich vollständiger Online-Shop-Erstellung und Integration mit verschiedenen Plugins wie Treueprogrammen und Produktabonnements."
           },
           {
             title: "Junior's Cheesecake",
             url: "https://juniorscheesecake.com/",
-            image: "/source/Juniors Cheesecake.png",
+            image: "/source/desktop/juniors-cheesecake-desktop.webp",
             tech: "Erstellung neuer benutzerdefinierter Abschnitte basierend auf Figma-Design, Entwicklung von E-Mail-Vorlagen und -Handhabung sowie Implementierung der Serving-Seiten-Funktionalität."
           },
           {
             title: "Spring Mountain Vineyard",
             url: "https://club.springmountainvineyard.com/",
-            image: "/source/Spring Mountain Vineyard.png",
+            image: "/source/desktop/spring-mountain-vineyard-desktop.webp",
             tech: "Neugestaltung der Kollektionsseite mit verbessertem Filterdesign und Produktkarten, Implementierung dynamischer Breadcrumb-Logik, die sich ohne Seitenaktualisierung aktualisiert für bessere UX."
           },
           {
             title: "Lunesi",
             url: "https://lunesi.co.uk/",
-            image: "/source/lunesi.png",
+            image: "/source/desktop/lunesi-desktop.webp",
             tech: "Entwicklung eines dynamischen Warenkorb-Upsell-Bereichs, der Produkte intelligent basierend auf dem Warenkorbinhalt anzeigt, vollständig konfigurierbar über den Theme-Editor. Verbesserter Header mit anpassbaren Farbschemata und konfigurierbarem Ankündigungsbanner für flexibles Branding und Werbeaktionen."
           },
           {
             title: "Nimfa",
             url: "https://nimfa.nl/",
-            image: "/source/nimfa.png",
-            tech: "Erstellung eines benutzerdefinierten Shopify-Themes von Grund auf mit pixelgenauer Implementierung gemäß Figma-Design. Entwicklung von Blog-Funktionalität, Upsell-Bereichen und vollständiger mehrsprachiger Unterstützung (Englisch, Ukrainisch, Niederländisch) für die Premium-Marke für intime Pflege."
+            image: "/source/desktop/nimfa-desktop.webp",
+            caseStudySlug: "nimfa",
+            tech: "Erstellung eines benutzerdefinierten Shopify-Themes von Grund auf mit pixelgenauer Implementierung gemäß Figma-Design. Entwicklung von Blog-Funktionalität, Upsell-Bereichen und vollständiger mehrsprachiger Unterstützung (Englisch, Ukrainisch, Niederländisch) für einen Premium-Sexshop."
           },
           {
             title: "Melinava",
             url: "https://melinava.nl/",
-            image: "/source/melinava.png",
+            image: "/source/desktop/melinava-desktop.webp",
             tech: "Finale Pre-Launch-Politur und QA vor dem Go-Live. Ich verantwortete die komplette “ready for traffic” Checkliste: zentrale Customer Journeys, Cart- und Checkout-Sanity-Checks, Responsive-Issues, Speed und visuelle Bugs — damit der Shop stabil und conversion-ready ist."
           },
           {
             title: "Petaljet",
             url: "https://petaljet.com/",
-            image: "/source/petaljet.png",
+            image: "/source/desktop/petaljet-desktop.webp",
+            caseStudySlug: "petaljet",
             tech: "Laufender Store-Support im Team. Ich verbessere SEO und Performance auf wichtigen Seiten, shippe Changes schnell, halte Releases sauber und übernehme tägliche Updates ohne den Storefront zu gefährden."
           },
           {
             title: "Indian Affairs",
             url: "https://indianaffairs.de/",
-            image: "/source/indian-affairs.png",
+            image: "/source/desktop/indian-affairs-desktop.webp",
+            caseStudySlug: "indian-affairs",
             tech: "Migration vom Legacy-Theme auf Shopify Online Store 2.0 (Prestige). Ich habe Inhalte übertragen, Custom-Funktionalität neu aufgebaut, Anforderungen aus der Spezifikation umgesetzt und Styling sowie UX über die gesamte Site hinweg vereinheitlicht."
           },
           {
             title: "SafeTag Tracking",
             url: "https://safetagtracking.com/",
-            image: "/source/safeatags.png",
+            image: "/source/desktop/safe-tag-tracking-desktop.webp",
             tech: "Custom Shopify Theme Development aus Figma mit voller Customization und mehrsprachigem Setup. Flexible Sections für einfaches Content-Management, pixelgenaues UI und eine solide Basis zum Skalieren von Seiten und Markets."
           },
           {
             title: "Virea",
             url: "https://virea.se/",
-            image: "/source/virea.png",
-            tech: "Umsetzung eines Refresh-Designs für Homepage, Produktseiten und Core-Templates. Kontinuierlicher Support: neue Features, Performance-Optimierung, UX-Verbesserungen und regelmäßige technische Iterationen."
+            image: "/source/desktop/virea-desktop.webp",
+            tech: "Umsetzung eines Refresh-Designs für Homepage, Produktseiten und Core-Templates. Ich betreue den Store weiterhin als Shopify-Experte und kümmere mich um neue Features, Performance-Optimierung, UX-Verbesserungen und laufende technische Iterationen."
           },
           {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/m-oceans.png",
-            tech: "Migration von einem alten Theme auf eine neue Shopify-2.0-Architektur inklusive Übernahme von Custom-Logik. Neue Funktionalität ergänzt, Seitenstruktur verbessert und alle kritischen Store-Flows nach dem Launch zuverlässig abgesichert."
+            image: "/source/desktop/m-oceans-desktop.webp",
+            tech: "Migration von einem alten Theme auf Shopify 2.0 inklusive Übernahme von Custom-Logik und Verbesserung zentraler Storefront-Flows. Ich betreue das Projekt weiterhin als Shopify-Experte, liefere neue Funktionen aus und halte den Store nach dem Launch stabil."
+          },
+          {
+            title: "Elanora Skin",
+            url: "https://elanoraskin.com/",
+            image: "/source/desktop/elanora-skin-desktop.webp",
+            caseStudySlug: "elanora-skin",
+            tech: "Seit einem halben Jahr laufender Shopify-Support als Shopify-Experte des Stores. Ich habe Multi-Market Announcement Banner, marktbezogene Upsell- und Free-Gift-Logik sowie unterschiedliche Free-Shipping-Schwellen für verschiedene Märkte umgesetzt."
           },
           {
             title: "Silk Tallow",
             url: "https://silktallow.com/",
-            image: "/source/silk-tallow.png",
+            image: "/source/desktop/silk-tallow-desktop.webp",
+            caseStudySlug: "silk-tallow",
             tech: "Advanced Mystery-Gift- und Free-Gift-Logik ohne Page Reloads gebaut. Nahtlos ins Storefront-Design integriert — inklusive Regeln, Cart-Verhalten und Edge-Case-Handling."
           },
           {
             title: "Bella Bloom Box",
             url: "https://bellabloombox.se/",
-            image: "/source/httpsbellabloombox.png",
+            image: "/source/desktop/bella-bloom-box-desktop.webp",
             tech: "Kompletten Shopify-Store basierend auf einem Lovable-Design gebaut. Design in Theme-Sections und Templates übersetzt, Content-Struktur aufgesetzt und so umgesetzt, dass der Kunde ohne Code verwalten kann."
           },
           {
             title: "Bazar Bizar",
             url: "https://bazarbizar.be/",
-            image: "/source/bazarbizar.png",
+            image: "/source/desktop/bazar-bizar-desktop.webp",
+            caseStudySlug: "bazar-bizar",
             tech: "Arbeit an einem großen, komplexen Shopify-Store mit vielen Templates und Custom-Logik. Tiefgreifende Anpassungen an Sections und Layouts, funktionale Verbesserungen und Support größerer Changes — bei stabiler Basis."
           }
         ]
@@ -1004,35 +1808,37 @@ const resources = {
         reviews: [
           {
             name: "Oleksandr",
-            image: "/source/1.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Kiril ist ein Lebensretter! Er hat alle Probleme auf meiner Shopify-Site behoben und mir sogar Tipps zur Verbesserung gegeben. Ich bin so glücklich mit den Ergebnissen."
           },
           {
             name: "Anastasia",
-            image: "/source/4.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Ich war so verloren beim Versuch, meinen Online-Shop einzurichten, aber Kiril hat es zum Kinderspiel gemacht! Jetzt habe ich eine schöne Website, die tatsächlich Verkäufe bringt. Danke, Kiril!"
           },
           {
             name: "Dmytro",
-            image: "/source/3.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Die Zusammenarbeit mit Kiril war eine fantastische Erfahrung. Er ist ein echter Shopify-Experte und kümmert sich wirklich um seine Kunden. Ich empfehle ihn sehr!"
           },
           {
             name: "Artem",
-            image: "/source/2.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Kiril hat alles getan, um eine atemberaubende Website für mein Unternehmen zu erstellen. Er ist ein echter Profi und es macht Spaß, mit ihm zu arbeiten."
           },
           {
             name: "Hanna",
-            image: "/source/5.png",
+            image: "/source/profile/testimonial-avatar-placeholder.png",
             text: "Meine neue Website ist alles, was ich wollte und mehr! Kiril ist unglaublich talentiert und einfach zu arbeiten. Ich kann ihm nicht genug danken."
           }
         ]
       },
       contact: {
-        title: "LASSEN SIE UNS ZUSAMMENARBEITEN",
-        subtitle: "alles beginnt mit einem Gespräch",
+        title: "Kontakt",
+        subtitle: "Brauchen Sie Hilfe bei einem Shopify Projekt?",
         email: "karatitsynkiril@gmail.com",
+        note: "Buchen Sie einen Call oder schicken Sie eine kurze E-Mail mit Store-Link und Aufgabenbeschreibung.",
+        audit: "Kostenloser Store Audit und Projekterstgespräch",
         book_call: "Termin vereinbaren",
         linkedin: "LinkedIn",
         github: "GitHub",
@@ -1090,40 +1896,50 @@ const resources = {
         title: "FAQ",
         questions: [
           {
-            question: "Was macht Ihre Websites besonders? 💻",
-            answer: "Ich erstelle Websites, die schnell sind, großartig aussehen und für Ihre Kunden einfach zu verwenden sind. Sie funktionieren perfekt auf Telefonen, Tablets und Computern. 🚀"
+            question: "Welche Shopify Arbeit übernehmen Sie normalerweise?",
+            answer: "Die meisten Projekte fallen in vier Kategorien: Custom Theme Arbeit, Online-Store-2.0-Migrationen, Feature-Entwicklung im Storefront und laufender Support nach dem Launch."
           },
           {
-            question: "Warum Shopify für meinen Online-Shop wählen? 🛍️",
-            answer: "Shopify ist der sicherste und einfachste Weg, einen Online-Shop zu betreiben. Es hat alles, was Sie brauchen, um schnell online zu verkaufen. 🔒"
+            question: "Können Sie in einem bestehenden Shopify Store arbeiten?",
+            answer: "Ja. Ich arbeite regelmäßig in Live Stores und verbessere Sections, Produktseiten, Cart-Verhalten, Filtering, Integrationen, Geschwindigkeit und Launch-Readiness."
           },
           {
-            question: "Warum mit mir arbeiten? 🌟",
-            answer: "Ich erstelle Websites, die nicht nur schön aussehen, sondern auch Ihrem Unternehmen beim Wachstum helfen. Ich bin hier, um Sie in jedem Schritt zu unterstützen. ⚡"
+            question: "Übernehmen Sie Migrationen auf Shopify Online Store 2.0?",
+            answer: "Ja. Ich unterstütze bei der Umstellung von Legacy Setups auf OS 2.0, sichere Content-Struktur, baue individuelle Logik neu auf und reduziere Launch-Risiken."
           },
           {
-            question: "Wie viel kostet es? 💰",
-            answer: "Jedes Projekt ist einzigartig - lassen Sie uns Ihre spezifischen Bedürfnisse und Ziele besprechen, um die richtige Lösung für Ihr Budget zu finden. 📊"
+            question: "Können Sie auch nach dem Launch unterstützen?",
+            answer: "Ja. Viele Kunden behalten mich nach dem Launch für Fixes, Experimente, SEO- und Speed-Verbesserungen, neue Sections und laufende Storefront-Entwicklung an Bord."
           },
           {
-            question: "Unterstützung nach dem Launch? 🔄",
-            answer: "Ja! Ich biete kontinuierliche Unterstützung, um sicherzustellen, dass Ihre Website auf dem neuesten Stand bleibt und optimal funktioniert. 🛡️"
+            question: "Wie starten wir am besten?",
+            answer: "Schicken Sie den Store-Link, die Aufgabe und eventuelle Deadlines oder Einschränkungen. Danach kann ich den sinnvollsten nächsten Schritt vorschlagen: Audit, kleiner Sprint oder größere Umsetzung."
           },
           {
-            question: "Wer bevorzugen Sie, einen Hund oder eine Katze? 🐱",
-            answer: "Katzen sind meine Favoriten! Sie sind unabhängig, anmutig und perfekte Programmierbegleiter. 😺"
+            question: "Arbeiten Sie mit Designern oder bestehenden Spezifikationen?",
+            answer: "Ja. Ich kann auf Basis von Figma, Loom-Videos, schriftlichen Spezifikationen oder einem bestehenden Storefront-Referenzbild umsetzen und helfe auch dabei, unscharfe Anforderungen sauberer zu strukturieren."
           }
         ],
         book_call: "Termin vereinbaren"
       },
       header: {
-        about: "Über mich",
+        services: "Leistungen",
+        cases: "Case Studies",
         process: "Prozess",
         faq: "FAQ",
+        contact: "Kontakt",
+        bookCall: "Termin",
+        about: "Über mich",
         works: "Projekte",
         blog: "Blog",
-        contact: "Kontakt",
         resume: "Lebenslauf"
+      },
+      footer: {
+        blurb: "Shopify Entwicklung für Marken, die individuelle Lösungen, saubereren UX und verlässlichen Support ohne unnötige Komplexität brauchen.",
+        follow: "Auch hier",
+        telegram: "Telegram",
+        instagram: "Instagram",
+        rights: "Alle Rechte vorbehalten."
       }
     }
   }

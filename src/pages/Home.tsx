@@ -1,33 +1,43 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../sections/Hero';
 import AboutMe from '../sections/AboutMe';
+import Services from '../sections/Services';
+import FeaturedCaseStudies from '../sections/FeaturedCaseStudies';
 import Works from '../sections/Works';
-import FeaturedPosts from '../sections/FeaturedPosts';
 import Process from '../sections/Process';
 import FAQ from '../sections/FAQ';
 import Contact from '../sections/Contact';
 
 const Home = () => {
   const location = useLocation();
+  const previousPathnameRef = useRef(location.pathname);
 
   useEffect(() => {
+    const isCrossPageNavigation = previousPathnameRef.current !== location.pathname;
+
     if (location.hash) {
       const target = document.querySelector(location.hash);
       if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.scrollIntoView({
+          behavior: isCrossPageNavigation ? 'auto' : 'smooth',
+          block: 'start',
+        });
       }
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'auto' });
     }
-  }, [location.hash]);
+
+    previousPathnameRef.current = location.pathname;
+  }, [location.hash, location.pathname]);
 
   return (
     <>
       <Hero />
       <AboutMe />
+      <Services />
+      <FeaturedCaseStudies />
       <Works />
-      <FeaturedPosts />
       <Process />
       <FAQ />
       <Contact />

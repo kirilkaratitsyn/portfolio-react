@@ -1,72 +1,75 @@
-import { useEffect, useState } from 'react';
-import Button from '../components/Button';
 import { useTranslation } from 'react-i18next';
 
 function Hero() {
   const { t } = useTranslation();
-  const [currentWord, setCurrentWord] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [wordIndex, setWordIndex] = useState(0);
-  const [letterIndex, setLetterIndex] = useState(0);
-
-  useEffect(() => {
-    const typeWord = () => {
-      const currentFullWord = t(`hero.words.${wordIndex}`);
-      
-      if (!isDeleting) {
-        setCurrentWord(currentFullWord.substring(0, letterIndex + 1));
-        setLetterIndex(prev => prev + 1);
-
-        if (letterIndex === currentFullWord.length) {
-          setTimeout(() => setIsDeleting(true), 2000);
-        }
-      } else {
-        setCurrentWord(currentFullWord.substring(0, letterIndex - 1));
-        setLetterIndex(prev => prev - 1);
-
-        if (letterIndex <= 0) {
-          setIsDeleting(false);
-          setWordIndex((prev) => (prev + 1) % (t('hero.words', { returnObjects: true }) as string[]).length);
-        }
-      }
-    };
-
-    const timer = setTimeout(typeWord, isDeleting ? 100 : 200);
-    return () => clearTimeout(timer);
-  }, [wordIndex, letterIndex, isDeleting, t]);
+  const proofItems = t('hero.proofItems', { returnObjects: true }) as string[];
+  const servicePills = t('hero.servicePills', { returnObjects: true }) as string[];
 
   return (
     <section id="hero">
       <video className="back-video" autoPlay loop muted playsInline>
-        <source src="source/1028(1).webm" type="video/webm" />
+        <source src="/source/video/hero-background.webm" type="video/webm" />
       </video>
-      
-      <div className="hero__container flex flex-col items-center justify-center font-medium md:py-[70px] py-[35px] bg-transparent" data-aos="fade-up">
-        <h1 className="mb-2.5 text-3xl md:text-5xl light-gradient">{t('hero.title')}<br /></h1>
-        <div className="min-h-[60px]">
-          <span className="text-3xl md:text-5xl primary-gradient primary-shadow mr-2.5 font-bold">{t('hero.web')}</span>
-          <h1 className="text-2xl md:text-5xl light-gradient" id="word">{currentWord}</h1>
+
+      <div
+        className="hero__container relative flex flex-col justify-center gap-8 bg-transparent py-[56px] md:min-h-[calc(100vh-76px)] md:py-[88px]"
+        data-aos="fade-up"
+      >
+        <div className="max-w-4xl">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-white/80">
+            {t('hero.eyebrow')}
+          </p>
+          <h1 className="max-w-4xl text-[42px] font-bold leading-[1.05] text-white md:text-[50px]">
+            {t('hero.title')}{' '}
+            <span className="primary-gradient primary-shadow">{t('hero.titleAccent')}</span>
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/80 md:text-[24px]">
+            {t('hero.subtitle')}
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/65 md:text-lg">
+            {t('hero.description')}
+          </p>
         </div>
-        <div className="slogan text-center md:mt-[37px] text-2xl md:text-[32px] light-gradient">
-          {t('hero.subtitle')}
+
+        <div className="flex flex-wrap gap-3">
+          {servicePills.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium text-white/80 backdrop-blur-sm"
+            >
+              {item}
+            </span>
+          ))}
         </div>
-        <div className="buttons mt-14 flex justify-center md:flex-row flex-col items-center gap-5 text-sm whitespace-nowrap">
-          <button 
-            className="light-shadow text-black bg-white/90 backdrop-blur-sm px-12 py-3 rounded-full hover:bg-white transition-all duration-300" 
-            data-cal-link="kiril-karatitsyn/free-consultation-call" 
-            data-cal-namespace="free-consultation-call" 
-            data-cal-config='{"layout":"month_view","theme":"dark"}' 
+
+        <div className="flex flex-col items-start gap-5 text-sm md:flex-row md:items-center md:gap-6">
+          <button
+            className="transition-all duration-500 whitespace-nowrap font-medium bg-white text-black light-shadow px-12 py-3 text-lg rounded-full"
+            data-cal-link="kiril-karatitsyn/free-consultation-call"
+            data-cal-namespace="free-consultation-call"
+            data-cal-config='{"layout":"month_view","theme":"dark"}'
             id="Button"
           >
             {t('hero.book_call')}
           </button>
-          <span className="md:inline-block hidden">{t('hero.or')}</span>
-          <a 
-            href="mailto:karatitsynkiril@gmail.com?subject=Hi Kiril!" 
-            className="light-shadow flex justify-center items-center py-3 px-2 border-white/50 backdrop-blur-sm bg-white/10 border-[2px] rounded-full hover:bg-white/20 transition-all duration-300"
+          <a
+            href="mailto:karatitsynkiril@gmail.com?subject=Shopify%20project%20inquiry"
+            className="flex items-center justify-center rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20"
           >
-            {t('hero.send_message')} <img className="ml-2" width="16px" src="source/Arrow up-right.png" alt="arrow" />
+            {t('hero.send_message')}
+            <img className="ml-2" width="16px" src="/source/ui/arrow-up-right.png" alt="arrow" />
           </a>
+        </div>
+
+        <div className="grid gap-3 border-t border-white/10 pt-6 text-sm text-white/70 md:grid-cols-3">
+          {proofItems.map((item) => (
+            <div
+              key={item}
+              className="shiny-surface rounded-2xl border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-sm"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </section>

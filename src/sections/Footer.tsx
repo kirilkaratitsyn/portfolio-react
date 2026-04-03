@@ -1,47 +1,59 @@
-import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
-    <footer>
-      <div className="footer__containr max-w-[1440px] mx-auto pb-5 py-1 flex flex-col justify-center items-center bg-white text-black">
-        <span className="opacity-60 mb-2.5 md:text-[16px] text-[12px]">
-          © {new Date().getFullYear()} Kiril Karatitsyn. All rights reserved.
-        </span>
-        <div className="links flex p-1 gap-5">
-          <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-60 hover:opacity-100"
-            href="https://github.com/kirilwallstreetreserv"
-          >
-            <FaGithub className="w-8 h-8" />
-          </a>
-          <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-60 hover:opacity-100"
-            href="https://www.instagram.com/kiril.karatitsyn?igsh=anUycG50cW1ha3li&utm_source=qr"
-          >
-            <FaInstagram className="w-8 h-8" />
-          </a>
-          <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-60 hover:opacity-100"
-            href="https://t.me/kirilkryt"
-          >
-            <FaTelegramPlane className="w-8 h-8" />
-          </a>
-          <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-60 hover:opacity-100"
-            href="https://www.linkedin.com/in/kiril-karatitsyn-bb278b332/"
-          >
-            <svg className="w-8 h-8 text-[#000000]" viewBox="0 0 382 382" xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472L341.91,330.654L341.91,330.654z"/>
-            </svg>
-          </a>
+    <footer id="footer">
+      <div className="footer__container mx-auto max-w-[1440px] bg-white px-[15px] pb-8 pt-6 text-black md:px-[75px]">
+        <div className="flex flex-col gap-8 border-t border-black/10 pt-6 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-xl space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-black/45">
+              KARATITSYN
+            </p>
+            <p className="text-sm leading-relaxed text-black/60 md:text-base">
+              {t('footer.blurb')}
+            </p>
+            <a
+              href="mailto:karatitsynkiril@gmail.com?subject=Shopify%20project%20inquiry"
+              className="inline-flex items-center text-sm font-medium text-black hover:text-black/70 md:text-base"
+            >
+              {t('contact.email')}
+            </a>
+          </div>
+
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-black/45">
+              {t('footer.follow')}
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm text-black/70 transition hover:border-black/20 hover:bg-black/5 hover:text-black"
+                href="https://github.com/kirilwallstreetreserv"
+              >
+                <FaGithub className="h-4 w-4" />
+                {t('contact.github')}
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm text-black/70 transition hover:border-black/20 hover:bg-black/5 hover:text-black"
+                href="https://www.linkedin.com/in/kiril-karatitsyn-bb278b332/"
+              >
+                <svg className="h-4 w-4 text-current" viewBox="0 0 382 382" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472L341.91,330.654L341.91,330.654z"/>
+                </svg>
+                {t('contact.linkedin')}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 text-xs text-black/45 md:text-sm">
+          © {new Date().getFullYear()} Kiril Karatitsyn. {t('footer.rights')}
         </div>
       </div>
     </footer>

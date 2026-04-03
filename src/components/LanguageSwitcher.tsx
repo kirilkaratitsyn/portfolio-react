@@ -1,55 +1,93 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isOnLightSection, setIsOnLightSection] = useState(false);
+  const switcherRef = useRef<HTMLDivElement>(null);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const targetElement = document.elementFromPoint(e.clientX, e.clientY);
-      const isOverDarkSection = targetElement?.closest('#contact, #footer');
-      setIsDarkMode(!!isOverDarkSection);
+    const updateSectionState = () => {
+      const switcher = switcherRef.current;
+      if (!switcher) return;
+
+      const rect = switcher.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      const elements = document.elementsFromPoint(centerX, centerY);
+      const relevantElement = elements.find((element) => element !== switcher && !switcher.contains(element));
+      const isOverLightSection = relevantElement?.closest('#contact, #footer');
+
+      setIsOnLightSection(!!isOverLightSection);
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
+    updateSectionState();
+
+    const handleViewportChange = () => {
+      requestAnimationFrame(updateSectionState);
+    };
+
+    window.addEventListener('scroll', handleViewportChange, { passive: true });
+    window.addEventListener('resize', handleViewportChange);
+
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('scroll', handleViewportChange);
+      window.removeEventListener('resize', handleViewportChange);
     };
   }, []);
 
   return (
-    <div className="language-switcher fixed bottom-4 backdrop-blur-md bg-white/10 border border-white/20 shadow-lg px-4 py-2 rounded-full right-4 flex flex-row gap-4 z-50">
+    <div
+      ref={switcherRef}
+      className="language-switcher fixed bottom-4 right-4 z-50 flex flex-row items-center gap-3 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 shadow-lg backdrop-blur-md"
+    >
       <button 
         onClick={() => changeLanguage('en')} 
-        className={`text-sm font-medium transition-all duration-300 ${
+        className={`text-xs font-medium transition-all duration-300 ${
           i18n.language === 'en' 
-            ? isDarkMode ? 'text-black scale-110' : 'text-white scale-110'
-            : isDarkMode ? 'text-black/50 hover:text-black' : 'text-white/50 hover:text-white'
+            ? isOnLightSection ? 'text-black scale-110' : 'text-white scale-110'
+            : isOnLightSection ? 'text-black/40 hover:text-black/60' : 'text-white/50 hover:text-white'
         }`}
       >
         EN
       </button>
+      <span
+        aria-hidden="true"
+        className="relative block h-5 w-px"
+      >
+        <span
+          className={`absolute inset-y-[-6px] left-0 w-px ${isOnLightSection ? 'bg-black/20' : 'bg-white/20'}`}
+        />
+      </span>
       <button 
         onClick={() => changeLanguage('uk')} 
-        className={`text-sm font-medium transition-all duration-300 ${
+        className={`text-xs font-medium transition-all duration-300 ${
           i18n.language === 'uk' 
-            ? isDarkMode ? 'text-black scale-110' : 'text-white scale-110'
-            : isDarkMode ? 'text-black/50 hover:text-black' : 'text-white/50 hover:text-white'
+            ? isOnLightSection ? 'text-black scale-110' : 'text-white scale-110'
+            : isOnLightSection ? 'text-black/40 hover:text-black/60' : 'text-white/50 hover:text-white'
         }`}
       >
         UA
       </button>
+      <span
+        aria-hidden="true"
+        className="relative block h-5 w-px"
+      >
+        <span
+          className={`absolute inset-y-[-6px] left-0 w-px ${isOnLightSection ? 'bg-black/20' : 'bg-white/20'}`}
+        />
+      </span>
       <button 
         onClick={() => changeLanguage('de')} 
-        className={`text-sm font-medium transition-all duration-300 ${
+        className={`text-xs font-medium transition-all duration-300 ${
           i18n.language === 'de' 
-            ? isDarkMode ? 'text-black scale-110' : 'text-white scale-110'
-            : isDarkMode ? 'text-black/50 hover:text-black' : 'text-white/50 hover:text-white'
+            ? isOnLightSection ? 'text-black scale-110' : 'text-white scale-110'
+            : isOnLightSection ? 'text-black/40 hover:text-black/60' : 'text-white/50 hover:text-white'
         }`}
       >
         DE
