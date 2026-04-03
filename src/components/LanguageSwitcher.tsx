@@ -44,7 +44,7 @@ function LanguageSwitcher() {
   return (
     <div
       ref={switcherRef}
-      className="language-switcher fixed bottom-4 right-4 z-50 flex flex-row items-center gap-3 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 shadow-lg backdrop-blur-md"
+      className="language-switcher fixed bottom-3 right-5 z-50 flex flex-row items-center gap-3 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 shadow-lg backdrop-blur-md md:bottom-4 md:right-5"
     >
       <button 
         onClick={() => changeLanguage('en')} 

@@ -1,9 +1,13 @@
-import { useCaseStudies } from '../hooks/useCaseStudies';
-import TransitionLink from '../components/TransitionLink';
+import { useCaseStudies } from "../hooks/useCaseStudies";
+import TransitionLink from "../components/TransitionLink";
 
 const FeaturedCaseStudies = () => {
   const caseStudies = useCaseStudies();
-  const renderBrandBlock = (slug: string, brandSummary: string, className = '') => (
+  const renderBrandBlock = (
+    slug: string,
+    brandSummary: string,
+    className = "",
+  ) => (
     <div
       className={`rounded-[22px] border border-dashed border-white/15 bg-black/20 p-4 text-sm text-white/70 ${className}`.trim()}
     >
@@ -61,7 +65,11 @@ const FeaturedCaseStudies = () => {
                       loading="lazy"
                     />
                   </div>
-                  {renderBrandBlock(item.slug, item.brandSummary, 'hidden lg:block')}
+                  {renderBrandBlock(
+                    item.slug,
+                    item.brandSummary,
+                    "hidden lg:block",
+                  )}
                 </div>
               </div>
               <div className="flex h-full flex-col gap-5 p-6 lg:p-8">
@@ -76,12 +84,14 @@ const FeaturedCaseStudies = () => {
                   ))}
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
+                  <h3 className="text-2xl font-semibold text-white">
+                    {item.title}
+                  </h3>
                   <p className="text-base leading-relaxed text-white/70">
                     {item.summary}
                   </p>
                 </div>
-                {renderBrandBlock(item.slug, item.brandSummary, 'lg:hidden')}
+                {renderBrandBlock(item.slug, item.brandSummary, "lg:hidden")}
                 <div className="grid gap-3 text-sm text-white/70">
                   <div className="shiny-surface rounded-2xl border border-white/10 bg-black/20 p-4">
                     <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.2em] text-white/80">

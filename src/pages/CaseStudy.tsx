@@ -4,6 +4,7 @@ import Contact from '../sections/Contact';
 import { useCaseStudies, useCaseStudyBySlug } from '../hooks/useCaseStudies';
 import TransitionLink from '../components/TransitionLink';
 import CaseStudyMobilePreview from '../components/CaseStudyMobilePreview';
+import CaseStudyMoreProjects from '../components/CaseStudyMoreProjects';
 
 const CaseStudy = () => {
   const { slug } = useParams();
@@ -200,6 +201,9 @@ const CaseStudy = () => {
           </div>
         </div>
       </article>
+
+      <CaseStudyMoreProjects copy={caseStudies} items={caseStudies.items} currentSlug={caseStudy.slug} />
+
       <Contact />
     </>
   );

@@ -1,9 +1,10 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
+import { useCaseStudies } from '../hooks/useCaseStudies';
 import { useWorksContent, type WorkProject } from '../hooks/useWorks';
 import WorkCard from '../components/WorkCard';
 import TransitionLink from '../components/TransitionLink';
@@ -14,17 +15,27 @@ gsap.registerPlugin(ScrollTrigger);
 function Works() {
   const { t } = useTranslation();
   const worksContent = useWorksContent();
-  
+  const caseStudies = useCaseStudies();
+
   const visibleItems = 6;
   const previousItemsRef = useRef(6);
-  
+
+  const featuredCaseSlugs = useMemo(
+    () => new Set(caseStudies.items.slice(0, 3).map((item) => item.slug)),
+    [caseStudies.items]
+  );
+
+  const works = useMemo(() => {
+    const raw = worksContent.projects as WorkProject[];
+    return raw.filter(
+      (work) => !work.caseStudySlug || !featuredCaseSlugs.has(work.caseStudySlug)
+    );
+  }, [worksContent.projects, featuredCaseSlugs]);
+
   // References for the hover effect
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   // Reference for the container
   const containerRef = useRef<HTMLDivElement>(null);
-  
-  // Get works from translation
-  const works = worksContent.projects as WorkProject[];
 
   // Function to initialize lazy loading for images
   const initLazyLoading = () => {
@@ -127,7 +138,7 @@ function Works() {
         <div ref={containerRef} className="items grid grid-cols-1 gap-x-[40px] gap-y-[40px] justify-items-center lg:grid-cols-2 xl:grid-cols-3">
           {works.slice(0, visibleItems).map((work, index) => (
             <WorkCard
-              key={index} 
+              key={work.url}
               work={work}
               viewCaseLabel={t('works.viewCase')}
               visitWebsiteLabel={t('works.visitWebsite')}

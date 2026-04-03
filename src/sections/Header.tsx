@@ -39,7 +39,7 @@ function Header() {
   return (
     <>
       <header className="sticky w-full top-0 left-0 z-50">
-        <div className="header flex flex-row items-center justify-between gap-4 p-[15px] backdrop-blur-md bg-black/30 border-b border-white/10">
+        <div className="header flex flex-row items-center justify-between gap-4 px-5 py-3 backdrop-blur-md bg-black/30 border-b border-white/10">
           <h1 className={`primary-gradient name ${isMenuOpen ? 'invisible' : ''}`}>
             <TransitionLink to="/#hero" onClick={() => setIsMenuOpen(false)}>
               KARATITSYN

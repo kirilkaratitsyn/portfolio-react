@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer id="footer">
-      <div className="footer__container mx-auto max-w-[1440px] bg-white px-[15px] pb-8 pt-6 text-black md:px-[75px]">
+      <div className="footer__container mx-auto max-w-[1440px] bg-white px-5 pb-8 pt-6 text-black">
         <div className="flex flex-col gap-8 border-t border-black/10 pt-6 md:flex-row md:items-start md:justify-between">
           <div className="max-w-xl space-y-3">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-black/45">
