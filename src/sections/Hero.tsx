@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 function Hero() {
   const { t } = useTranslation();
   const proofItems = t('hero.proofItems', { returnObjects: true }) as string[];
-  const servicePills = t('hero.servicePills', { returnObjects: true }) as string[];
 
   return (
     <section id="hero">
@@ -23,23 +22,9 @@ function Hero() {
             {t('hero.title')}{' '}
             <span className="primary-gradient primary-shadow">{t('hero.titleAccent')}</span>
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/80 md:text-[24px]">
-            {t('hero.subtitle')}
-          </p>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/65 md:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/65 md:text-lg">
             {t('hero.description')}
           </p>
-        </div>
-
-        <div className="flex flex-wrap gap-3">
-          {servicePills.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium text-white/80 backdrop-blur-sm"
-            >
-              {item}
-            </span>
-          ))}
         </div>
 
         <div className="flex flex-col items-start gap-5 text-sm md:flex-row md:items-center md:gap-6">
@@ -61,7 +46,7 @@ function Hero() {
           </a>
         </div>
 
-        <div className="grid gap-3 border-t border-white/10 pt-6 text-sm text-white/70 md:grid-cols-3">
+        <div className="hidden grid gap-3 border-t border-white/10 pt-6 text-sm text-white/70 md:grid-cols-3">
           {proofItems.map((item) => (
             <div
               key={item}

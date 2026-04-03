@@ -17,24 +17,16 @@ const resources = {
           "Hands-on work across custom builds, migrations, CRO, and support retainers.",
           "Focused on Shopify-first execution with clean UX and reliable releases."
         ],
-        servicePills: [
-          "Store builds & migrations",
-          "Theme customization",
-          "Integrations & APIs",
-          "Performance & SEO"
-        ],
         or: "or",
         words: ["Developer", "Magician", "Expert", "Master", "Specialist", "Guru", "Virtuoso", "Maestro"]
       },
       about: {
         eyebrow: "Why Shopify Teams Hire Me",
         title: "A Shopify partner who thinks beyond implementation",
-        text: "I work with Shopify brands that need more than quick fixes. The goal is to turn store requirements into clean, conversion-aware solutions that are fast to ship and easy to manage after launch.",
-        text_2: "That includes custom Liquid work, Online Store 2.0 migrations, integrations, merchandising improvements, multilingual storefronts, and ongoing support for stores that keep evolving after release.",
-        highlights: [
-          "Custom theme development with flexible sections and clean storefront logic.",
-          "CRO-minded implementation focused on product discovery, cart behavior, and speed."
-        ],
+        text: "I translate business goals into maintainable Shopify storefronts—custom themes, integrations, and iterations that keep selling after launch.",
+        statYearLabel: "Years shipping Shopify work",
+        statProjectsLabel: "Projects delivered",
+        statSatisfactionLabel: "Client satisfaction",
         lets_work: "Let's Work Together"
       },
       services: {
@@ -43,28 +35,34 @@ const resources = {
         subtitle: "Each engagement is focused on making the store easier to grow, easier to manage, and stronger at converting traffic into revenue.",
         items: [
           {
-            title: "Store builds & migrations",
-            description: "Launch a new Shopify store or move from a legacy theme to a cleaner Online Store 2.0 setup without losing critical content or customer flows."
+            id: "store-setup",
+            title: "Shopify Store Setup From Scratch",
+            description: "Launch a new store with a clean theme structure, flexible sections, and admin-friendly content—aligned to your brand before you scale."
           },
           {
-            title: "Theme customization",
-            description: "Build or refine sections, templates, and product experiences so the storefront matches your brand and supports merchandising goals."
+            id: "platform-migration",
+            title: "Platform Migration",
+            description: "Move from WooCommerce, Magento, custom stacks, or legacy Shopify themes to Online Store 2.0 without losing SEO, redirects, or critical customer flows."
           },
           {
-            title: "Integrations & APIs",
-            description: "Connect apps, subscriptions, payments, CRMs, and external systems in a way that works reliably inside the storefront and admin."
+            id: "app-integration",
+            title: "App Integration for Shopify",
+            description: "Connect apps, subscriptions, payments, CRMs, and custom APIs so storefront, cart, and admin stay reliable and easy to operate."
           },
           {
-            title: "Performance & SEO",
-            description: "Improve load speed, reduce frontend friction, and strengthen technical foundations that help both rankings and conversion."
+            id: "performance-seo",
+            title: "Performance & SEO Optimization",
+            description: "Improve Core Web Vitals and perceived speed with leaner Liquid and assets, plus technical SEO foundations—structured data, metadata, and crawl-friendly templates."
           },
           {
-            title: "Custom Shopify functionality",
-            description: "Implement advanced storefront behavior like upsells, gifts, bundle flows, dynamic cart logic, or specialized product interactions."
+            id: "cro-audit",
+            title: "Conversion & UX Optimization Audit",
+            description: "Review funnels, UX friction, and merchandising gaps—then ship prioritized fixes that lift conversion without a full rebuild."
           },
           {
-            title: "Ongoing support & audits",
-            description: "Get a reliable technical partner for store audits, launch readiness, bug fixing, maintenance, and continuous iteration after release."
+            id: "support",
+            title: "Ongoing Support and Maintenance",
+            description: "Retainers for launches, bug fixes, theme updates, and iteration so your team can focus on growth while the storefront stays stable."
           }
         ]
       },
@@ -664,24 +662,16 @@ const resources = {
           "Практичний досвід у кастомних збірках, міграціях, CRO і support-retainer задачах.",
           "Фокус на Shopify-first реалізації, чистому UX і стабільних релізах."
         ],
-        servicePills: [
-          "Запуск і міграції магазинів",
-          "Кастомізація тем",
-          "Інтеграції та API",
-          "Швидкість і SEO"
-        ],
         or: "або",
         words: ["Розробник", "Чарівник", "Експерт", "Майстер", "Спеціаліст", "Гуру", "Віртуоз", "Маестро"]
       },
       about: {
         eyebrow: "Чому зі мною працюють Shopify-команди",
         title: "Shopify-партнер, який думає не лише про код",
-        text: "Я працюю з Shopify-брендами, яким потрібні не просто точкові правки. Моя задача — перетворити вимоги бізнесу на чисті, конверсійно-орієнтовані рішення, які швидко доставляються й залишаються зручними для команди після запуску.",
-        text_2: "Це включає кастомну Liquid-розробку, міграції на Online Store 2.0, інтеграції, покращення мерчандайзингу, мультимовні storefront-рішення та постійну підтримку для магазинів, які розвиваються після релізу.",
-        highlights: [
-          "Кастомна розробка тем із гнучкими секціями та чистою storefront-логікою.",
-          "CRO-мислення в реалізації: discovery товарів, поведінка кошика і швидкість."
-        ],
+        text: "Перетворюю вимоги бізнесу на підтримувані Shopify-магазини — теми, інтеграції та ітерації, які працюють після запуску.",
+        statYearLabel: "Років з Shopify",
+        statProjectsLabel: "Реалізованих проєктів",
+        statSatisfactionLabel: "Задоволених клієнтів",
         lets_work: "Давайте працювати разом"
       },
       services: {
@@ -690,28 +680,34 @@ const resources = {
         subtitle: "Кожна співпраця побудована так, щоб магазин було легше масштабувати, легше підтримувати і простіше конвертувати трафік у продажі.",
         items: [
           {
-            title: "Запуск і міграції магазинів",
-            description: "Запуск нового Shopify-магазину або перехід із legacy-теми на чистішу архітектуру Online Store 2.0 без втрати критичного контенту чи клієнтських флоу."
+            id: "store-setup",
+            title: "Запуск Shopify-магазину з нуля",
+            description: "Новий магазин із чистою структурою теми, гнучкими секціями та зручним для команди контентом — під бренд і подальше масштабування."
           },
           {
-            title: "Кастомізація тем",
-            description: "Розробка і доопрацювання секцій, шаблонів і storefront-досвіду так, щоб магазин працював під бренд і задачі мерчандайзингу."
+            id: "platform-migration",
+            title: "Міграція з іншої платформи",
+            description: "Перехід з WooCommerce, Magento, кастомних рішень або legacy-тем Shopify на Online Store 2.0 без втрати SEO, редиректів і критичних клієнтських флоу."
           },
           {
-            title: "Інтеграції та API",
-            description: "Підключення додатків, підписок, оплат, CRM і зовнішніх сервісів так, щоб усе надійно працювало в storefront та адмінці."
+            id: "app-integration",
+            title: "Інтеграція додатків для Shopify",
+            description: "Підключення додатків, підписок, оплат, CRM і кастомних API так, щоб storefront, кошик і адмінка залишались стабільними."
           },
           {
-            title: "Швидкість і SEO",
-            description: "Покращення швидкості завантаження, зниження frontend-тертя і посилення технічної бази, яка допомагає і SEO, і конверсії."
+            id: "performance-seo",
+            title: "Оптимізація продуктивності та SEO",
+            description: "Кращі Core Web Vitals і відчутна швидкість — легший Liquid і асети, плюс технічне SEO: структуровані дані, метадані та зручні для краулінгу шаблони."
           },
           {
-            title: "Кастомна Shopify-функціональність",
-            description: "Реалізація складної storefront-логіки: upsell, gift-механіки, bundle-флоу, динамічний кошик та нетипові товарні сценарії."
+            id: "cro-audit",
+            title: "Аудит конверсії та UX",
+            description: "Розбір воронок, тертя в UX і мерчандайзингу — потім пріоритезовані правки без повної переробки магазину."
           },
           {
-            title: "Підтримка та аудити",
-            description: "Надійний технічний партнер для аудиту магазину, підготовки до запуску, виправлення багів, maintenance і постійних ітерацій."
+            id: "support",
+            title: "Підтримка та супровід",
+            description: "Ретейнери на запуски, багфікси, оновлення теми й ітерації, поки команда зосереджена на зростанні, а магазин лишається під контролем."
           }
         ]
       },
@@ -1311,24 +1307,16 @@ const resources = {
           "Praxis in Custom Builds, Migrationen, CRO und laufendem Store-Support.",
           "Shopify-first Umsetzung mit sauberem UX und stabilen Releases."
         ],
-        servicePills: [
-          "Store Builds & Migrationen",
-          "Theme Customization",
-          "Integrationen & APIs",
-          "Performance & SEO"
-        ],
         or: "oder",
         words: ["Entwickler", "Magier", "Experte", "Meister", "Spezialist", "Guru", "Virtuose", "Maestro"]
       },
       about: {
         eyebrow: "Warum Shopify Teams mit mir arbeiten",
         title: "Ein Shopify Partner, der über reine Umsetzung hinausdenkt",
-        text: "Ich arbeite mit Shopify Marken, die mehr als schnelle Einzelfixes brauchen. Ziel ist es, Anforderungen in saubere, conversion-orientierte Lösungen zu übersetzen, die schnell ausgeliefert werden und nach dem Launch gut wartbar bleiben.",
-        text_2: "Dazu gehören individuelle Liquid-Entwicklung, Online-Store-2.0-Migrationen, Integrationen, Merchandising-Verbesserungen, mehrsprachige Storefronts und laufender Support für Shops, die nach dem Release weiter wachsen.",
-        highlights: [
-          "Custom Theme Entwicklung mit flexiblen Sections und sauberer Storefront-Logik.",
-          "CRO-orientierte Umsetzung mit Fokus auf Produktfindung, Cart-Verhalten und Geschwindigkeit."
-        ],
+        text: "Ich übersetze Business-Ziele in wartbare Shopify-Storefronts—Themes, Integrationen und Iterationen, die nach dem Launch weiter verkaufen.",
+        statYearLabel: "Jahre Shopify-Erfahrung",
+        statProjectsLabel: "Projekte umgesetzt",
+        statSatisfactionLabel: "Zufriedene Kunden",
         lets_work: "Lassen Sie uns zusammenarbeiten"
       },
       services: {
@@ -1337,28 +1325,34 @@ const resources = {
         subtitle: "Jedes Projekt ist darauf ausgerichtet, den Shop leichter skalierbar, leichter wartbar und stärker in der Conversion zu machen.",
         items: [
           {
-            title: "Store Builds & Migrationen",
-            description: "Neuen Shopify Store aufsetzen oder von einem Legacy Theme auf ein sauberes Online-Store-2.0-Setup wechseln, ohne kritische Inhalte oder Kundenflüsse zu verlieren."
+            id: "store-setup",
+            title: "Shopify Store Setup von Grund auf",
+            description: "Neuen Store mit sauberem Theme-Aufbau, flexiblen Sections und admin-freundlichen Inhalten—passend zur Marke und bereit zum Skalieren."
           },
           {
-            title: "Theme Customization",
-            description: "Sections, Templates und Produkt-Erlebnisse so entwickeln oder verfeinern, dass der Store zur Marke passt und Merchandising-Ziele unterstützt."
+            id: "platform-migration",
+            title: "Plattform-Migration",
+            description: "Umzug von WooCommerce, Magento, Custom-Stacks oder Legacy-Themes zu Online Store 2.0—ohne SEO, Redirects oder kritische Kundenflüsse zu verlieren."
           },
           {
-            title: "Integrationen & APIs",
-            description: "Apps, Abos, Payments, CRMs und externe Systeme so anbinden, dass sie im Storefront und Admin zuverlässig funktionieren."
+            id: "app-integration",
+            title: "App-Integration für Shopify",
+            description: "Apps, Abos, Payments, CRMs und APIs anbinden, sodass Storefront, Warenkorb und Admin stabil und gut bedienbar bleiben."
           },
           {
-            title: "Performance & SEO",
-            description: "Ladezeiten verbessern, Frontend-Reibung reduzieren und die technische Basis stärken, die sowohl Rankings als auch Conversion unterstützt."
+            id: "performance-seo",
+            title: "Performance- & SEO-Optimierung",
+            description: "Core Web Vitals und gefühlte Geschwindigkeit verbessern mit schlankerem Liquid und Assets, plus technisches SEO—Structured Data, Metadaten, crawl-freundliche Templates."
           },
           {
-            title: "Custom Shopify Funktionalität",
-            description: "Komplexe Storefront-Features wie Upsells, Gifts, Bundle-Flows, dynamische Cart-Logik oder spezielle Produktinteraktionen umsetzen."
+            id: "cro-audit",
+            title: "Conversion- & UX-Optimierungs-Audit",
+            description: "Funnels, UX-Reibung und Merchandising-Lücken prüfen—dann priorisierte Fixes, die Conversion verbessern ohne Full-Rebuild."
           },
           {
-            title: "Laufender Support & Audits",
-            description: "Ein verlässlicher technischer Partner für Store Audits, Launch-Vorbereitung, Bugfixing, Maintenance und kontinuierliche Weiterentwicklung."
+            id: "support",
+            title: "Laufender Support und Wartung",
+            description: "Retainer für Launches, Bugfixes, Theme-Updates und Iteration—damit ihr wachsen könnt, während der Store zuverlässig bleibt."
           }
         ]
       },

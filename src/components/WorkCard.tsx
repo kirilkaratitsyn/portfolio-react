@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
-import { type WorkProject } from '../hooks/useWorks';
-import { useCaseStudyBySlug } from '../hooks/useCaseStudies';
-import TransitionLink from './TransitionLink';
+import { useTranslation } from "react-i18next";
+import { type WorkProject } from "../hooks/useWorks";
+import { useCaseStudyBySlug } from "../hooks/useCaseStudies";
+import TransitionLink from "./TransitionLink";
 
 type WorkCardProps = {
   work: WorkProject;
@@ -27,15 +27,15 @@ const WorkCard = ({
 
   const imageProps = lazyImage
     ? {
-        'data-src': work.image,
+        "data-src": work.image,
         className:
-          'lazy h-full w-full rounded-lg object-cover object-top transition-transform duration-700',
+          "lazy h-full w-full rounded-lg object-cover object-top transition-transform duration-700",
       }
     : {
         src: work.image,
-        loading: 'lazy' as const,
+        loading: "lazy" as const,
         className:
-          'h-full w-full rounded-lg object-cover object-top transition-transform duration-700',
+          "h-full w-full rounded-lg object-cover object-top transition-transform duration-700",
       };
 
   return (
@@ -44,7 +44,7 @@ const WorkCard = ({
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       className="item flex h-full w-full max-w-[490px] flex-col items-center justify-start gap-[15px] rounded-lg border border-white/10 bg-white/5 px-5 py-5 shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-white/10"
-      style={{ transition: 'all 0.3s ease' }}
+      style={{ transition: "all 0.3s ease" }}
     >
       <a
         href={work.url}
@@ -60,15 +60,15 @@ const WorkCard = ({
       {work.caseStudySlug && caseStudy ? (
         <div className="w-full rounded-2xl border border-dashed border-white/15 bg-black/20 p-4 text-left">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
-            {t('caseStudies.aboutBrandTitle')}
+            {t("caseStudies.aboutBrandTitle")}
           </p>
           <p
             className="text-sm leading-relaxed text-white/70"
             style={{
-              display: '-webkit-box',
+              display: "-webkit-box",
               WebkitLineClamp: 3,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
             }}
           >
             {caseStudy.brandSummary}
@@ -77,7 +77,7 @@ const WorkCard = ({
             to={`/projects/${work.caseStudySlug}`}
             className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/20 underline-offset-4 transition hover:text-white/70"
           >
-            {t('caseStudies.readMore')}
+            {t("caseStudies.readMore")}
           </TransitionLink>
         </div>
       ) : null}
@@ -92,7 +92,7 @@ const WorkCard = ({
           </TransitionLink>
         ) : (
           <button
-            onClick={() => window.open(work.url, '_blank')}
+            onClick={() => window.open(work.url, "_blank")}
             className="rounded-full bg-white px-12 py-3 text-lg font-medium whitespace-nowrap text-black transition-all duration-500 light-shadow"
           >
             {visitWebsiteLabel}

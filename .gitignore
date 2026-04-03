@@ -4,3 +4,6 @@ dist
 .env.local
 .playwright-cli
 output/playwright
+test-results/
+playwright-report/
+blob-report/

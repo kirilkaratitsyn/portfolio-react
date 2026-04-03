@@ -185,7 +185,7 @@ body.route-loading-out .route-loader {
 }
 
 .route-loader__track {
-  width: min(220px, calc(100vw - 32px));
+  width: min(220px, calc(100vw - 40px));
   height: 4px;
   overflow: hidden;
   border-radius: 999px;
@@ -206,18 +206,10 @@ body.route-loading-out .route-loader {
 
 [class*="__container"] {
   max-width: 1440px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   padding-bottom: 100px;
-}
-
-@media (max-width: 680px) {
-  [class*="__container"] {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 100px;
-  }
 }
 
 
@@ -389,7 +381,7 @@ body.menu-open {
     background-color: black;
     transition: all 0.5s ease 0s;
     animation: burgerAnimation 0.4s ease;
-    padding: 20px 32px 32px 32px;
+    padding: 20px 20px 32px 20px;
     align-items: center;
     justify-content: flex-start;
   }
@@ -421,7 +413,7 @@ body.menu-open {
     z-index: 49 !important;
     background-color: black !important;
     overflow-y: auto !important;
-    padding: 20px 32px 32px 32px !important;
+    padding: 20px 20px 32px 20px !important;
     align-items: center !important;
     justify-content: flex-start !important;
   }
