@@ -59,26 +59,18 @@ const WorkCard = ({
       </p>
       {work.caseStudySlug && caseStudy ? (
         <div className="w-full rounded-2xl border border-dashed border-white/15 bg-black/20 p-4 text-left">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
+          <p className="mb-2 whitespace-nowrap text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
             {t("caseStudies.aboutBrandTitle")}
           </p>
-          <p
-            className="text-sm leading-relaxed text-white/70"
-            style={{
-              display: "-webkit-box",
-              WebkitLineClamp: 3,
-              WebkitBoxOrient: "vertical",
-              overflow: "hidden",
-            }}
-          >
-            {caseStudy.brandSummary}
+          <p className="flex min-w-0 items-baseline gap-1.5 text-sm leading-relaxed text-white/70">
+            <span className="min-w-0 truncate">{caseStudy.brandSummary}</span>
+            <TransitionLink
+              to={`/projects/${work.caseStudySlug}`}
+              className="shrink-0 font-medium text-white underline decoration-white/20 underline-offset-4 transition hover:text-white/70"
+            >
+              {t("caseStudies.readMore")}
+            </TransitionLink>
           </p>
-          <TransitionLink
-            to={`/projects/${work.caseStudySlug}`}
-            className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/20 underline-offset-4 transition hover:text-white/70"
-          >
-            {t("caseStudies.readMore")}
-          </TransitionLink>
         </div>
       ) : null}
       <span className="min-h-[100px] opacity-80">{work.tech}</span>
