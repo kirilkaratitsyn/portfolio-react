@@ -23,7 +23,7 @@ function Header() {
     { name: t('header.services'), to: '/#services' },
     { name: t('header.cases'), to: '/#case-studies' },
     { name: t('header.works'), to: '/projects' },
-    { name: t('header.process'), to: '/#process' },
+    { name: t('header.experience'), to: '/#experience' },
     { name: t('header.faq'), to: '/#faq' },
     { name: t('header.contact'), to: '/#contact' }
   ];

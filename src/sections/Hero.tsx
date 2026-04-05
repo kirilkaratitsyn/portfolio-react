@@ -18,6 +18,10 @@ function Hero() {
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.32em] text-white/80">
             {t('hero.eyebrow')}
           </p>
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 backdrop-blur-sm">
+            <img src="/source/ui/upwork-top-rated.svg" alt="" className="h-5 w-5 shrink-0" aria-hidden />
+            <span>{t('hero.topRated')}</span>
+          </div>
           <h1 className="max-w-4xl text-[42px] font-bold leading-[1.05] text-white md:text-[50px]">
             {t('hero.title')}{' '}
             <span className="primary-gradient primary-shadow">{t('hero.titleAccent')}</span>

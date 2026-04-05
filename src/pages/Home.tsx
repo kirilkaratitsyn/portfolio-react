@@ -5,7 +5,7 @@ import AboutMe from '../sections/AboutMe';
 import Services from '../sections/Services';
 import FeaturedCaseStudies from '../sections/FeaturedCaseStudies';
 import Works from '../sections/Works';
-import Process from '../sections/Process';
+import Experience from '../sections/Experience';
 import FAQ from '../sections/FAQ';
 import Contact from '../sections/Contact';
 
@@ -38,7 +38,7 @@ const Home = () => {
       <Services />
       <FeaturedCaseStudies />
       <Works />
-      <Process />
+      <Experience />
       <FAQ />
       <Contact />
     </>

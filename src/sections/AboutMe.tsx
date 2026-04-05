@@ -88,8 +88,8 @@ function AboutMe() {
 
             <div className="mt-8 grid max-w-xl grid-cols-3 gap-2 sm:gap-3 lg:max-w-none">
               <AnimatedStat target={3} suffix="+" label={t('about.statYearLabel')} />
-              <AnimatedStat target={30} suffix="+" label={t('about.statProjectsLabel')} />
-              <AnimatedStat target={99} suffix="%" label={t('about.statSatisfactionLabel')} />
+              <AnimatedStat target={35} suffix="+" label={t('about.statProjectsLabel')} />
+              <AnimatedStat target={250} suffix="+" label={t('about.statHoursLabel')} />
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">

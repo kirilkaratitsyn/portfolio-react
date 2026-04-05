@@ -6,6 +6,7 @@ const resources = {
     translation: {
       hero: {
         eyebrow: "Shopify Developer",
+        topRated: "Top Rated on Upwork",
         title: "I build Shopify stores that",
         titleAccent: "convert, scale, and stay easy to manage.",
         subtitle: "Custom themes, Online Store 2.0 migrations, integrations, CRO-focused storefront work, and long-term support for brands that need more than a generic setup.",
@@ -26,7 +27,7 @@ const resources = {
         text: "I translate business goals into maintainable Shopify storefronts—custom themes, integrations, and iterations that keep selling after launch.",
         statYearLabel: "Years shipping Shopify work",
         statProjectsLabel: "Projects delivered",
-        statSatisfactionLabel: "Client satisfaction",
+        statHoursLabel: "Upwork hours worked",
         lets_work: "Let's Work Together"
       },
       services: {
@@ -295,35 +296,61 @@ const resources = {
           }
         ]
       },
-      process: {
-        title: "How I Work",
-        steps: {
-          step1: {
-            title: "1. Discovery",
-            description: "We define business goals, current blockers, storefront priorities, and what success should look like for the Shopify work."
-          },
-          step2: {
-            title: "2. Audit & planning",
-            description: "I review the current theme, apps, technical constraints, and customer journeys so the implementation plan is realistic before code starts."
-          },
-          step3: {
-            title: "3. Build",
-            description: "I implement the storefront, sections, logic, or migration work with a strong focus on maintainability and clean user experience."
-          },
-          step4: {
-            title: "4. QA & refinement",
-            description: "Every key page and flow gets reviewed for responsiveness, storefront behavior, and launch-readiness before handoff."
-          },
-          step5: {
-            title: "5. Launch support",
-            description: "I help make sure the release is stable, with fixes and final polish where needed before traffic hits the updated store."
-          },
-          step6: {
-            title: "6. Ongoing iteration",
-            description: "After launch, I can stay involved for improvements, new sections, technical fixes, CRO work, and store maintenance."
-          }
+      experience: {
+        eyebrow: "Experience",
+        title: "Timeline of work, learning, and current growth",
+        subtitle: "A focused view of the teams and institutions shaping my Shopify work right now, from product delivery to ongoing study and hands-on internship experience.",
+        placeholderLabel: "Placeholder logo",
+        stats: {
+          timeline: "Active timeline entries",
+          since: "Learning and building since"
         },
-        book_call: "Book a Call"
+        items: [
+          {
+            kind: "Internship",
+            role: "Frontend Developer",
+            company: "Funduino GmbH",
+            dateRange: "February 2026 - Present",
+            location: "Nordhorn, Germany",
+            summary: "An ongoing internship as a Frontend Developer at an Arduino-focused learning platform and education brand, contributing to interface and storefront work inside a live company environment.",
+            logo: "/source/logos/funduino.jpg",
+            logoAlt: "Funduino GmbH logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Education",
+            role: "Student",
+            company: "KBS Nordhorn",
+            dateRange: "2024 - Present",
+            location: "Nordhorn, Germany",
+            summary: "Studying at Kaufmannische Berufsbildende Schulen Nordhorn since 2024, building a stronger technical and professional foundation alongside real Shopify project work.",
+            logo: "/source/logos/kbs-nordhorn.png",
+            logoAlt: "KBS Nordhorn logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Work",
+            role: "Shopify Developer",
+            company: "Collab IT",
+            dateRange: "May 2025 - November 2025",
+            location: "Remote",
+            summary: "Worked as a Shopify Developer on client delivery and storefront implementation. Public company details are currently limited, so the portfolio copy stays intentionally factual and conservative.",
+            logo: "/source/logos/collab-it.png",
+            logoAlt: "Collab IT logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Work",
+            role: "Shopify Developer",
+            company: "Great Dev",
+            dateRange: "December 2024 - April 2025",
+            location: "Remote",
+            summary: "Worked on Shopify development in a team setting before the company website became unavailable. The entry is kept concise until an official logo source is available again.",
+            logo: "/source/logos/great-dev.png",
+            logoAlt: "Great Dev logo",
+            isPlaceholderLogo: false
+          }
+        ]
       },
       works: {
         eyebrow: "Project Catalog",
@@ -539,9 +566,11 @@ const resources = {
       },
       contact: {
         title: "Contact",
+        topRated: "Top Rated on Upwork",
         subtitle: "Need help with a Shopify project?",
         email: "karatitsynkiril@gmail.com",
         note: "Book a call or send a short email with your store link and what you need.",
+        topRatedNote: "Work with a Top Rated Upwork freelancer who focuses on clean communication, reliable delivery, and Shopify work that stays solid after launch.",
         audit: "Free store audit and project discussion",
         book_call: "Book a Call",
         linkedin: "LinkedIn",
@@ -629,7 +658,7 @@ const resources = {
       header: {
         services: "Services",
         cases: "Case Studies",
-        process: "Process",
+        experience: "Experience",
         faq: "FAQ",
         contact: "Contact Me",
         bookCall: "Book a Call",
@@ -651,6 +680,7 @@ const resources = {
     translation: {
       hero: {
         eyebrow: "Shopify Розробник",
+        topRated: "Top Rated на Upwork",
         title: "Я створюю Shopify-магазини, які",
         titleAccent: "конвертують, масштабуються і залишаються зручними в управлінні.",
         subtitle: "Кастомні теми, міграції на Online Store 2.0, інтеграції, CRO-орієнтована робота зі storefront і довгострокова технічна підтримка для брендів, яким замало шаблонного рішення.",
@@ -671,7 +701,7 @@ const resources = {
         text: "Перетворюю вимоги бізнесу на підтримувані Shopify-магазини — теми, інтеграції та ітерації, які працюють після запуску.",
         statYearLabel: "Років з Shopify",
         statProjectsLabel: "Реалізованих проєктів",
-        statSatisfactionLabel: "Задоволених клієнтів",
+        statHoursLabel: "Годин на Upwork",
         lets_work: "Давайте працювати разом"
       },
       services: {
@@ -940,35 +970,61 @@ const resources = {
           }
         ]
       },
-      process: {
-        title: "Як я працюю",
-        steps: {
-          step1: {
-            title: "1. Discovery",
-            description: "Фіксуємо бізнес-цілі, поточні блокери, пріоритети storefront і розуміння того, як виглядатиме успіх для Shopify-задачі."
-          },
-          step2: {
-            title: "2. Аудит і планування",
-            description: "Я переглядаю тему, додатки, технічні обмеження і customer journeys, щоб план реалізації був реалістичним ще до старту коду."
-          },
-          step3: {
-            title: "3. Реалізація",
-            description: "Впроваджую storefront, секції, логіку або міграцію з акцентом на підтримуваність і чистий користувацький досвід."
-          },
-          step4: {
-            title: "4. QA і полірування",
-            description: "Кожна ключова сторінка і флоу перевіряються на адаптивність, поведінку storefront і готовність до запуску."
-          },
-          step5: {
-            title: "5. Підтримка запуску",
-            description: "Допомагаю довести реліз до стабільного стану: фінальні правки, фікси і передзапускове полірування перед приходом трафіку."
-          },
-          step6: {
-            title: "6. Подальші ітерації",
-            description: "Після запуску можу залишатися в проєкті для покращень, нових секцій, технічних задач, CRO-експериментів і maintenance."
-          }
+      experience: {
+        eyebrow: "Досвід",
+        title: "Таймлайн роботи, навчання і поточного розвитку",
+        subtitle: "Короткий зріз команд і навчальних середовищ, які зараз формують мій Shopify-досвід: комерційна розробка, постійне навчання і практичне стажування.",
+        placeholderLabel: "Тимчасовий логотип",
+        stats: {
+          timeline: "Активні етапи таймлайну",
+          since: "Навчаюся і розвиваюся з"
         },
-        book_call: "Забронювати дзвінок"
+        items: [
+          {
+            kind: "Стажування",
+            role: "Frontend Developer",
+            company: "Funduino GmbH",
+            dateRange: "Лютий 2026 - дотепер",
+            location: "Нордгорн, Німеччина",
+            summary: "Поточне стажування на позиції Frontend Developer в Arduino-орієнтованій освітній платформі та бренді навчальних наборів, де я працюю над інтерфейсами й storefront у реальному компанійному середовищі.",
+            logo: "/source/logos/funduino.jpg",
+            logoAlt: "Логотип Funduino GmbH",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Освіта",
+            role: "Student",
+            company: "KBS Nordhorn",
+            dateRange: "2024 - дотепер",
+            location: "Нордгорн, Німеччина",
+            summary: "Навчаюся в Kaufmannische Berufsbildende Schulen Nordhorn з 2024 року, паралельно посилюючи технічну й професійну базу разом із реальною Shopify-практикою.",
+            logo: "/source/logos/kbs-nordhorn.png",
+            logoAlt: "Логотип KBS Nordhorn",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Робота",
+            role: "Shopify Developer",
+            company: "Collab IT",
+            dateRange: "Травень 2025 - Листопад 2025",
+            location: "Віддалено",
+            summary: "Працював Shopify Developer над клієнтською реалізацією та storefront-розробкою. Публічної інформації про компанію зараз небагато, тому опис у портфоліо свідомо залишається стриманим і фактичним.",
+            logo: "/source/logos/collab-it.png",
+            logoAlt: "Логотип Collab IT",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Робота",
+            role: "Shopify Developer",
+            company: "Great Dev",
+            dateRange: "Грудень 2024 - Квітень 2025",
+            location: "Віддалено",
+            summary: "Працював над Shopify-розробкою в командному середовищі ще до того, як сайт компанії став недоступним. Запис залишено коротким, поки знову не з’явиться офіційне джерело логотипа.",
+            logo: "/source/logos/great-dev.png",
+            logoAlt: "Логотип Great Dev",
+            isPlaceholderLogo: false
+          }
+        ]
       },
       works: {
         eyebrow: "Каталог проєктів",
@@ -1184,9 +1240,11 @@ const resources = {
       },
       contact: {
         title: "Контакт",
+        topRated: "Top Rated на Upwork",
         subtitle: "Потрібна допомога з Shopify-проєктом?",
         email: "karatitsynkiril@gmail.com",
         note: "Забронюйте дзвінок або надішліть короткий email з посиланням на магазин і описом задачі.",
+        topRatedNote: "Працюйте з Top Rated фрилансером на Upwork, який робить ставку на чітку комунікацію, надійну реалізацію і Shopify-роботу, що лишається стабільною після запуску.",
         audit: "Безкоштовний аудит магазину і обговорення проєкту",
         book_call: "Забронювати дзвінок",
         linkedin: "LinkedIn",
@@ -1274,7 +1332,7 @@ const resources = {
       header: {
         services: "Послуги",
         cases: "Кейси",
-        process: "Процес",
+        experience: "Досвід",
         faq: "FAQ",
         contact: "Контакти",
         bookCall: "Дзвінок",
@@ -1296,6 +1354,7 @@ const resources = {
     translation: {
       hero: {
         eyebrow: "Shopify Entwickler",
+        topRated: "Top Rated auf Upwork",
         title: "Ich entwickle Shopify Stores, die",
         titleAccent: "konvertieren, skalieren und trotzdem leicht zu pflegen bleiben.",
         subtitle: "Custom Themes, Online-Store-2.0-Migrationen, Integrationen, CRO-orientierte Storefront-Arbeit und langfristiger Support für Marken, die mehr als ein Standard-Setup brauchen.",
@@ -1316,7 +1375,7 @@ const resources = {
         text: "Ich übersetze Business-Ziele in wartbare Shopify-Storefronts—Themes, Integrationen und Iterationen, die nach dem Launch weiter verkaufen.",
         statYearLabel: "Jahre Shopify-Erfahrung",
         statProjectsLabel: "Projekte umgesetzt",
-        statSatisfactionLabel: "Zufriedene Kunden",
+        statHoursLabel: "Upwork-Stunden",
         lets_work: "Lassen Sie uns zusammenarbeiten"
       },
       services: {
@@ -1585,35 +1644,61 @@ const resources = {
           }
         ]
       },
-      process: {
-        title: "So arbeite ich",
-        steps: {
-          step1: {
-            title: "1. Discovery",
-            description: "Wir definieren Business-Ziele, aktuelle Blocker, Prioritäten im Storefront und wie Erfolg für die Shopify-Arbeit konkret aussieht."
-          },
-          step2: {
-            title: "2. Audit & Planung",
-            description: "Ich prüfe Theme, Apps, technische Grenzen und Customer Journeys, damit der Umsetzungsplan realistisch ist, bevor Code geschrieben wird."
-          },
-          step3: {
-            title: "3. Umsetzung",
-            description: "Ich baue den Storefront, die Sections, die Logik oder die Migration mit Fokus auf Wartbarkeit und sauberes Nutzererlebnis."
-          },
-          step4: {
-            title: "4. QA & Verfeinerung",
-            description: "Jede wichtige Seite und jeder Kern-Flow wird auf Responsiveness, Verhalten und Launch-Readiness geprüft."
-          },
-          step5: {
-            title: "5. Launch Support",
-            description: "Ich helfe dabei, den Release stabil zu bekommen, mit letzten Fixes und Feinschliff bevor echter Traffic auf den Shop kommt."
-          },
-          step6: {
-            title: "6. Laufende Iteration",
-            description: "Nach dem Launch kann ich für Verbesserungen, neue Sections, technische Aufgaben, CRO-Arbeit und Maintenance im Projekt bleiben."
-          }
+      experience: {
+        eyebrow: "Erfahrung",
+        title: "Timeline aus Arbeit, Lernen und aktuellem Wachstum",
+        subtitle: "Ein kompakter Blick auf die Teams und Institutionen, die meine Shopify-Arbeit aktuell prägen: Kundenprojekte, laufendes Lernen und praktische Internship-Erfahrung.",
+        placeholderLabel: "Platzhalter-Logo",
+        stats: {
+          timeline: "Aktive Timeline-Eintrage",
+          since: "Lernen und Bauen seit"
         },
-        book_call: "Termin vereinbaren"
+        items: [
+          {
+            kind: "Praktikum",
+            role: "Frontend Developer",
+            company: "Funduino GmbH",
+            dateRange: "Februar 2026 - Heute",
+            location: "Nordhorn, Deutschland",
+            summary: "Ein laufendes Praktikum als Frontend Developer bei einer Arduino-orientierten Lernplattform und Education-Marke, mit Fokus auf Interface- und Storefront-Arbeit im echten Unternehmensalltag.",
+            logo: "/source/logos/funduino.jpg",
+            logoAlt: "Funduino GmbH Logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Ausbildung",
+            role: "Student",
+            company: "KBS Nordhorn",
+            dateRange: "2024 - Heute",
+            location: "Nordhorn, Deutschland",
+            summary: "Seit 2024 Schuler an den Kaufmannischen Berufsbildenden Schulen Nordhorn und parallel dazu technisches sowie berufliches Fundament durch echte Shopify-Projektarbeit vertieft.",
+            logo: "/source/logos/kbs-nordhorn.png",
+            logoAlt: "KBS Nordhorn Logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Arbeit",
+            role: "Shopify Developer",
+            company: "Collab IT",
+            dateRange: "Mai 2025 - November 2025",
+            location: "Remote",
+            summary: "Arbeit als Shopify Developer an Kundenprojekten und Storefront-Umsetzung. Da die öffentliche Firmenpräsenz derzeit sehr begrenzt ist, bleibt der Portfolio-Text bewusst sachlich und zurückhaltend.",
+            logo: "/source/logos/collab-it.png",
+            logoAlt: "Collab IT Logo",
+            isPlaceholderLogo: false
+          },
+          {
+            kind: "Arbeit",
+            role: "Shopify Developer",
+            company: "Great Dev",
+            dateRange: "Dezember 2024 - April 2025",
+            location: "Remote",
+            summary: "Shopify-Entwicklung im Team, bevor die Unternehmenswebsite nicht mehr erreichbar war. Der Eintrag bleibt bewusst knapp, bis wieder eine offizielle Logo-Quelle verfugbar ist.",
+            logo: "/source/logos/great-dev.png",
+            logoAlt: "Great Dev Logo",
+            isPlaceholderLogo: false
+          }
+        ]
       },
       works: {
         eyebrow: "Projektkatalog",
@@ -1829,9 +1914,11 @@ const resources = {
       },
       contact: {
         title: "Kontakt",
+        topRated: "Top Rated auf Upwork",
         subtitle: "Brauchen Sie Hilfe bei einem Shopify Projekt?",
         email: "karatitsynkiril@gmail.com",
         note: "Buchen Sie einen Call oder schicken Sie eine kurze E-Mail mit Store-Link und Aufgabenbeschreibung.",
+        topRatedNote: "Arbeiten Sie mit einem Top Rated Upwork-Freelancer, der für klare Kommunikation, verlässliche Umsetzung und Shopify-Arbeit steht, die auch nach dem Launch stabil bleibt.",
         audit: "Kostenloser Store Audit und Projekterstgespräch",
         book_call: "Termin vereinbaren",
         linkedin: "LinkedIn",
@@ -1919,7 +2006,7 @@ const resources = {
       header: {
         services: "Leistungen",
         cases: "Case Studies",
-        process: "Prozess",
+        experience: "Erfahrung",
         faq: "FAQ",
         contact: "Kontakt",
         bookCall: "Termin",
