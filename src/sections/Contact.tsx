@@ -21,9 +21,6 @@ function Contact() {
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-black/60 md:text-base">
             {t('contact.note')}
           </p>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-black/55 md:text-base">
-            {t('contact.topRatedNote')}
-          </p>
 
           <a
             href="mailto:karatitsynkiril@gmail.com?subject=Shopify%20project%20inquiry"

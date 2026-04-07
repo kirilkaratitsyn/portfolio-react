@@ -6,7 +6,7 @@ import Services from '../sections/Services';
 import FeaturedCaseStudies from '../sections/FeaturedCaseStudies';
 import Works from '../sections/Works';
 import Experience from '../sections/Experience';
-import FAQ from '../sections/FAQ';
+import UpworkReviews from '../sections/UpworkReviews';
 import Contact from '../sections/Contact';
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
       <FeaturedCaseStudies />
       <Works />
       <Experience />
-      <FAQ />
+      <UpworkReviews />
       <Contact />
     </>
   );

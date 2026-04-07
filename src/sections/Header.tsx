@@ -24,7 +24,7 @@ function Header() {
     { name: t('header.cases'), to: '/#case-studies' },
     { name: t('header.works'), to: '/projects' },
     { name: t('header.experience'), to: '/#experience' },
-    { name: t('header.faq'), to: '/#faq' },
+    { name: t('header.upwork'), to: '/#upwork-reviews' },
     { name: t('header.contact'), to: '/#contact' }
   ];
 
