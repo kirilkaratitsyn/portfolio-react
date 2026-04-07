@@ -2,10 +2,19 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Contact from '../sections/Contact';
 import { useBlogContent } from '../hooks/useBlogPosts';
+import { useSeo } from '../hooks/useSeo';
 
 const BlogList = () => {
   const blog = useBlogContent();
   const { t } = useTranslation();
+
+  useSeo({
+    title: 'Shopify Blog',
+    description:
+      'Articles about Shopify development, conversion optimization, launch checklists, and practical storefront improvements.',
+    path: '/blog',
+    type: 'website',
+  });
 
   return (
     <>

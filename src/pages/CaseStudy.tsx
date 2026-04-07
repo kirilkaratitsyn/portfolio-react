@@ -5,11 +5,29 @@ import { useCaseStudies, useCaseStudyBySlug } from '../hooks/useCaseStudies';
 import TransitionLink from '../components/TransitionLink';
 import CaseStudyMobilePreview from '../components/CaseStudyMobilePreview';
 import CaseStudyMoreProjects from '../components/CaseStudyMoreProjects';
+import { useSeo } from '../hooks/useSeo';
 
 const CaseStudy = () => {
   const { slug } = useParams();
   const caseStudies = useCaseStudies();
   const caseStudy = useCaseStudyBySlug(slug);
+
+  useSeo(
+    caseStudy
+      ? {
+          title: `${caseStudy.title} Case Study`,
+          description: caseStudy.summary,
+          path: `/projects/${caseStudy.slug}`,
+          type: 'article',
+          image: caseStudy.image,
+        }
+      : {
+          title: 'Case Study Not Found',
+          description: 'The requested case study could not be found.',
+          path: '/projects',
+          robots: 'noindex,follow',
+        }
+  );
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });

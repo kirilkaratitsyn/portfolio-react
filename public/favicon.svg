@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>Kiril Karatitsyn favicon</title>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="40" x2="448" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7d4a35"/>
+      <stop offset="0.38" stop-color="#2a130b"/>
+      <stop offset="1" stop-color="#140707"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="122" y1="96" x2="356" y2="334" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="28" y="28" width="456" height="456" rx="120" fill="url(#bg)"/>
+  <rect x="44" y="44" width="424" height="424" rx="104" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+  <path d="M104 84C160 72 206 66 254 66C328 66 404 82 404 130C404 160 375 179 337 193L398 334C410 363 389 396 357 396H321L270 243C255 245 238 246 222 246H193V396H104V84Z" fill="#fff"/>
+  <path d="M193 143V185H250C290 185 317 177 317 159C317 141 291 143 250 143H193Z" fill="url(#bg)"/>
+  <path d="M84 74C132 52 192 44 259 44C334 44 432 60 432 135C432 180 399 207 356 223L415 331C431 361 412 424 356 424H298L245 267H221V424H76V74H84Z" fill="url(#shine)" opacity="0.6"/>
+</svg>

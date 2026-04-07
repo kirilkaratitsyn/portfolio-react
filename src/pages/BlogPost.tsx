@@ -3,12 +3,30 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Contact from '../sections/Contact';
 import { useBlogContent } from '../hooks/useBlogPosts';
+import { useSeo } from '../hooks/useSeo';
 
 const BlogPost = () => {
   const { slug } = useParams();
   const blog = useBlogContent();
   const { t } = useTranslation();
   const post = blog.posts.find((item) => item.slug === slug);
+
+  useSeo(
+    post
+      ? {
+          title: post.title,
+          description: post.excerpt,
+          path: `/blog/${post.slug}`,
+          type: 'article',
+          image: post.image,
+        }
+      : {
+          title: 'Blog Post Not Found',
+          description: 'The requested article could not be found.',
+          path: '/blog',
+          robots: 'noindex,follow',
+        }
+  );
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });

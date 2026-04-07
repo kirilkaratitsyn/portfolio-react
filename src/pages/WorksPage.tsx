@@ -3,6 +3,7 @@ import Contact from "../sections/Contact";
 import { useWorksContent } from "../hooks/useWorks";
 import WorkCard from "../components/WorkCard";
 import TransitionLink from "../components/TransitionLink";
+import { useSeo } from "../hooks/useSeo";
 
 const INITIAL_PROJECTS_COUNT = 9;
 const PROJECTS_STEP = 6;
@@ -10,6 +11,14 @@ const PROJECTS_STEP = 6;
 const WorksPage = () => {
   const works = useWorksContent();
   const [visibleCount, setVisibleCount] = useState(INITIAL_PROJECTS_COUNT);
+
+  useSeo({
+    title: 'Shopify Projects',
+    description:
+      'Selected Shopify projects across custom themes, migrations, storefront improvements, merchandising logic, and launch support.',
+    path: '/projects',
+    type: 'website',
+  });
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
