@@ -139,11 +139,11 @@ function Experience() {
                         }`}
                       >
                         <div
-                          className={`flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg border ${
+                          className={`flex h-11 shrink-0 items-center justify-center overflow-hidden rounded-lg border ${
                             item.isPlaceholderLogo
                               ? 'border-dashed border-white/15 bg-[#121212]'
                               : 'border-white/10 bg-white/95'
-                          } p-1.5`}
+                          } px-3`}
                         >
                           <img
                             src={item.logo}
