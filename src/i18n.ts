@@ -456,10 +456,40 @@ const resources = {
             tech: "Implemented a refreshed design for the homepage, product pages, and core templates. I still support the store as their Shopify expert, handling new features, performance optimization, UX improvements, and ongoing technical iterations."
           },
           {
+            title: "ReviewCore",
+            url: "https://apps.shopify.com/reviews-core",
+            image: "/source/desktop/reviewcore-desktop.png",
+            tech: "Built a headless Shopify reviews backend app. Merchants design the review UI in their own storefront while the app handles storage, moderation, organization, CSV imports, and lightweight review delivery without heavy scripts."
+          },
+          {
+            title: "MarinePatches",
+            url: "https://marinepatches.com/",
+            image: "/source/desktop/marinepatches-desktop.png",
+            tech: "Built a Shopify theme on the new-generation theme architecture with wishlist functionality and cleaner, faster storefront flows. The setup is easier to manage, smoother for customers, and better suited for ongoing iteration."
+          },
+          {
+            title: "White Canvas Earth",
+            url: "https://whitecanvasearth.com/",
+            image: "/source/desktop/white-canvas-earth-desktop.png",
+            tech: "Delivered a Shopify redesign with technical migration, SEO foundations, and growth marketing setup. The work connected the new storefront structure with cleaner launch readiness and better visibility foundations."
+          },
+          {
+            title: "Lineargent",
+            url: "https://lineargent.com/",
+            image: "/source/desktop/lineargent-desktop.png",
+            tech: "Ongoing Shopify store support focused on SEO, CRO, performance, and functional improvements. I help improve key shopping flows, fix issues, and keep the storefront moving through practical growth iterations."
+          },
+          {
+            title: "Peter Bijoux",
+            url: "https://peterbijoux.com/",
+            image: "/source/desktop/peter-bijoux-desktop.png",
+            tech: "Shopify store redesign using the Prestige theme, with structure and implementation work across templates, product presentation, and content setup so the jewelry catalog is easier to manage and browse."
+          },
+          {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/desktop/m-oceans-desktop.webp",
-            tech: "Migrated from an old theme to Shopify 2.0, carried over custom logic, and improved key storefront flows. I still support the project as their Shopify expert, shipping new functionality and keeping the store stable after launch."
+            image: "/source/desktop/m-oceans-desktop.png",
+            tech: "Ongoing support plus redesign work for the homepage and product page experience. I improve storefront structure, ship new functionality, and keep the store stable while the marine equipment catalog continues to evolve."
           },
           {
             title: "Elanora Skin",
@@ -1224,10 +1254,40 @@ const resources = {
             tech: "Впровадив оновлений дизайн для головної, PDP та базових шаблонів. Я досі підтримую магазин як їхній Shopify-експерт: нові фічі, оптимізація швидкості, UX-покращення та постійні технічні ітерації."
           },
           {
+            title: "ReviewCore",
+            url: "https://apps.shopify.com/reviews-core",
+            image: "/source/desktop/reviewcore-desktop.png",
+            tech: "Створив headless Shopify reviews backend app. Merchant сам дизайнить review UI у storefront, а app відповідає за storage, moderation, organization, CSV import і легку доставку reviews без важких scripts."
+          },
+          {
+            title: "MarinePatches",
+            url: "https://marinepatches.com/",
+            image: "/source/desktop/marinepatches-desktop.png",
+            tech: "Розробка Shopify-теми на основі нової генерації тем: wishlist, чистіші storefront-флоу та швидша робота магазину. Структура стала простішою в підтримці, плавнішою для покупців і зручнішою для подальших ітерацій."
+          },
+          {
+            title: "White Canvas Earth",
+            url: "https://whitecanvasearth.com/",
+            image: "/source/desktop/white-canvas-earth-desktop.png",
+            tech: "Shopify redesign з технічною міграцією, SEO-фундаментом і growth marketing setup. Робота поєднала нову структуру storefront, готовність до запуску та кращу базу для видимості в пошуку."
+          },
+          {
+            title: "Lineargent",
+            url: "https://lineargent.com/",
+            image: "/source/desktop/lineargent-desktop.png",
+            tech: "Постійна підтримка Shopify-магазину з фокусом на SEO, CRO, performance і покращення функціоналу. Допомагаю покращувати ключові shopping flows, виправляти проблеми та рухати storefront через практичні growth-ітерації."
+          },
+          {
+            title: "Peter Bijoux",
+            url: "https://peterbijoux.com/",
+            image: "/source/desktop/peter-bijoux-desktop.png",
+            tech: "Shopify Store Redesign на темі Prestige: структура й реалізація templates, product presentation і content setup, щоб jewelry-каталог було легше підтримувати та зручніше переглядати."
+          },
+          {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/desktop/m-oceans-desktop.webp",
-            tech: "Міграція зі старої теми на Shopify 2.0 з перенесенням кастомної логіки та покращенням ключових storefront-флоу. Я досі веду проєкт як їхній Shopify-експерт, додаю нову функціональність і підтримую стабільність магазину після запуску."
+            image: "/source/desktop/m-oceans-desktop.png",
+            tech: "Поточна підтримка плюс redesign homepage і product page experience. Покращую структуру storefront, додаю новий функціонал і підтримую стабільність магазину, поки marine equipment catalog продовжує розвиватися."
           },
           {
             title: "Elanora Skin",
@@ -1992,10 +2052,40 @@ const resources = {
             tech: "Umsetzung eines Refresh-Designs für Homepage, Produktseiten und Core-Templates. Ich betreue den Store weiterhin als Shopify-Experte und kümmere mich um neue Features, Performance-Optimierung, UX-Verbesserungen und laufende technische Iterationen."
           },
           {
+            title: "ReviewCore",
+            url: "https://apps.shopify.com/reviews-core",
+            image: "/source/desktop/reviewcore-desktop.png",
+            tech: "Entwicklung einer headless Shopify Reviews Backend App. Merchants gestalten die Review UI im eigenen Storefront, während die App Storage, Moderation, Organisation, CSV-Importe und leichte Review-Ausgabe ohne schwere Scripts übernimmt."
+          },
+          {
+            title: "MarinePatches",
+            url: "https://marinepatches.com/",
+            image: "/source/desktop/marinepatches-desktop.png",
+            tech: "Entwicklung einer Shopify-Theme-Umsetzung auf Basis der neuen Theme-Generation: Wishlist-Funktion, sauberere Storefront-Flows und schnellere Bedienung. Die Struktur ist einfacher zu pflegen, läuft flüssiger für Kunden und eignet sich besser für laufende Iterationen."
+          },
+          {
+            title: "White Canvas Earth",
+            url: "https://whitecanvasearth.com/",
+            image: "/source/desktop/white-canvas-earth-desktop.png",
+            tech: "Shopify Redesign mit technischer Migration, SEO-Grundlagen und Growth-Marketing-Setup. Die Arbeit verband eine neue Storefront-Struktur mit Launch-Readiness und einer stärkeren Basis für organische Sichtbarkeit."
+          },
+          {
+            title: "Lineargent",
+            url: "https://lineargent.com/",
+            image: "/source/desktop/lineargent-desktop.png",
+            tech: "Laufende Shopify-Store-Betreuung mit Fokus auf SEO, CRO, Performance und funktionale Verbesserungen. Ich optimiere zentrale Shopping-Flows, behebe Probleme und entwickle die Storefront durch praktische Growth-Iterationen weiter."
+          },
+          {
+            title: "Peter Bijoux",
+            url: "https://peterbijoux.com/",
+            image: "/source/desktop/peter-bijoux-desktop.png",
+            tech: "Shopify Store Redesign auf Basis des Prestige Themes: Struktur und Umsetzung von Templates, Produktdarstellung und Content-Setup, damit der Schmuckkatalog leichter gepflegt und angenehmer durchsucht werden kann."
+          },
+          {
             title: "M-Oceans",
             url: "https://m-oceans.com/",
-            image: "/source/desktop/m-oceans-desktop.webp",
-            tech: "Migration von einem alten Theme auf Shopify 2.0 inklusive Übernahme von Custom-Logik und Verbesserung zentraler Storefront-Flows. Ich betreue das Projekt weiterhin als Shopify-Experte, liefere neue Funktionen aus und halte den Store nach dem Launch stabil."
+            image: "/source/desktop/m-oceans-desktop.png",
+            tech: "Laufende Unterstützung plus Redesign von Homepage und Product Page Experience. Ich verbessere die Storefront-Struktur, liefere neue Funktionen und halte den Store stabil, während der Marine-Equipment-Katalog weiter wächst."
           },
           {
             title: "Elanora Skin",
