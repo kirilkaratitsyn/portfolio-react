@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kiril Karatitsyn">
-  <style>
-    .mark { color: #130b08; }
-    @media (prefers-color-scheme: dark) {
-      .mark { color: #fff; }
-    }
-  </style>
-  <g class="mark" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="#130b08" stroke-linecap="round" stroke-linejoin="round">
     <ellipse cx="32" cy="32" rx="28" ry="29" stroke-width="5" />
     <path d="M23 16.5v31M40.5 16.5 23.5 32l18 15.5" stroke-width="5.5" />
   </g>

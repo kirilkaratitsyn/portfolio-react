@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../sections/Hero';
+import LatestProjects from '../sections/LatestProjects';
 import AboutMe from '../sections/AboutMe';
 import Services from '../sections/Services';
-import FeaturedCaseStudies from '../sections/FeaturedCaseStudies';
-import Works from '../sections/Works';
 import Experience from '../sections/Experience';
 import Contact from '../sections/Contact';
 import { useSeo } from '../hooks/useSeo';
@@ -66,10 +65,9 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <LatestProjects />
       <AboutMe />
       <Services />
-      <FeaturedCaseStudies />
-      <Works />
       <Experience />
       <Contact />
     </>
